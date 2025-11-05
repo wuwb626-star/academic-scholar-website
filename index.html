@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-  <!-- Inline Style for Background and Colors -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -33,11 +32,6 @@
       font-weight: 600;
     }
 
-    header p {
-      font-size: 1rem;
-      color: #bbb;
-    }
-
     nav a {
       color: #fff;
       margin: 0 15px;
@@ -51,7 +45,7 @@
       border-bottom: 2px solid #4caf50;
     }
 
-    #intro {
+    #team {
       background: rgba(0, 0, 0, 0.7);
       padding: 40px;
       margin-top: 20px;
@@ -60,72 +54,45 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    h2 {
-      font-size: 2rem;
-      color: #ff6347;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #ddd;
-      line-height: 1.5;
-    }
-
-    .app-grid {
+    .team-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
 
-    .app-card {
-      background: #333;
+    .team-card {
+      background: #fff;
+      border-radius: 10px;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: 0.3s ease;
+      text-align: center;
     }
 
-    .app-card:hover {
-      background: #4caf50; /* Green theme for remote sensing */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
-
-    .app-card h3 {
-      font-size: 1.5rem;
-      color: #fff;
+    .team-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
       margin-bottom: 10px;
     }
 
-    .app-card a {
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 4px;
-      background: #ff6347; /* A complementary color for contrast */
-      transition: 0.3s ease;
-    }
-
-    .app-card a:hover {
+    .team-card:hover {
       background: #4caf50;
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
-    footer {
-      background: #333;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-      color: #bbb;
+    .team-card h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
     }
 
-    footer p {
+    .team-card p {
       font-size: 1rem;
-    }
-
-    .research-interests ul {
-      list-style-type: square;
-      padding-left: 20px;
+      color: #555;
     }
 
   </style>
@@ -147,55 +114,94 @@
 
   <!-- Main Content Section -->
   <main>
-    <section id="intro" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>I specialize in quantitative remote sensing and vegetation radiative transfer modeling, focusing on vegetation structural and functional traits. My research merges the latest remote sensing technologies with ecological insights to improve vegetation monitoring and climate science, with a focus on canopy and soil analysis.</p>
-    </section>
-
-    <!-- Interactive Applications Section -->
-    <section id="apps" data-aos="fade-up">
-      <h2>🌿 Explore Our Applications</h2>
-      <div class="app-grid">
-        <div class="app-card" data-aos="fade-up" data-aos-delay="100">
-          <h3>SoilRTM</h3>
-          <p>Soil radiative transfer model visualized via Streamlit.</p>
-          <a href="https://soilRTM.streamlit.app" target="_blank">Open App →</a>
-        </div>
-        <div class="app-card" data-aos="fade-up" data-aos-delay="200">
-          <h3>LeafRTM</h3>
-          <p>Leaf-level reflectance and transmittance simulation using PROSPECT-D.</p>
-          <a href="https://leafRTM.streamlit.app" target="_blank">Open App →</a>
-        </div>
-        <div class="app-card" data-aos="fade-up" data-aos-delay="300">
-          <h3>CanopyRTM</h3>
-          <p>Canopy-level reflectance modeling based on PROSAIL.</p>
-          <a href="https://canopyRTM.streamlit.app" target="_blank">Open App →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research Interests Section -->
-    <section id="research" data-aos="fade-up" class="research-interests">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Quantitative Remote Sensing of Vegetation</li>
-        <li>Radiative Transfer Modeling (Soil, Leaf, Canopy)</li>
-        <li>Sun-Induced Fluorescence (SIF) and Photochemical Reflectance Index (PRI)</li>
-        <li>Retrieval of Vegetation Structure and Functional Traits</li>
-      </ul>
-    </section>
-
-    <!-- Team Section -->
     <section id="team" data-aos="fade-up">
       <h2>Research Team</h2>
       <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
       <div class="team-grid">
-        <!-- Add team members here, similar to the previous structure -->
+        <!-- Team Member 1: 杨沛琦 -->
+        <div class="team-card">
+          <img src="images/team/yang_peiqi.jpg" alt="Yang Peiqi">
+          <h3>杨沛琦 教授</h3>
+          <p>定量遥感与辐射传输建模研究</p>
+        </div>
+        <!-- Team Member 2: 刘婧 -->
+        <div class="team-card">
+          <img src="images/team/liu_jing.png" alt="Liu Jing">
+          <h3>刘婧 副教授</h3>
+          <p>激光雷达与森林三维结构反演</p>
+        </div>
+        <!-- Team Member 3: 李龙 -->
+        <div class="team-card">
+          <img src="images/team/li_long.jpg" alt="Li Long">
+          <h3>李龙 讲师</h3>
+          <p>热环境遥感</p>
+        </div>
+        <!-- Team Member 4: 鹿旭晖 -->
+        <div class="team-card">
+          <img src="images/team/lu_xuhui.jpg" alt="Lu Xuhui">
+          <h3>鹿旭晖 博士生（2020级，荷兰）</h3>
+          <p><strong>研究方向：</strong> 太阳诱导叶绿素荧光，植物生理监测</p>
+          <p><strong>邮箱：</strong> x.lu@utwente.nl</p>
+        </div>
+        <!-- Team Member 5: 石思琪 -->
+        <div class="team-card">
+          <img src="images/team/shi_siqi.jpg" alt="Shi Siqi">
+          <h3>石思琪 博士生（2021级，荷兰）</h3>
+          <p><strong>研究方向：</strong> 植被遥感，植物物候监测</p>
+          <p><strong>邮箱：</strong> s.shi@utwente.nl / shisq.ucas@gmail.com</p>
+        </div>
+        <!-- Team Member 6: 韩大磊 -->
+        <div class="team-card">
+          <img src="images/team/han_dalei.jpg" alt="Han Dalei">
+          <h3>韩大磊 博士生（2024级）</h3>
+          <p><strong>研究方向：</strong> 植被定量遥感，辐射传输建模，激光雷达遥感</p>
+          <p><strong>邮箱：</strong> 221302108@njnu.edu.cn</p>
+        </div>
+        <!-- Team Member 7: 王子阳 -->
+        <div class="team-card">
+          <img src="images/team/wang_ziyang.jpg" alt="Wang Ziyang">
+          <h3>王子阳 博士生（2022级）</h3>
+          <p><strong>研究方向：</strong> 激光雷达遥感，卫星信号解释</p>
+          <p><strong>邮箱：</strong> 191335025@njnu.edu.cn</p>
+        </div>
+        <!-- Team Member 8: 张润飞 -->
+        <div class="team-card">
+          <img src="images/team/zhang_runfei.jpg" alt="Zhang Runfei">
+          <h3>张润飞 博士生（2023级）</h3>
+          <p><strong>研究方向：</strong> 植被遥感</p>
+          <p><strong>邮箱：</strong> zhangrunfei@njnu.edu.cn</p>
+        </div>
+        <!-- Team Member 9: 蒋昊 -->
+        <div class="team-card">
+          <img src="images/team/jiang_hao.jpg" alt="Jiang Hao">
+          <h3>蒋昊 博士生（2024级，荷兰）</h3>
+          <p><strong>研究方向：</strong> 植被遥感、日光诱导叶绿素荧光、水分胁迫</p>
+          <p><strong>邮箱：</strong> h.jiang@utwente.nl</p>
+        </div>
+        <!-- Team Member 10: 李杰 -->
+        <div class="team-card">
+          <img src="images/team/li_jie.jpg" alt="Li Jie">
+          <h3>李杰 博士生（2025级）</h3>
+          <p><strong>研究方向：</strong> 植被定量遥感</p>
+        </div>
+        <!-- Team Member 11: 黄潇爽 -->
+        <div class="team-card">
+          <img src="images/team/huang_xiaoshuang.jpg" alt="Huang Xiaoshuang">
+          <h3>黄潇爽 博士生（2025级）</h3>
+          <p><strong>研究方向：</strong> 植被定量遥感</p>
+          <p><strong>邮箱：</strong> huang_xs98@163.com</p>
+        </div>
+        <!-- Team Member 12: 郭夏楠 -->
+        <div class="team-card">
+          <img src="images/team/guo_xianan.jpg" alt="Guo Xianan">
+          <h3>郭夏楠 博士生（2025级）</h3>
+          <p><strong>研究方向：</strong> 植被定量遥感</p>
+          <p><strong>邮箱：</strong> 18838465880@163.com</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer Section -->
   <footer>
     <p>© 2025 Peiqi Yang. Hosted via GitHub Pages.</p>
   </footer>
