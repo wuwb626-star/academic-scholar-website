@@ -5,39 +5,46 @@
   <title>Peiqi Yang | Academic Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>Professor Peiqi Yang</h1>
-    <p>School of Geography, Nanjing Normal University</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="publications_v2.html">Publications</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Professor Peiqi Yang</h1>
+      <p>School of Geography, Nanjing Normal University</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="publications_v2.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Main Content Section -->
   <main>
-    <section id="intro">
+    <section id="intro" data-aos="fade-up">
       <h2>About Me</h2>
-      <p>I specialize in quantitative remote sensing and vegetation radiative transfer modeling, with a focus on vegetation structural and functional traits.</p>
+      <p>I specialize in quantitative remote sensing and vegetation radiative transfer modeling, focusing on vegetation structural and functional traits. My research combines cutting-edge remote sensing technologies with ecological insights to advance vegetation monitoring and climate science.</p>
     </section>
 
-    <section id="apps">
-      <h2>🌿 Online Apps</h2>
+    <!-- Interactive Applications Section -->
+    <section id="apps" data-aos="fade-up">
+      <h2>🌿 Explore Our Apps</h2>
       <div class="app-grid">
-        <div class="app-card">
+        <div class="app-card" data-aos="fade-up" data-aos-delay="100">
           <h3>SoilRTM</h3>
           <p>Soil radiative transfer model visualized via Streamlit.</p>
           <a href="https://soilRTM.streamlit.app" target="_blank">Open App →</a>
         </div>
-        <div class="app-card">
+        <div class="app-card" data-aos="fade-up" data-aos-delay="200">
           <h3>LeafRTM</h3>
           <p>Leaf-level reflectance and transmittance simulation using PROSPECT-D.</p>
           <a href="https://leafRTM.streamlit.app" target="_blank">Open App →</a>
         </div>
-        <div class="app-card">
+        <div class="app-card" data-aos="fade-up" data-aos-delay="300">
           <h3>CanopyRTM</h3>
           <p>Canopy-level reflectance modeling based on PROSAIL.</p>
           <a href="https://canopyRTM.streamlit.app" target="_blank">Open App →</a>
@@ -45,29 +52,96 @@
       </div>
     </section>
 
-    <section id="research">
+    <!-- Research Interests Section -->
+    <section id="research" data-aos="fade-up">
       <h2>Research Interests</h2>
       <ul>
         <li>Quantitative Remote Sensing of Vegetation</li>
         <li>Radiative Transfer Modeling (Soil, Leaf, Canopy)</li>
         <li>Sun-Induced Fluorescence (SIF) and Photochemical Reflectance Index (PRI)</li>
-        <li> Retrieval of Vegetation Structure and Functional Traits</li>
+        <li>Retrieval of Vegetation Structure and Functional Traits</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:p.yang@njnu.edu.cn">p.yang@njnu.edu.cn</a></p>
+    <!-- Team Section -->
+    <section id="team" data-aos="fade-up">
+      <h2>Research Team</h2>
+      <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
+      <div class="team-grid">
+        <div class="member-card">
+          <h3>杨沛琦 教授</h3>
+          <p>南京师范大学地理科学学院，主要从事定量遥感与辐射传输建模研究</p>
+        </div>
+        <div class="member-card">
+          <h3>刘婧 副教授</h3>
+          <p>南京师范大学地理科学学院，主要从事激光雷达与森林三维结构反演</p>
+        </div>
+        <div class="member-card">
+          <h3>李龙 讲师</h3>
+          <p>南京师范大学地理科学学院，主要从事热环境遥感</p>
+        </div>
+        <div class="member-card">
+          <h3>鹿旭晖 博士生（2020级，荷兰）</h3>
+          <p><strong>研究方向：</strong>太阳诱导叶绿素荧光，植物生理监测</p>
+          <p><strong>邮箱：</strong><a href="mailto:x.lu@utwente.nl">x.lu@utwente.nl</a></p>
+        </div>
+        <div class="member-card">
+          <h3>石思琪 博士生（2021级，荷兰）</h3>
+          <p><strong>研究方向：</strong>植被遥感，植物物候监测</p>
+          <p><strong>邮箱：</strong><a href="mailto:s.shi@utwente.nl">s.shi@utwente.nl</a> / <a href="mailto:shisq.ucas@gmail.com">shisq.ucas@gmail.com</a></p>
+        </div>
+        <div class="member-card">
+          <h3>韩大磊 博士生（2024级）</h3>
+          <p><strong>研究方向：</strong>植被定量遥感，辐射传输建模，激光雷达遥感</p>
+          <p><strong>邮箱：</strong><a href="mailto:221302108@njnu.edu.cn">221302108@njnu.edu.cn</a></p>
+        </div>
+        <div class="member-card">
+          <h3>王子阳 博士生（2022级）</h3>
+          <p><strong>研究方向：</strong>激光雷达遥感，卫星信号解释</p>
+          <p><strong>邮箱：</strong><a href="mailto:191335025@njnu.edu.cn">191335025@njnu.edu.cn</a></p>
+        </div>
+        <div class="member-card">
+          <h3>张润飞 博士生（2023级）</h3>
+          <p><strong>研究方向：</strong>植被遥感</p>
+          <p><strong>邮箱：</strong><a href="mailto:zhangrunfei@njnu.edu.cn">zhangrunfei@njnu.edu.cn</a></p>
+        </div>
+        <div class="member-card">
+          <h3>蒋昊 博士生（2024级，荷兰）</h3>
+          <p><strong>研究方向：</strong>植被遥感、日光诱导叶绿素荧光、水分胁迫</p>
+          <p><strong>邮箱：</strong><a href="mailto:h.jiang@utwente.nl">h.jiang@utwente.nl</a></p>
+        </div>
+        <div class="member-card">
+          <h3>李杰 博士生（2025级）</h3>
+          <p><strong>研究方向：</strong>植被定量遥感</p>
+        </div>
+        <div class="member-card">
+          <h3>黄潇爽 博士生（2025级）</h3>
+          <p><strong>研究方向：</strong>植被定量遥感</p>
+          <p><strong>邮箱：</strong><a href="mailto:huang_xs98@163.com">huang_xs98@163.com</a></p>
+        </div>
+        <div class="member-card">
+          <h3>郭夏楠 博士生（2025级）</h3>
+          <p><strong>研究方向：</strong>植被定量遥感</p>
+          <p><strong>邮箱：</strong><a href="mailto:18838465880@163.com">18838465880@163.com</a></p>
+        </div>
+      </div>
     </section>
   </main>
 
-<footer>
-  <p>© 2025 Peiqi Yang. Hosted via GitHub Pages.</p>
-  <p>访问次数：
-    <a href="https://hits.seeyoufarm.com" target="_blank">
-      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpeiqiyang.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false"/>
-    </a>
-  </p>
-</footer>
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Peiqi Yang. Hosted via GitHub Pages.</p>
+  </footer>
+
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      offset: 100, // offset (in px) for triggering animations
+      duration: 600, // animation duration
+      easing: 'ease-in-out', // easing function
+      delay: 100, // animation delay
+      once: true, // whether animation should happen once
+    });
+  </script>
 </body>
 </html>
