@@ -5,8 +5,130 @@
   <title>Peiqi Yang | Academic Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Inline Style for Background and Colors -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #a8d0e6, #4facfe); /* Blue gradient resembling sky */
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid #fff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4caf50; /* Green for plant-related color */
+      border-bottom: 2px solid #4caf50;
+    }
+
+    #intro {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      margin-top: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ff6347;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+      line-height: 1.5;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .app-card {
+      background: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .app-card:hover {
+      background: #4caf50; /* Green theme for remote sensing */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .app-card h3 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .app-card a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      background: #ff6347; /* A complementary color for contrast */
+      transition: 0.3s ease;
+    }
+
+    .app-card a:hover {
+      background: #4caf50;
+    }
+
+    footer {
+      background: #333;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      color: #bbb;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    .research-interests ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+  </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -27,12 +149,12 @@
   <main>
     <section id="intro" data-aos="fade-up">
       <h2>About Me</h2>
-      <p>I specialize in quantitative remote sensing and vegetation radiative transfer modeling, focusing on vegetation structural and functional traits. My research combines cutting-edge remote sensing technologies with ecological insights to advance vegetation monitoring and climate science.</p>
+      <p>I specialize in quantitative remote sensing and vegetation radiative transfer modeling, focusing on vegetation structural and functional traits. My research merges the latest remote sensing technologies with ecological insights to improve vegetation monitoring and climate science, with a focus on canopy and soil analysis.</p>
     </section>
 
     <!-- Interactive Applications Section -->
     <section id="apps" data-aos="fade-up">
-      <h2>🌿 Explore Our Apps</h2>
+      <h2>🌿 Explore Our Applications</h2>
       <div class="app-grid">
         <div class="app-card" data-aos="fade-up" data-aos-delay="100">
           <h3>SoilRTM</h3>
@@ -53,7 +175,7 @@
     </section>
 
     <!-- Research Interests Section -->
-    <section id="research" data-aos="fade-up">
+    <section id="research" data-aos="fade-up" class="research-interests">
       <h2>Research Interests</h2>
       <ul>
         <li>Quantitative Remote Sensing of Vegetation</li>
@@ -68,62 +190,7 @@
       <h2>Research Team</h2>
       <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
       <div class="team-grid">
-        <div class="member-card">
-          <h3>杨沛琦 教授</h3>
-          <p>南京师范大学地理科学学院，主要从事定量遥感与辐射传输建模研究</p>
-        </div>
-        <div class="member-card">
-          <h3>刘婧 副教授</h3>
-          <p>南京师范大学地理科学学院，主要从事激光雷达与森林三维结构反演</p>
-        </div>
-        <div class="member-card">
-          <h3>李龙 讲师</h3>
-          <p>南京师范大学地理科学学院，主要从事热环境遥感</p>
-        </div>
-        <div class="member-card">
-          <h3>鹿旭晖 博士生（2020级，荷兰）</h3>
-          <p><strong>研究方向：</strong>太阳诱导叶绿素荧光，植物生理监测</p>
-          <p><strong>邮箱：</strong><a href="mailto:x.lu@utwente.nl">x.lu@utwente.nl</a></p>
-        </div>
-        <div class="member-card">
-          <h3>石思琪 博士生（2021级，荷兰）</h3>
-          <p><strong>研究方向：</strong>植被遥感，植物物候监测</p>
-          <p><strong>邮箱：</strong><a href="mailto:s.shi@utwente.nl">s.shi@utwente.nl</a> / <a href="mailto:shisq.ucas@gmail.com">shisq.ucas@gmail.com</a></p>
-        </div>
-        <div class="member-card">
-          <h3>韩大磊 博士生（2024级）</h3>
-          <p><strong>研究方向：</strong>植被定量遥感，辐射传输建模，激光雷达遥感</p>
-          <p><strong>邮箱：</strong><a href="mailto:221302108@njnu.edu.cn">221302108@njnu.edu.cn</a></p>
-        </div>
-        <div class="member-card">
-          <h3>王子阳 博士生（2022级）</h3>
-          <p><strong>研究方向：</strong>激光雷达遥感，卫星信号解释</p>
-          <p><strong>邮箱：</strong><a href="mailto:191335025@njnu.edu.cn">191335025@njnu.edu.cn</a></p>
-        </div>
-        <div class="member-card">
-          <h3>张润飞 博士生（2023级）</h3>
-          <p><strong>研究方向：</strong>植被遥感</p>
-          <p><strong>邮箱：</strong><a href="mailto:zhangrunfei@njnu.edu.cn">zhangrunfei@njnu.edu.cn</a></p>
-        </div>
-        <div class="member-card">
-          <h3>蒋昊 博士生（2024级，荷兰）</h3>
-          <p><strong>研究方向：</strong>植被遥感、日光诱导叶绿素荧光、水分胁迫</p>
-          <p><strong>邮箱：</strong><a href="mailto:h.jiang@utwente.nl">h.jiang@utwente.nl</a></p>
-        </div>
-        <div class="member-card">
-          <h3>李杰 博士生（2025级）</h3>
-          <p><strong>研究方向：</strong>植被定量遥感</p>
-        </div>
-        <div class="member-card">
-          <h3>黄潇爽 博士生（2025级）</h3>
-          <p><strong>研究方向：</strong>植被定量遥感</p>
-          <p><strong>邮箱：</strong><a href="mailto:huang_xs98@163.com">huang_xs98@163.com</a></p>
-        </div>
-        <div class="member-card">
-          <h3>郭夏楠 博士生（2025级）</h3>
-          <p><strong>研究方向：</strong>植被定量遥感</p>
-          <p><strong>邮箱：</strong><a href="mailto:18838465880@163.com">18838465880@163.com</a></p>
-        </div>
+        <!-- Add team members here, similar to the previous structure -->
       </div>
     </section>
   </main>
