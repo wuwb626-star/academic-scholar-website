@@ -2,112 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Team | Peiqi Yang</title>
+  <title>Peiqi Yang | Academic Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #a8d0e6, #4facfe); /* Blue gradient resembling sky */
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid #fff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4caf50; /* Green for plant-related color */
+      border-bottom: 2px solid #4caf50;
+    }
+
+    #team {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      margin-top: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .team-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: 0.3s ease;
+      text-align: center;
+    }
+
+    .team-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .team-card:hover {
+      background: #4caf50;
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .team-card h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .team-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+  </style>
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>Research Team</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Professor Peiqi Yang</h1>
+      <p>School of Geography, Nanjing Normal University</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="publications_v2.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Main Content Section -->
   <main>
-    <section id="team" class="team-section">
-      <h2 class="section-title">Team Members</h2>
+    <section id="team" data-aos="fade-up">
+      <h2>Research Team</h2>
+      <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
       <div class="team-grid">
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/yang_peiqi.jpg" alt="Yang Peiqi" class="team-photo">
+        <!-- Team Member 1: 杨沛琦 -->
+        <div class="team-card">
+          <img src="images/team/yang_peiqi.jpg" alt="Yang Peiqi">
           <h3>杨沛琦 教授</h3>
-          <p>南京师范大学地理科学学院，主要从事定量遥感与辐射传输建模研究</p>
+          <p>定量遥感与辐射传输建模研究</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/liu_jing.jpg" alt="Liu Jing" class="team-photo">
+        <!-- Team Member 2: 刘婧 -->
+        <div class="team-card">
+          <img src="images/team/liu_jing.png" alt="Liu Jing">
           <h3>刘婧 副教授</h3>
-          <p>南京师范大学地理科学学院，主要从事激光雷达与森林三维结构反演</p>
+          <p>激光雷达与森林三维结构反演</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/li_long.jpg" alt="Li Long" class="team-photo">
+        <!-- Team Member 3: 李龙 -->
+        <div class="team-card">
+          <img src="images/team/li_long.jpg" alt="Li Long">
           <h3>李龙 讲师</h3>
-          <p>南京师范大学地理科学学院，主要从事热环境遥感</p>
+          <p>热环境遥感</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/lu_xuhui.jpg" alt="Lu Xuhui" class="team-photo">
+        <!-- Team Member 4: 鹿旭晖 -->
+        <div class="team-card">
+          <img src="images/team/lu_xuhui.jpg" alt="Lu Xuhui">
           <h3>鹿旭晖 博士生（2020级，荷兰）</h3>
           <p><strong>研究方向：</strong> 太阳诱导叶绿素荧光，植物生理监测</p>
           <p><strong>邮箱：</strong> x.lu@utwente.nl</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/shi_siqi.jpg" alt="Shi Siqi" class="team-photo">
+        <!-- Team Member 5: 石思琪 -->
+        <div class="team-card">
+          <img src="images/team/shi_siqi.jpg" alt="Shi Siqi">
           <h3>石思琪 博士生（2021级，荷兰）</h3>
           <p><strong>研究方向：</strong> 植被遥感，植物物候监测</p>
           <p><strong>邮箱：</strong> s.shi@utwente.nl / shisq.ucas@gmail.com</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/han_dalei.jpg" alt="Han Dalei" class="team-photo">
+        <!-- Team Member 6: 韩大磊 -->
+        <div class="team-card">
+          <img src="images/team/han_dalei.jpg" alt="Han Dalei">
           <h3>韩大磊 博士生（2024级）</h3>
           <p><strong>研究方向：</strong> 植被定量遥感，辐射传输建模，激光雷达遥感</p>
           <p><strong>邮箱：</strong> 221302108@njnu.edu.cn</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/wang_ziyang.jpg" alt="Wang Ziyang" class="team-photo">
+        <!-- Team Member 7: 王子阳 -->
+        <div class="team-card">
+          <img src="images/team/wang_ziyang.jpg" alt="Wang Ziyang">
           <h3>王子阳 博士生（2022级）</h3>
           <p><strong>研究方向：</strong> 激光雷达遥感，卫星信号解释</p>
           <p><strong>邮箱：</strong> 191335025@njnu.edu.cn</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/zhang_runfei.jpg" alt="Zhang Runfei" class="team-photo">
+        <!-- Team Member 8: 张润飞 -->
+        <div class="team-card">
+          <img src="images/team/zhang_runfei.jpg" alt="Zhang Runfei">
           <h3>张润飞 博士生（2023级）</h3>
           <p><strong>研究方向：</strong> 植被遥感</p>
           <p><strong>邮箱：</strong> zhangrunfei@njnu.edu.cn</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/jiang_hao.jpg" alt="Jiang Hao" class="team-photo">
+        <!-- Team Member 9: 蒋昊 -->
+        <div class="team-card">
+          <img src="images/team/jiang_hao.jpg" alt="Jiang Hao">
           <h3>蒋昊 博士生（2024级，荷兰）</h3>
           <p><strong>研究方向：</strong> 植被遥感、日光诱导叶绿素荧光、水分胁迫</p>
           <p><strong>邮箱：</strong> h.jiang@utwente.nl</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/li_jie.jpg" alt="Li Jie" class="team-photo">
+        <!-- Team Member 10: 李杰 -->
+        <div class="team-card">
+          <img src="images/team/li_jie.jpg" alt="Li Jie">
           <h3>李杰 博士生（2025级）</h3>
           <p><strong>研究方向：</strong> 植被定量遥感</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/huang_xiaoshuang.jpg" alt="Huang Xiaoshuang" class="team-photo">
+        <!-- Team Member 11: 黄潇爽 -->
+        <div class="team-card">
+          <img src="images/team/huang_xiaoshuang.jpg" alt="Huang Xiaoshuang">
           <h3>黄潇爽 博士生（2025级）</h3>
           <p><strong>研究方向：</strong> 植被定量遥感</p>
           <p><strong>邮箱：</strong> huang_xs98@163.com</p>
         </div>
-
-        <div class="member-card">
-          <!-- Add member photo -->
-          <img src="images/team/guo_xianan.jpg" alt="Guo Xianan" class="team-photo">
+        <!-- Team Member 12: 郭夏楠 -->
+        <div class="team-card">
+          <img src="images/team/guo_xianan.jpg" alt="Guo Xianan">
           <h3>郭夏楠 博士生（2025级）</h3>
           <p><strong>研究方向：</strong> 植被定量遥感</p>
           <p><strong>邮箱：</strong> 18838465880@163.com</p>
@@ -119,5 +205,16 @@
   <footer>
     <p>© 2025 Peiqi Yang. Hosted via GitHub Pages.</p>
   </footer>
+
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      offset: 100, // offset (in px) for triggering animations
+      duration: 600, // animation duration
+      easing: 'ease-in-out', // easing function
+      delay: 100, // animation delay
+      once: true, // whether animation should happen once
+    });
+  </script>
 </body>
 </html>
