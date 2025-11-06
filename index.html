@@ -20,7 +20,7 @@
     }
 
     header {
-      background: rgba(30, 50, 30, 0.8);
+      background: rgba(30, 50, 30, 0.85);
       padding: 20px;
       text-align: center;
       border-bottom: 3px solid #4caf50;
@@ -54,13 +54,13 @@
 
     /* ===================== Sections ===================== */
     #intro {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       padding: 40px;
       margin: 30px auto;
       text-align: center;
       border-radius: 12px;
       max-width: 900px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       color: #2b3e2b;
     }
 
@@ -75,8 +75,8 @@
       line-height: 1.6;
     }
 
-    /* ===================== App Cards ===================== */
-    .app-grid {
+    /* ===================== App & Team Cards ===================== */
+    .app-grid, .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 20px;
@@ -84,27 +84,32 @@
       max-width: 1000px;
     }
 
-    .app-card {
-      background: #f0f4f0;
+    .app-card, .team-card {
+      background: #e4f0e4; /* 柔和绿色背景 */
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 微妙阴影 */
+      transition: 0.3s ease, transform 0.3s ease;
+      text-align: center;
     }
 
-    .app-card:hover {
+    .app-card:hover, .team-card:hover {
       background: #4caf50;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      color: #fff;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
-    .app-card h3 {
+    .app-card h3, .team-card h3 {
       font-size: 1.5rem;
       color: #2b3e2b;
       margin-bottom: 10px;
+      transition: color 0.3s ease;
     }
 
-    .app-card p {
+    .app-card p, .team-card p {
       color: #3b3b3b;
+      transition: color 0.3s ease;
     }
 
     .app-card a {
@@ -116,7 +121,7 @@
       padding: 8px 16px;
       border-radius: 5px;
       background: #3b7d3b;
-      transition: 0.3s ease;
+      transition: background 0.3s ease;
     }
 
     .app-card a:hover {
@@ -127,11 +132,11 @@
     .research-interests {
       max-width: 900px;
       margin: 30px auto;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       padding: 30px;
       border-radius: 12px;
       color: #2b3e2b;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     .research-interests h2 {
@@ -233,7 +238,7 @@
       <h2>Research Team</h2>
       <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
       <div class="team-grid">
-        <!-- Team members grid remains the same -->
+        <!-- Team members remain unchanged -->
       </div>
     </section>
   </main>
