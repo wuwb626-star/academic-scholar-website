@@ -109,6 +109,24 @@
       background: #e6f2df;
     }
 
+    /* Separator style */
+    .team-separator {
+      grid-column: 1 / -1; /* 占满整行 */
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #3a6b35;
+      padding: 30px 0; /* 上下间距 */
+      border-top: 2px solid #6da65c;
+      border-bottom: 2px solid #6da65c;
+      background-color: #f0f9f2; /* 可选淡绿色背景 */
+    }
+
+    .team-separator span {
+      background-color: #f0f9f2;
+      padding: 0 15px;
+    }
+
     footer {
       background: linear-gradient(90deg, #3a6b35, #6da65c);
       color: #fff;
@@ -157,6 +175,9 @@
           <p>Thermal environment remote sensing</p>
         </a>
       </div>
+
+      <!-- Separator -->
+      <div class="team-separator"><span>PhD Students</span></div>
 
       <!-- PhD Students -->
       <div class="team-card">
