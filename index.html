@@ -9,21 +9,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-  <!-- Inline Style for Background and Colors -->
   <style>
+    /* ===================== Body & Header ===================== */
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #a8d0e6, #4facfe); /* Blue gradient resembling sky */
-      color: #fff;
+      background: linear-gradient(to right, #d0e8d0, #a8d0e6); /* 柔和绿蓝渐变 */
+      color: #333;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(30, 50, 30, 0.8);
       padding: 20px;
       text-align: center;
-      border-bottom: 5px solid #fff;
+      border-bottom: 3px solid #4caf50;
     }
 
     header h1 {
@@ -35,7 +35,8 @@
 
     header p {
       font-size: 1rem;
-      color: #bbb;
+      color: #cce0c0;
+      margin: 5px 0 0 0;
     }
 
     nav a {
@@ -47,80 +48,95 @@
     }
 
     nav a:hover {
-      color: #4caf50; /* Green for plant-related color */
+      color: #4caf50;
       border-bottom: 2px solid #4caf50;
     }
 
+    /* ===================== Sections ===================== */
     #intro {
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(255, 255, 255, 0.9);
       padding: 40px;
-      margin-top: 20px;
+      margin: 30px auto;
       text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      color: #2b3e2b;
     }
 
-    h2 {
+    #intro h2 {
       font-size: 2rem;
-      color: #ff6347;
+      color: #3b5e3b;
+      margin-bottom: 20px;
     }
 
-    p {
+    #intro p {
       font-size: 1.2rem;
-      color: #ddd;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
+    /* ===================== App Cards ===================== */
     .app-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      margin: 30px auto;
+      max-width: 1000px;
     }
 
     .app-card {
-      background: #333;
+      background: #f0f4f0;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: 0.3s ease;
     }
 
     .app-card:hover {
-      background: #4caf50; /* Green theme for remote sensing */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      background: #4caf50;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     }
 
     .app-card h3 {
       font-size: 1.5rem;
-      color: #fff;
+      color: #2b3e2b;
       margin-bottom: 10px;
     }
 
+    .app-card p {
+      color: #3b3b3b;
+    }
+
     .app-card a {
+      display: inline-block;
+      margin-top: 10px;
       color: #fff;
       font-weight: bold;
       text-decoration: none;
       padding: 8px 16px;
-      border-radius: 4px;
-      background: #ff6347; /* A complementary color for contrast */
+      border-radius: 5px;
+      background: #3b7d3b;
       transition: 0.3s ease;
     }
 
     .app-card a:hover {
-      background: #4caf50;
+      background: #2e5d2e;
     }
 
-    footer {
-      background: #333;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-      color: #bbb;
+    /* ===================== Research Interests ===================== */
+    .research-interests {
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 12px;
+      color: #2b3e2b;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
 
-    footer p {
-      font-size: 1rem;
+    .research-interests h2 {
+      margin-bottom: 20px;
+      color: #3b5e3b;
     }
 
     .research-interests ul {
@@ -128,10 +144,41 @@
       padding-left: 20px;
     }
 
+    /* ===================== Team Section ===================== */
+    #team {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #team h2 {
+      color: #3b5e3b;
+      margin-bottom: 10px;
+    }
+
+    #team p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    /* ===================== Footer ===================== */
+    footer {
+      background: #2b3e2b;
+      color: #cce0c0;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
   </style>
 </head>
 <body>
-  <!-- Header Section -->
   <header>
     <div class="container">
       <h1>Professor Peiqi Yang</h1>
@@ -145,14 +192,12 @@
     </div>
   </header>
 
-  <!-- Main Content Section -->
   <main>
     <section id="intro" data-aos="fade-up">
       <h2>About Me</h2>
       <p>I specialize in quantitative remote sensing and vegetation radiative transfer modeling, focusing on vegetation structural and functional traits. My research merges the latest remote sensing technologies with ecological insights to improve vegetation monitoring and climate science, with a focus on canopy and soil analysis.</p>
     </section>
 
-    <!-- Interactive Applications Section -->
     <section id="apps" data-aos="fade-up">
       <h2>🌿 Explore Our Applications</h2>
       <div class="app-grid">
@@ -174,7 +219,6 @@
       </div>
     </section>
 
-    <!-- Research Interests Section -->
     <section id="research" data-aos="fade-up" class="research-interests">
       <h2>Research Interests</h2>
       <ul>
@@ -185,29 +229,26 @@
       </ul>
     </section>
 
-    <!-- Team Section -->
     <section id="team" data-aos="fade-up">
       <h2>Research Team</h2>
       <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
       <div class="team-grid">
-        <!-- Add team members here, similar to the previous structure -->
+        <!-- Team members grid remains the same -->
       </div>
     </section>
   </main>
 
-  <!-- Footer Section -->
   <footer>
     <p>© 2025 Peiqi Yang. Hosted via GitHub Pages.</p>
   </footer>
 
   <script>
-    // Initialize AOS animations
     AOS.init({
-      offset: 100, // offset (in px) for triggering animations
-      duration: 600, // animation duration
-      easing: 'ease-in-out', // easing function
-      delay: 100, // animation delay
-      once: true, // whether animation should happen once
+      offset: 100,
+      duration: 600,
+      easing: 'ease-in-out',
+      delay: 100,
+      once: true,
     });
   </script>
 </body>
