@@ -12,7 +12,7 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #a8d0e6, #4facfe); /* Blue gradient resembling sky */
+      background: linear-gradient(to right, #a8d0e6, #4facfe);
       color: #fff;
       margin: 0;
       padding: 0;
@@ -41,7 +41,7 @@
     }
 
     nav a:hover {
-      color: #4caf50; /* Green for plant-related color */
+      color: #4caf50;
       border-bottom: 2px solid #4caf50;
     }
 
@@ -70,6 +70,13 @@
       text-align: center;
     }
 
+    /* 整个卡片可点击，并去掉下划线 */
+    .team-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
     .team-card img {
       width: 180px;
       height: 180px;
@@ -82,11 +89,11 @@
       background: #4caf50;
       transform: translateY(-10px);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      color: #fff;
     }
 
     .team-card h3 {
       font-size: 1.2rem;
-      color: #333;
       margin-bottom: 10px;
     }
 
@@ -94,11 +101,9 @@
       font-size: 1rem;
       color: #555;
     }
-
   </style>
 </head>
 <body>
-  <!-- Header Section -->
   <header>
     <div class="container">
       <h1>Professor Peiqi Yang</h1>
@@ -112,121 +117,111 @@
     </div>
   </header>
 
-  <!-- Main Content Section -->
   <main>
     <section id="team" data-aos="fade-up">
       <h2>Research Team</h2>
-      <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
-     <div class="team-grid">
-  <!-- Team Member 1 -->
-  <div class="team-card">
-    <a href="members/yang_peiqi.html">
-      <img src="images/team/yang_peiqi.jpg" alt="杨沛琦">
-      <h3>杨沛琦 教授</h3>
-      <p>定量遥感与辐射传输建模研究</p>
-    </a>
-  </div>
+      <p>Meet our dedicated team of researchers and PhD students advancing vegetation remote sensing.</p>
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+          <a href="members/yang_peiqi.html">
+            <img src="images/team/yang_peiqi.jpg" alt="杨沛琦">
+            <h3>杨沛琦 教授</h3>
+            <p>定量遥感与辐射传输建模研究</p>
+          </a>
+        </div>
 
-  <!-- Team Member 2 -->
-  <div class="team-card">
-    <a href="members/liu_jing.html">
-      <img src="images/team/liu_jing.png" alt="刘婧">
-      <h3>刘婧 副教授</h3>
-      <p>激光雷达与森林三维结构反演</p>
-    </a>
-  </div>
+        <!-- Team Member 2 -->
+        <div class="team-card">
+          <a href="members/liu_jing.html">
+            <img src="images/team/liu_jing.png" alt="刘婧">
+            <h3>刘婧 副教授</h3>
+            <p>激光雷达与森林三维结构反演</p>
+          </a>
+        </div>
 
-  <!-- Team Member 3 -->
-  <div class="team-card">
-    <a href="members/li_long.html">
-      <img src="images/team/li_long.jpg" alt="李龙">
-      <h3>李龙 讲师</h3>
-      <p>热环境遥感</p>
-    </a>
-  </div>
+        <!-- Team Member 3 -->
+        <div class="team-card">
+          <a href="members/li_long.html">
+            <img src="images/team/li_long.jpg" alt="李龙">
+            <h3>李龙 讲师</h3>
+            <p>热环境遥感</p>
+          </a>
+        </div>
 
-  <!-- Team Member 4 -->
-  <div class="team-card">
-    <a href="members/lu_xuhui.html">
-      <img src="images/team/lu_xuhui.jpg" alt="鹿旭晖">
-      <h3>鹿旭晖 博士生（2020级，荷兰）</h3>
-      <p>太阳诱导叶绿素荧光，植物生理监测</p>
-    </a>
-  </div>
+        <!-- 其他成员类似 -->
+        <div class="team-card">
+          <a href="members/lu_xuhui.html">
+            <img src="images/team/lu_xuhui.jpg" alt="鹿旭晖">
+            <h3>鹿旭晖 博士生（2020级，荷兰）</h3>
+            <p>太阳诱导叶绿素荧光，植物生理监测</p>
+          </a>
+        </div>
 
-  <!-- Team Member 5 -->
-  <div class="team-card">
-    <a href="members/shi_siqi.html">
-      <img src="images/team/shi_siqi.jpg" alt="石思琪">
-      <h3>石思琪 博士生（2021级，荷兰）</h3>
-      <p>植被遥感，植物物候监测</p>
-    </a>
-  </div>
+        <div class="team-card">
+          <a href="members/shi_siqi.html">
+            <img src="images/team/shi_siqi.jpg" alt="石思琪">
+            <h3>石思琪 博士生（2021级，荷兰）</h3>
+            <p>植被遥感，植物物候监测</p>
+          </a>
+        </div>
 
-  <!-- Team Member 6 -->
-  <div class="team-card">
-    <a href="members/han_dalei.html">
-      <img src="images/team/han_dalei.jpg" alt="韩大磊">
-      <h3>韩大磊 博士生（2024级）</h3>
-      <p>植被定量遥感，辐射传输建模，激光雷达遥感</p>
-    </a>
-  </div>
+        <div class="team-card">
+          <a href="members/han_dalei.html">
+            <img src="images/team/han_dalei.jpg" alt="韩大磊">
+            <h3>韩大磊 博士生（2024级）</h3>
+            <p>植被定量遥感，辐射传输建模，激光雷达遥感</p>
+          </a>
+        </div>
 
-  <!-- Team Member 7 -->
-  <div class="team-card">
-    <a href="members/wang_ziyang.html">
-      <img src="images/team/wang_ziyang.jpg" alt="王子阳">
-      <h3>王子阳 博士生（2022级）</h3>
-      <p>激光雷达遥感，卫星信号解释</p>
-    </a>
-  </div>
+        <div class="team-card">
+          <a href="members/wang_ziyang.html">
+            <img src="images/team/wang_ziyang.jpg" alt="王子阳">
+            <h3>王子阳 博士生（2022级）</h3>
+            <p>激光雷达遥感，卫星信号解释</p>
+          </a>
+        </div>
 
-  <!-- Team Member 8 -->
-  <div class="team-card">
-    <a href="members/zhang_runfei.html">
-      <img src="images/team/zhang_runfei.jpg" alt="张润飞">
-      <h3>张润飞 博士生（2023级）</h3>
-      <p>植被遥感</p>
-    </a>
-  </div>
+        <div class="team-card">
+          <a href="members/zhang_runfei.html">
+            <img src="images/team/zhang_runfei.jpg" alt="张润飞">
+            <h3>张润飞 博士生（2023级）</h3>
+            <p>植被遥感</p>
+          </a>
+        </div>
 
-  <!-- Team Member 9 -->
-  <div class="team-card">
-    <a href="members/jiang_hao.html">
-      <img src="images/team/jiang_hao.png" alt="蒋昊">
-      <h3>蒋昊 博士生（2024级，荷兰）</h3>
-      <p>植被遥感、日光诱导叶绿素荧光、水分胁迫</p>
-    </a>
-  </div>
+        <div class="team-card">
+          <a href="members/jiang_hao.html">
+            <img src="images/team/jiang_hao.png" alt="蒋昊">
+            <h3>蒋昊 博士生（2024级，荷兰）</h3>
+            <p>植被遥感、日光诱导叶绿素荧光、水分胁迫</p>
+          </a>
+        </div>
 
-  <!-- Team Member 10 -->
-  <div class="team-card">
-    <a href="members/li_jie.html">
-      <img src="images/team/li_jie.jpg" alt="李杰">
-      <h3>李杰 博士生（2025级）</h3>
-      <p>植被定量遥感</p>
-    </a>
-  </div>
+        <div class="team-card">
+          <a href="members/li_jie.html">
+            <img src="images/team/li_jie.jpg" alt="李杰">
+            <h3>李杰 博士生（2025级）</h3>
+            <p>植被定量遥感</p>
+          </a>
+        </div>
 
-  <!-- Team Member 11 -->
-  <div class="team-card">
-    <a href="members/huang_xiaoshuang.html">
-      <img src="images/team/huang_xiaoshuang.jpg" alt="黄潇爽">
-      <h3>黄潇爽 博士生（2025级）</h3>
-      <p>植被定量遥感</p>
-    </a>
-  </div>
+        <div class="team-card">
+          <a href="members/huang_xiaoshuang.html">
+            <img src="images/team/huang_xiaoshuang.jpg" alt="黄潇爽">
+            <h3>黄潇爽 博士生（2025级）</h3>
+            <p>植被定量遥感</p>
+          </a>
+        </div>
 
-  <!-- Team Member 12 -->
-  <div class="team-card">
-    <a href="members/guo_xianan.html">
-      <img src="images/team/guo_xianan.jpg" alt="郭夏楠">
-      <h3>郭夏楠 博士生（2025级）</h3>
-      <p>植被定量遥感</p>
-    </a>
-  </div>
-</div>
-
+        <div class="team-card">
+          <a href="members/guo_xianan.html">
+            <img src="images/team/guo_xianan.jpg" alt="郭夏楠">
+            <h3>郭夏楠 博士生（2025级）</h3>
+            <p>植被定量遥感</p>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -235,13 +230,12 @@
   </footer>
 
   <script>
-    // Initialize AOS animations
     AOS.init({
-      offset: 100, // offset (in px) for triggering animations
-      duration: 600, // animation duration
-      easing: 'ease-in-out', // easing function
-      delay: 100, // animation delay
-      once: true, // whether animation should happen once
+      offset: 100,
+      duration: 600,
+      easing: 'ease-in-out',
+      delay: 100,
+      once: true,
     });
   </script>
 </body>
