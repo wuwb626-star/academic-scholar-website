@@ -77,7 +77,8 @@
       padding-left: 20px;
     }
 
-    .teachers {
+    /* ==== Faculty (Research Direction Cards) ==== */
+    .faculty-section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -85,35 +86,54 @@
       margin-top: 20px;
     }
 
-    .teacher-card {
+    .faculty-card {
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      width: 300px;
+      width: 320px;
       text-align: center;
-      padding: 20px;
-      transition: transform 0.3s ease;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .teacher-card:hover {
-      transform: translateY(-5px);
+    .faculty-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     }
 
-    .teacher-card img {
-      width: 120px;
-      height: 120px;
+    .faculty-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .faculty-card img {
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
+      margin-bottom: 15px;
     }
 
-    .teacher-card h3 {
+    .faculty-card h3 {
       color: #002b5b;
       margin: 10px 0 5px;
+      font-size: 1.1rem;
     }
 
-    .teacher-card p {
+    .faculty-card p {
       font-size: 0.95rem;
       color: #555;
+      line-height: 1.5;
+    }
+
+    .faculty-card .direction {
+      margin-top: 10px;
+      background: #f1f4f9;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #003366;
     }
 
     .research-section {
@@ -149,11 +169,11 @@
     }
 
     @media (max-width: 768px) {
-      .teachers {
+      .faculty-section {
         flex-direction: column;
         align-items: center;
       }
-      .teacher-card {
+      .faculty-card {
         width: 90%;
       }
     }
@@ -180,27 +200,39 @@
     </section>
 
     <section>
-      <h2>Faculty</h2>
-      <div class="teachers">
-        <div class="teacher-card">
-          <img src="images/team/yang_peiqi.jpg" alt="Peiqi Yang">
-          <h3>Prof. Peiqi Yang</h3>
-          <p>Professor | Vegetation Remote Sensing</p>
-          <a href="members/peiqi_yang.html">View Profile →</a>
+      <h2>Faculty & Research Directions</h2>
+      <div class="faculty-section">
+        <div class="faculty-card">
+          <a href="members/yang_peiqi.html">
+            <img src="images/team/yang_peiqi.jpg" alt="Peiqi Yang">
+            <h3>Prof. Peiqi Yang</h3>
+            <p>Professor | Vegetation Remote Sensing</p>
+            <div class="direction">
+              Quantitative remote sensing, radiative transfer modeling, and vegetation parameter inversion.
+            </div>
+          </a>
         </div>
 
-        <div class="teacher-card">
-          <img src="images/team/liu_jing.png" alt="Jing Liu">
-          <h3>Assoc. Prof. Jing Liu</h3>
-          <p>Associate Professor | Ecological Remote Sensing</p>
-          <a href="members/jing_liu.html">View Profile →</a>
+        <div class="faculty-card">
+          <a href="members/liu_jing.html">
+            <img src="images/team/liu_jing.png" alt="Jing Liu">
+            <h3>Assoc. Prof. Jing Liu</h3>
+            <p>Associate Professor | Ecological Remote Sensing</p>
+            <div class="direction">
+              Lidar-based vegetation structure retrieval and ecosystem functional dynamics.
+            </div>
+          </a>
         </div>
 
-        <div class="teacher-card">
-          <img src="images/team/li_long.jpg" alt="Long Li">
-          <h3>Dr. Long Li</h3>
-          <p>Lecturer | Urban and Thermal Remote Sensing</p>
-          <a href="members/long_li.html">View Profile →</a>
+        <div class="faculty-card">
+          <a href="members/li_long.html">
+            <img src="images/team/li_long.jpg" alt="Long Li">
+            <h3>Dr. Long Li</h3>
+            <p>Lecturer | Thermal & Urban Remote Sensing</p>
+            <div class="direction">
+              Urban thermal environment monitoring and heat island dynamics using multi-source data.
+            </div>
+          </a>
         </div>
       </div>
     </section>
