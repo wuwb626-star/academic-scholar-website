@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Students | Peiqi Yang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team | Vegetation Remote Sensing Group</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ==== Academic Minimalist Theme (same as index) ==== */
+    /* ==== Academic Blue-White Theme (matching index.html) ==== */
     body {
       font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
@@ -51,140 +51,181 @@
       padding: 0 20px;
     }
 
-    section {
-      margin-bottom: 60px;
-    }
-
     h2 {
       color: #002b5b;
       border-left: 4px solid #002b5b;
       padding-left: 10px;
-      font-size: 1.5rem;
-      margin-bottom: 15px;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
     }
 
-    .student-grid {
-      display: flex;
-      flex-wrap: wrap;
+    p {
+      margin: 8px 0;
+      color: #333;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 25px;
-      justify-content: flex-start;
+      margin-top: 30px;
     }
 
-    .student-card {
-      background-color: white;
+    .team-card {
+      background-color: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      width: calc(25% - 20px);
-      min-width: 220px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       padding: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .student-card:hover {
+    .team-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
 
-    .student-card img {
-      width: 120px;
-      height: 120px;
+    .team-card img {
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .student-card h3 {
+    .team-card h3 {
       color: #002b5b;
-      font-size: 1rem;
-      margin: 8px 0 5px;
+      margin: 10px 0 5px;
+      font-size: 1.1rem;
     }
 
-    .student-card p {
+    .team-card p {
       color: #555;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      margin: 4px 0;
     }
 
-    @media (max-width: 900px) {
-      .student-card {
-        width: 45%;
-      }
+    .team-card a {
+      color: #004c97;
+      text-decoration: none;
+      font-weight: 500;
     }
 
-    @media (max-width: 600px) {
-      .student-card {
-        width: 90%;
-      }
+    .team-card a:hover {
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
-      padding: 30px 0;
+      padding: 25px 0;
       background-color: #002b5b;
       color: white;
       font-size: 0.9rem;
-      margin-top: 40px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Our Team</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="team.html">Team</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Students</h2>
-      <div class="student-grid">
-        <div class="student-card">
-          <img src="images/team/student1.jpg" alt="Student 1">
-          <h3>Yue Zhang</h3>
-          <p>Ph.D. Candidate | Vegetation Phenology</p>
-        </div>
+<header>
+  <h1>Our Students</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="students.html" style="font-weight:bold; text-decoration:underline;">Students</a>
+    <a href="publications_v2.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-        <div class="student-card">
-          <img src="images/team/student2.jpg" alt="Student 2">
-          <h3>Wei Chen</h3>
-          <p>M.Sc. Student | Hyperspectral Remote Sensing</p>
-        </div>
-
-        <div class="student-card">
-          <img src="images/team/student3.jpg" alt="Student 3">
-          <h3>Jiahao Liu</h3>
-          <p>M.Sc. Student | Lidar Data Processing</p>
-        </div>
-
-        <div class="student-card">
-          <img src="images/team/student4.jpg" alt="Student 4">
-          <h3>Rui Wang</h3>
-          <p>Ph.D. Candidate | Machine Learning in Remote Sensing</p>
-        </div>
-
-        <div class="student-card">
-          <img src="images/team/student5.jpg" alt="Student 5">
-          <h3>Liang Zhao</h3>
-          <p>M.Sc. Student | Forest Structure Modeling</p>
-        </div>
-
-        <div class="student-card">
-          <img src="images/team/student6.jpg" alt="Student 6">
-          <h3>Na Li</h3>
-          <p>M.Sc. Student | UAV-based Vegetation Monitoring</p>
-        </div>
+<main>
+  <section>
+    <h2>PhD Students</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <a href="members/lu_xuhui.html">
+          <img src="images/team/lu_xuhui.jpg" alt="Xuhui Lu">
+          <h3>Xuhui Lu, PhD (2020, Netherlands)</h3>
+          <p>Sun-induced chlorophyll fluorescence and plant physiology monitoring</p>
+        </a>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    © 2025 Vegetation Remote Sensing Group | Nanjing Normal University
-  </footer>
+      <div class="team-card">
+        <a href="members/shi_siqi.html">
+          <img src="images/team/shi_siqi.jpg" alt="Siqi Shi">
+          <h3>Siqi Shi, PhD (2021, Netherlands)</h3>
+          <p>Vegetation remote sensing and phenology monitoring</p>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="members/han_dalei.html">
+          <img src="images/team/han_dalei.jpg" alt="Dalei Han">
+          <h3>Dalei Han, PhD (2024)</h3>
+          <p>Quantitative vegetation remote sensing, radiative transfer, lidar</p>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="members/wang_ziyang.html">
+          <img src="images/team/wang_ziyang.jpg" alt="Ziyang Wang">
+          <h3>Ziyang Wang, PhD (2022)</h3>
+          <p>Lidar remote sensing and satellite signal interpretation</p>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="members/zhang_runfei.html">
+          <img src="images/team/zhang_runfei.jpg" alt="Runfei Zhang">
+          <h3>Runfei Zhang, PhD (2023)</h3>
+          <p>Vegetation remote sensing</p>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="members/jiang_hao.html">
+          <img src="images/team/jiang_hao.png" alt="Hao Jiang">
+          <h3>Hao Jiang, PhD (2024, Netherlands)</h3>
+          <p>Vegetation remote sensing, SIF, water stress</p>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="members/li_jie.html">
+          <img src="images/team/li_jie.jpg" alt="Jie Li">
+          <h3>Jie Li, PhD (2025)</h3>
+          <p>Quantitative vegetation remote sensing</p>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="members/huang_xiaoshuang.html">
+          <img src="images/team/huang_xiaoshuang.jpg" alt="Xiaoshuang Huang">
+          <h3>Xiaoshuang Huang, PhD (2025)</h3>
+          <p>Quantitative vegetation remote sensing</p>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="members/guo_xianan.html">
+          <img src="images/team/guo_xianan.jpg" alt="Xianan Guo">
+          <h3>Xianan Guo, PhD (2025)</h3>
+          <p>Quantitative vegetation remote sensing</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Vegetation Remote Sensing Group | Nanjing Normal University
+</footer>
+
 </body>
 </html>
