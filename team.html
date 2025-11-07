@@ -2,268 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Research Team | Peiqi Yang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Team | Vegetation Remote Sensing Group</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
   <style>
+    /* ==== Academic Minimalist Theme ==== */
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #80deea); /* soft blue gradient */
-      color: #333;
+      font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #1a1a1a;
+      background-color: #f9f9fb;
+      line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(90deg, #00796b, #004d40); /* dark-to-light green gradient */
-      padding: 20px;
+      background-color: #003366; /* 深蓝色 */
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      color: #fff;
     }
 
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 10px;
     }
 
     nav a {
-      color: #fff;
+      color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-size: 1.2rem;
-      transition: 0.3s ease;
+      font-weight: 500;
+      transition: opacity 0.3s;
     }
 
     nav a:hover {
-      color: #c5e1a5;
-      border-bottom: 2px solid #c5e1a5;
+      opacity: 0.8;
     }
 
-    #team {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    #team h2 {
-      text-align: center;
-      font-size: 2rem;
-      color: #004d40;
-      margin-bottom: 10px;
+    section {
+      margin-bottom: 60px;
     }
 
-    #team p {
-      text-align: center;
-      color: #555;
-      margin-bottom: 30px;
-    }
-
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .team-card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    }
-
-    .team-card img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
+    h2 {
+      color: #003366; /* 深蓝色 */
+      border-left: 4px solid #003366;
+      padding-left: 10px;
+      font-size: 1.5rem;
       margin-bottom: 15px;
     }
 
-    .team-card h3 {
-      font-size: 1.3rem;
-      color: #004d40;
-      margin-bottom: 5px;
+    h3 {
+      color: #444;
+      margin-top: 25px;
     }
 
-    .team-card p {
-      font-size: 1rem;
-      color: #555;
-      margin: 5px 0;
+    p {
+      margin: 8px 0;
+      color: #333;
     }
 
-    .team-card a {
-      color: #00796b;
-      text-decoration: none;
-      font-weight: bold;
+    .teachers {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
     }
 
-    .team-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      background: #e6f2df;
-    }
-
-    .team-separator {
-      grid-column: 1 / -1;
+    .teacher-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       text-align: center;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #00796b;
-      padding: 30px 0;
-      border-top: 2px solid #004d40;
-      border-bottom: 2px solid #004d40;
-      background-color: #f0f9f2;
+      padding: 20px;
+      transition: transform 0.3s ease;
     }
 
-    .team-separator span {
-      background-color: #f0f9f2;
-      padding: 0 15px;
+    .teacher-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .teacher-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .teacher-card h3 {
+      color: #003366;
+      margin: 10px 0 5px;
+    }
+
+    .teacher-card p {
+      font-size: 0.95rem;
+      color: #555;
     }
 
     footer {
-      background: linear-gradient(90deg, #00796b, #004d40);
-      color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 30px 0;
+      background-color: #003366;
+      color: white;
+      font-size: 0.9rem;
       margin-top: 40px;
+    }
+
+    a {
+      color: #004c97;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .teachers {
+        flex-direction: column;
+        align-items: center;
+      }
+      .teacher-card {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Research Team | Vegetation Remote Sensing Group</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Research Team</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="publications_v2.html">Publications</a>
-    <a href="team.html">Team</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <section id="team" data-aos="fade-up">
-    <h2>Meet Our Team</h2>
-    <p>Our team focuses on vegetation remote sensing and radiative transfer modeling.</p>
-    <div class="team-grid">
-
-      <!-- Faculty Separator -->
-      <div class="team-separator"><span>Faculty</span></div>
-
-      <!-- Faculty -->
-      <div class="team-card">
-        <a href="members/yang_peiqi.html">
+  <main>
+    <section>
+      <h2>Faculty</h2>
+      <div class="teachers">
+        <!-- Faculty -->
+        <div class="teacher-card">
           <img src="images/team/yang_peiqi.jpg" alt="Peiqi Yang">
-          <h3>Peiqi Yang, Professor</h3>
-          <p>Quantitative remote sensing and radiative transfer modeling</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/liu_jing.html">
+          <h3>Prof. Peiqi Yang</h3>
+          <p>Professor | Vegetation Remote Sensing</p>
+          <a href="members/yang_peiqi.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/liu_jing.png" alt="Jing Liu">
-          <h3>Jing Liu, Associate Professor</h3>
-          <p>Lidar and 3D forest structure retrieval</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/li_long.html">
+          <h3>Assoc. Prof. Jing Liu</h3>
+          <p>Associate Professor | Ecological Remote Sensing</p>
+          <a href="members/liu_jing.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/li_long.jpg" alt="Long Li">
-          <h3>Long Li, Lecturer</h3>
-          <p>Thermal environment remote sensing</p>
-        </a>
+          <h3>Dr. Long Li</h3>
+          <p>Lecturer | Urban and Thermal Remote Sensing</p>
+          <a href="members/li_long.html">View Profile →</a>
+        </div>
       </div>
+    </section>
 
-      <!-- PhD Students Separator -->
-      <div class="team-separator"><span>PhD Students</span></div>
-
-      <!-- PhD Students -->
-      <div class="team-card">
-        <a href="members/lu_xuhui.html">
+    <section>
+      <h2>PhD Students</h2>
+      <div class="teachers">
+        <!-- PhD Students -->
+        <div class="teacher-card">
           <img src="images/team/lu_xuhui.jpg" alt="Xuhui Lu">
-          <h3>Xuhui Lu, PhD (2020, Netherlands)</h3>
+          <h3>Xuhui Lu, PhD (2020)</h3>
           <p>Sun-induced chlorophyll fluorescence and plant physiology monitoring</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/shi_siqi.html">
+          <a href="members/lu_xuhui.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/shi_siqi.jpg" alt="Siqi Shi">
-          <h3>Siqi Shi, PhD (2021, Netherlands)</h3>
+          <h3>Siqi Shi, PhD (2021)</h3>
           <p>Vegetation remote sensing and phenology monitoring</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/han_dalei.html">
+          <a href="members/shi_siqi.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/han_dalei.jpg" alt="Dalei Han">
           <h3>Dalei Han, PhD (2024)</h3>
           <p>Quantitative vegetation remote sensing, radiative transfer, lidar</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/wang_ziyang.html">
+          <a href="members/han_dalei.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/wang_ziyang.jpg" alt="Ziyang Wang">
           <h3>Ziyang Wang, PhD (2022)</h3>
           <p>Lidar remote sensing and satellite signal interpretation</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/zhang_runfei.html">
+          <a href="members/wang_ziyang.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/zhang_runfei.jpg" alt="Runfei Zhang">
           <h3>Runfei Zhang, PhD (2023)</h3>
           <p>Vegetation remote sensing</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/jiang_hao.html">
+          <a href="members/zhang_runfei.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/jiang_hao.png" alt="Hao Jiang">
-          <h3>Hao Jiang, PhD (2024, Netherlands)</h3>
+          <h3>Hao Jiang, PhD (2024)</h3>
           <p>Vegetation remote sensing, SIF, water stress</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/li_jie.html">
+          <a href="members/jiang_hao.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/li_jie.jpg" alt="Jie Li">
           <h3>Jie Li, PhD (2025)</h3>
           <p>Quantitative vegetation remote sensing</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/huang_xiaoshuang.html">
+          <a href="members/li_jie.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/huang_xiaoshuang.jpg" alt="Xiaoshuang Huang">
           <h3>Xiaoshuang Huang, PhD (2025)</h3>
           <p>Quantitative vegetation remote sensing</p>
-        </a>
-      </div>
-      <div class="team-card">
-        <a href="members/guo_xianan.html">
+          <a href="members/huang_xiaoshuang.html">View Profile →</a>
+        </div>
+
+        <div class="teacher-card">
           <img src="images/team/guo_xianan.jpg" alt="Xianan Guo">
           <h3>Xianan Guo, PhD (2025)</h3>
           <p>Quantitative vegetation remote sensing</p>
-        </a>
+          <a href="members/guo_xianan.html">View Profile →</a>
+        </div>
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>© 2025 Peiqi Yang. Hosted via GitHub Pages.</p>
-</footer>
-
-<script>
-  AOS.init({
-    offset: 100,
-    duration: 600,
-    easing: 'ease-in-out',
-    delay: 100,
-    once: true,
-  });
-</script>
-
+  <footer>
+    © 2025 Vegetation Remote Sensing Group | Nanjing Normal University
+  </footer>
 </body>
 </html>
