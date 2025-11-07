@@ -2,259 +2,232 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Peiqi Yang | Academic Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Vegetation Remote Sensing Group</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
   <style>
-    /* ===================== Body & Header ===================== */
+    /* ==== Academic Minimalist Theme ==== */
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #d0e8d0, #a8d0e6); /* 柔和绿蓝渐变 */
-      color: #333;
+      font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #1a1a1a;
+      background-color: #f9f9fb;
+      line-height: 1.7;
     }
 
     header {
-      background: rgba(30, 50, 30, 0.85);
-      padding: 20px;
+      background-color: #002b5b;
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      border-bottom: 3px solid #4caf50;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      color: #fff;
+      font-size: 2rem;
       margin: 0;
-      font-weight: 600;
+      letter-spacing: 1px;
     }
 
-    header p {
-      font-size: 1rem;
-      color: #cce0c0;
-      margin: 5px 0 0 0;
+    nav {
+      margin-top: 10px;
     }
 
     nav a {
-      color: #fff;
+      color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-size: 1.2rem;
-      transition: 0.3s ease;
+      font-weight: 500;
+      transition: opacity 0.3s;
     }
 
     nav a:hover {
-      color: #4caf50;
-      border-bottom: 2px solid #4caf50;
+      opacity: 0.8;
     }
 
-    /* ===================== Sections ===================== */
-    #intro {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 40px;
-      margin: 30px auto;
-      text-align: center;
-      border-radius: 12px;
-      max-width: 900px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      color: #2b3e2b;
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    #intro h2 {
-      font-size: 2rem;
-      color: #3b5e3b;
-      margin-bottom: 20px;
+    section {
+      margin-bottom: 60px;
     }
 
-    #intro p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
-    /* ===================== App & Team Cards ===================== */
-    .app-grid, .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-      margin: 30px auto;
-      max-width: 1000px;
-    }
-
-    .app-card, .team-card {
-      background: #e4f0e4; /* 柔和绿色背景 */
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 微妙阴影 */
-      transition: 0.3s ease, transform 0.3s ease;
-      text-align: center;
-    }
-
-    .app-card:hover, .team-card:hover {
-      background: #4caf50;
-      color: #fff;
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    .app-card h3, .team-card h3 {
+    h2 {
+      color: #002b5b;
+      border-left: 4px solid #002b5b;
+      padding-left: 10px;
       font-size: 1.5rem;
-      color: #2b3e2b;
-      margin-bottom: 10px;
-      transition: color 0.3s ease;
+      margin-bottom: 15px;
     }
 
-    .app-card p, .team-card p {
-      color: #3b3b3b;
-      transition: color 0.3s ease;
+    h3 {
+      color: #444;
+      margin-top: 25px;
     }
 
-    .app-card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      background: #3b7d3b;
-      transition: background 0.3s ease;
+    p {
+      margin: 8px 0;
+      color: #333;
     }
 
-    .app-card a:hover {
-      background: #2e5d2e;
-    }
-
-    /* ===================== Research Interests ===================== */
-    .research-interests {
-      max-width: 900px;
-      margin: 30px auto;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 30px;
-      border-radius: 12px;
-      color: #2b3e2b;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-
-    .research-interests h2 {
-      margin-bottom: 20px;
-      color: #3b5e3b;
-    }
-
-    .research-interests ul {
-      list-style-type: square;
+    ul {
       padding-left: 20px;
     }
 
-    /* ===================== Team Section ===================== */
-    #team {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
+    .teachers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .teacher-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      width: 300px;
       text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
     }
 
-    #team h2 {
-      color: #3b5e3b;
-      margin-bottom: 10px;
+    .teacher-card:hover {
+      transform: translateY(-5px);
     }
 
-    #team p {
+    .teacher-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .teacher-card h3 {
+      color: #002b5b;
+      margin: 10px 0 5px;
+    }
+
+    .teacher-card p {
+      font-size: 0.95rem;
       color: #555;
-      margin-bottom: 30px;
     }
 
-    /* ===================== Footer ===================== */
+    .research-section {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .publications {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
     footer {
-      background: #2b3e2b;
-      color: #cce0c0;
       text-align: center;
-      padding: 20px;
-      margin-top: 50px;
+      padding: 30px 0;
+      background-color: #002b5b;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
     }
 
-    footer p {
-      font-size: 1rem;
-      margin: 0;
+    a {
+      color: #004c97;
+      text-decoration: none;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .teachers {
+        flex-direction: column;
+        align-items: center;
+      }
+      .teacher-card {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Professor Peiqi Yang</h1>
-      <p>School of Geography, Nanjing Normal University</p>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="publications_v2.html">Publications</a>
-        <a href="team.html">Team</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+    <h1>Vegetation Remote Sensing Group</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section id="intro" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>I specialize in quantitative remote sensing and vegetation radiative transfer modeling, focusing on vegetation structural and functional traits. My research merges the latest remote sensing technologies with ecological insights to improve vegetation monitoring and climate science, with a focus on canopy and soil analysis.</p>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Our group focuses on <strong>vegetation remote sensing</strong>, exploring how satellite and near-surface observations can reveal the structure, dynamics, and functions of terrestrial ecosystems. We aim to understand vegetation responses to environmental changes, develop advanced retrieval algorithms, and support applications in ecology, agriculture, and resource management.
+      </p>
     </section>
 
-    <section id="apps" data-aos="fade-up">
-      <h2>🌿 Explore Our Applications</h2>
-      <div class="app-grid">
-        <div class="app-card" data-aos="fade-up" data-aos-delay="100">
-          <h3>SoilRTM</h3>
-          <p>Soil radiative transfer model visualized via Streamlit.</p>
-          <a href="https://soilRTM.streamlit.app" target="_blank">Open App →</a>
+    <section>
+      <h2>Faculty</h2>
+      <div class="teachers">
+        <div class="teacher-card">
+          <img src="images/Peiqi_Yang.jpg" alt="Peiqi Yang">
+          <h3>Prof. Peiqi Yang</h3>
+          <p>Professor | Vegetation Remote Sensing</p>
+          <a href="members/peiqi_yang.html">View Profile →</a>
         </div>
-        <div class="app-card" data-aos="fade-up" data-aos-delay="200">
-          <h3>LeafRTM</h3>
-          <p>Leaf-level reflectance and transmittance simulation using PROSPECT-D.</p>
-          <a href="https://leafRTM.streamlit.app" target="_blank">Open App →</a>
+
+        <div class="teacher-card">
+          <img src="images/Jing_Liu.jpg" alt="Jing Liu">
+          <h3>Assoc. Prof. Jing Liu</h3>
+          <p>Associate Professor | Ecological Remote Sensing</p>
+          <a href="members/jing_liu.html">View Profile →</a>
         </div>
-        <div class="app-card" data-aos="fade-up" data-aos-delay="300">
-          <h3>CanopyRTM</h3>
-          <p>Canopy-level reflectance modeling based on PROSAIL.</p>
-          <a href="https://canopyRTM.streamlit.app" target="_blank">Open App →</a>
+
+        <div class="teacher-card">
+          <img src="images/Long_Li.jpg" alt="Long Li">
+          <h3>Dr. Long Li</h3>
+          <p>Lecturer | Urban and Thermal Remote Sensing</p>
+          <a href="members/long_li.html">View Profile →</a>
         </div>
       </div>
     </section>
 
-    <section id="research" data-aos="fade-up" class="research-interests">
-      <h2>Research Interests</h2>
+    <section class="research-section">
+      <h2>Research Focus</h2>
       <ul>
-        <li>Quantitative Remote Sensing of Vegetation</li>
-        <li>Radiative Transfer Modeling (Soil, Leaf, Canopy)</li>
-        <li>Sun-Induced Fluorescence (SIF) and Photochemical Reflectance Index (PRI)</li>
-        <li>Retrieval of Vegetation Structure and Functional Traits</li>
+        <li>Fine-scale modeling and retrieval of vegetation parameters from UAV and satellite data.</li>
+        <li>Quantifying ecosystem dynamics under global environmental change.</li>
+        <li>Integration of remote sensing, radiative transfer, and deep learning approaches.</li>
+        <li>Applications in natural resource surveys, crop monitoring, and ecological assessment.</li>
       </ul>
     </section>
 
-    <section id="team" data-aos="fade-up">
-      <h2>Research Team</h2>
-      <p>Meet our dedicated team of researchers and PhD students who are advancing the field of vegetation remote sensing and radiative transfer modeling.</p>
-      <div class="team-grid">
-        <!-- Team members remain unchanged -->
-      </div>
+    <section class="publications">
+      <h2>Selected Publications</h2>
+      <ul>
+        <li><strong>Yang, P.</strong>, Liu, J., Li, L., et al. (2024). Advances in fine-scale vegetation remote sensing. <em>Remote Sensing of Environment</em>.</li>
+        <li><strong>Liu, J.</strong>, Yang, P., et al. (2023). Quantifying the temporal dynamics of plant phenology using high-resolution imagery. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>.</li>
+        <li><strong>Li, L.</strong>, Zhan, W.*, et al. (2023). Divergent urbanization-induced impacts on global surface urban heat island trends. <em>Remote Sensing of Environment</em>.</li>
+      </ul>
+      <a href="publications.html">See all publications →</a>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Peiqi Yang. Hosted via GitHub Pages.</p>
+    © 2025 Vegetation Remote Sensing Group | Nanjing Normal University
   </footer>
-
-  <script>
-    AOS.init({
-      offset: 100,
-      duration: 600,
-      easing: 'ease-in-out',
-      delay: 100,
-      once: true,
-    });
-  </script>
 </body>
 </html>
