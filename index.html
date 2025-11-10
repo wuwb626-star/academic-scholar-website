@@ -19,12 +19,12 @@
     header {
       background-color: #002b5b;
       color: white;
-      padding: 20px 40px; /* 保持原蓝色条高度 */
+      padding: 20px 40px;
       position: relative;
     }
 
     .logo {
-      height: 65px; /* 略大于标题 */
+      height: 70px; /* 顶部 logo 略大，比标题稍高 */
       width: auto;
       vertical-align: middle;
       display: inline-block;
@@ -169,7 +169,7 @@
     }
 
     .footer-logo {
-      height: 65px; /* 与顶部一致 */
+      height: 70px; /* 与顶部 logo 一致 */
       width: auto;
       margin-bottom: 10px;
     }
@@ -212,7 +212,74 @@
   </header>
 
   <main>
-    <!-- Main content和之前一致，不改 -->
+    <!-- About Section -->
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Our group focuses on <strong>vegetation remote sensing</strong>, exploring how satellite and near-surface observations can reveal the structure, dynamics, and functions of terrestrial ecosystems. We aim to understand vegetation responses to environmental changes, develop advanced retrieval algorithms, and support applications in ecology, agriculture, and resource management.
+      </p>
+    </section>
+
+    <!-- Faculty Section -->
+    <section>
+      <h2>Faculty & Research Directions</h2>
+      <div class="faculty-section">
+        <div class="faculty-card">
+          <a href="members/yang_peiqi.html">
+            <img src="images/team/yang_peiqi.jpg" alt="Peiqi Yang">
+            <h3>Prof. Peiqi Yang</h3>
+            <p>Professor | Vegetation Remote Sensing</p>
+            <div class="direction">
+              Quantitative remote sensing, radiative transfer modeling, and vegetation parameter inversion.
+            </div>
+          </a>
+        </div>
+
+        <div class="faculty-card">
+          <a href="members/liu_jing.html">
+            <img src="images/team/liu_jing.png" alt="Jing Liu">
+            <h3>Assoc. Prof. Jing Liu</h3>
+            <p>Associate Professor | Ecological Remote Sensing</p>
+            <div class="direction">
+              Lidar-based vegetation structure retrieval and ecosystem functional dynamics.
+            </div>
+          </a>
+        </div>
+
+        <div class="faculty-card">
+          <a href="members/li_long.html">
+            <img src="images/team/li_long.jpg" alt="Long Li">
+            <h3>Dr. Long Li</h3>
+            <p>Lecturer | Thermal & Urban Remote Sensing</p>
+            <div class="direction">
+              Urban thermal environment monitoring and heat island dynamics using multi-source data.
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research-section">
+      <h2>Research Focus</h2>
+      <ul>
+        <li>Fine-scale modeling and retrieval of vegetation parameters from UAV and satellite data.</li>
+        <li>Quantifying ecosystem dynamics under global environmental change.</li>
+        <li>Integration of remote sensing, radiative transfer, and deep learning approaches.</li>
+        <li>Applications in natural resource surveys, crop monitoring, and ecological assessment.</li>
+      </ul>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications">
+      <h2>Selected Publications</h2>
+      <ul>
+        <li><strong>Yang, P.</strong>, Liu, J., Li, L., et al. (2024). Advances in fine-scale vegetation remote sensing. <em>Remote Sensing of Environment</em>.</li>
+        <li><strong>Liu, J.</strong>, Yang, P., et al. (2023). Quantifying the temporal dynamics of plant phenology using high-resolution imagery. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>.</li>
+        <li><strong>Li, L.</strong>, Zhan, W.*, et al. (2023). Divergent urbanization-induced impacts on global surface urban heat island trends. <em>Remote Sensing of Environment</em>.</li>
+      </ul>
+      <a href="publications.html">See all publications →</a>
+    </section>
   </main>
 
   <footer>
