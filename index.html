@@ -17,50 +17,48 @@
 
     /* ==== Header ==== */
     header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       background-color: #002b5b;
       color: white;
       padding: 0 40px;
-      height: 110px; /* 蓝色条带高度 */
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       box-sizing: border-box;
       position: relative;
     }
 
-    /* 顶部 logo */
-    .logo {
-      height: 100px; /* 略比蓝色条带小 */
-      width: auto;
-      flex-shrink: 0;
-      margin-right: 20px;
-      display: inline-block;
-      vertical-align: middle;
+    /* 顶部 logo 和标题容器 */
+    .header-top {
+      display: flex;
+      align-items: center;
     }
 
-    /* 标题 */
+    .logo {
+      height: 100px; /* 略小于 header 高度 */
+      width: auto;
+      flex-shrink: 0;
+      margin-right: 20px; /* logo 和标题间距 */
+    }
+
     header h1 {
       font-size: 2rem;
-      display: inline-block;
-      vertical-align: middle;
       margin: 0;
       letter-spacing: 1px;
-      line-height: 1;
+      line-height: 1.1;
     }
 
     /* 导航 */
     nav {
-      position: absolute;
-      bottom: 5px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-weight: 500;
+      margin-top: 5px;
+      text-align: center;
     }
 
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
+      font-weight: 500;
       transition: opacity 0.3s;
     }
 
@@ -191,24 +189,21 @@
 
     /* Responsive */
     @media (max-width: 900px) {
-      header {
+      .header-top {
         flex-direction: column;
-        height: auto;
-        padding: 10px 20px;
+        align-items: center;
       }
 
       .logo {
-        margin: 0 auto 10px auto;
+        margin-right: 0;
+        margin-bottom: 10px;
       }
 
       header h1 {
         text-align: center;
-        margin-bottom: 10px;
       }
 
       nav {
-        position: static;
-        transform: none;
         margin-top: 10px;
       }
 
@@ -226,8 +221,10 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="Group Logo" class="logo">
-    <h1>Vegetation And Environment Remote Sensing</h1>
+    <div class="header-top">
+      <img src="images/logo.jpg" alt="Group Logo" class="logo">
+      <h1>Vegetation And Environment Remote Sensing</h1>
+    </div>
     <nav>
       <a href="index.html" style="font-weight:bold; text-decoration:underline;">Home</a>
       <a href="research.html">Research</a>
