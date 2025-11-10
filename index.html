@@ -16,26 +16,28 @@
     }
 
     /* ==== Header ==== */
-    header {
-      background-color: #002b5b;
-      color: white;
-      padding: 20px 40px;
-      box-sizing: border-box;
-    }
+  header {
+  background-color: #002b5b;
+  color: white;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  height: 130px; /* 可以控制整个蓝色条带高度 */
+}
 
-    /* 顶部 logo + 标题容器 */
-    .header-top {
-      display: flex;
-      align-items: center;
-      justify-content: center; /* 整体居中 */
-      gap: 20px; /* logo 与标题间距 */
-    }
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 整体居中 */
+  gap: 20px;
+  height: 100%; /* 填满 header 高度 */
+}
 
-    .logo {
-      height: 100px; /* 略小于 header */
-      width: auto;
-      flex-shrink: 0;
-    }
+.logo {
+  height: 110px; /* 顶部 logo 略小于 header，高度可调整 */
+  width: auto;
+  flex-shrink: 0;
+}
+
 
     header h1 {
       font-size: 2rem;
