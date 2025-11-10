@@ -19,26 +19,22 @@
     header {
       background-color: #002b5b;
       color: white;
-      padding: 0 40px;
-      height: 110px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding: 20px 40px;
       box-sizing: border-box;
-      position: relative;
     }
 
-    /* 顶部 logo 和标题容器 */
+    /* 顶部 logo + 标题容器 */
     .header-top {
       display: flex;
       align-items: center;
+      justify-content: center; /* 整体居中 */
+      gap: 20px; /* logo 与标题间距 */
     }
 
     .logo {
-      height: 100px; /* 略小于 header 高度 */
+      height: 100px; /* 略小于 header */
       width: auto;
       flex-shrink: 0;
-      margin-right: 20px; /* logo 和标题间距 */
     }
 
     header h1 {
@@ -46,11 +42,12 @@
       margin: 0;
       letter-spacing: 1px;
       line-height: 1.1;
+      text-align: center;
     }
 
     /* 导航 */
     nav {
-      margin-top: 5px;
+      margin-top: 10px;
       text-align: center;
     }
 
@@ -194,17 +191,8 @@
         align-items: center;
       }
 
-      .logo {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-
       header h1 {
         text-align: center;
-      }
-
-      nav {
-        margin-top: 10px;
       }
 
       .faculty-section {
