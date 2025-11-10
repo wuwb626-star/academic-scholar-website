@@ -199,43 +199,56 @@ footer {
   nav a { font-size: 1rem; }
   .app-card h3, .team-card h3 { font-size: 1.2rem; }
 }
-/* 组徽样式 - 顶部 logo */
+/* ==============================
+   Logo 样式优化（蓝色系协调）
+   ============================== */
+
+/* 顶部 logo */
+header .logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffffcc; /* 半透明白边，更柔和 */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* 柔和光晕 */
+  background-color: #fff; /* 避免底图透出 */
+}
+
+/* 页脚 logo */
+footer .footer-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 2px solid #ffffffcc;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+/* 调整 header 以容纳左侧 logo */
 header {
   background-color: #002b5b;
   color: white;
-  padding: 20px 0;
+  padding: 25px 0;
   text-align: center;
   position: relative;
 }
 
-header .logo {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid white;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+header h1 {
+  margin-left: 80px; /* 避开左侧 logo */
+  font-size: 2.4rem;
+  color: #ffffff;
 }
 
-/* 组徽样式 - 页脚 logo */
 footer {
   background-color: #002b5b;
   color: white;
   text-align: center;
-  padding: 20px 0;
-}
-
-footer .footer-logo {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
-  object-fit: cover;
-  border: 2px solid white;
+  padding: 25px 0;
 }
 
