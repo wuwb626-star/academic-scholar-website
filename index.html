@@ -20,7 +20,7 @@
     header {
       background-color: #002b5b;
       color: white;
-      padding: 15px 0 10px;
+      padding: 18px 0 12px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -30,18 +30,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      gap: 18px;
+      transition: all 0.3s ease;
     }
 
-    /* ✅ 顶部 logo 调整版 */
+    /* ✅ 顶部 logo 放大并加悬停效果 */
     .logo {
-      width: 45px;
-      height: 45px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid #ffffffcc;
       box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
       background-color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
     header h1 {
@@ -172,7 +179,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    /* ✅ 页脚 logo 调整为与顶部一致 */
+    /* ✅ 页脚 logo 保持一致大小与顶部协调 */
     footer {
       text-align: center;
       padding: 25px 0;
@@ -183,8 +190,8 @@
     }
 
     footer .footer-logo {
-      width: 45px;
-      height: 45px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       vertical-align: middle;
       margin-right: 10px;
@@ -192,6 +199,12 @@
       border: 2px solid #ffffffcc;
       box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
       background-color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    footer .footer-logo:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
     a {
@@ -309,4 +322,3 @@
   </footer>
 </body>
 </html>
-
