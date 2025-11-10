@@ -199,3 +199,43 @@ footer {
   nav a { font-size: 1rem; }
   .app-card h3, .team-card h3 { font-size: 1.2rem; }
 }
+/* 组徽样式 - 顶部 logo */
+header {
+  background-color: #002b5b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* 组徽样式 - 页脚 logo */
+footer {
+  background-color: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .footer-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
