@@ -23,13 +23,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.8rem 2rem;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 0.5rem 2rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
       position: relative;
+      height: 100px; /* ✅ 与 index 一致 */
     }
 
     .logo {
-      height: 70px;
+      height: 85px; /* ✅ 比条带略低 */
       vertical-align: middle;
     }
 
@@ -49,7 +50,7 @@
       transform: translateX(-50%);
       background: white;
       border-radius: 25px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
       padding: 0.5rem 2rem;
     }
 
@@ -169,7 +170,7 @@
     }
 
     .footer-logo {
-      height: 50px;
+      height: 60px;
       display: block;
       margin: 0.5rem auto;
     }
@@ -177,9 +178,10 @@
     @media (max-width: 768px) {
       header {
         flex-direction: column;
+        height: auto;
       }
       .logo {
-        height: 60px;
+        height: 70px;
       }
       .header-title {
         font-size: 1.4rem;
@@ -198,7 +200,7 @@
   <header>
     <img src="images/logo.jpg" alt="Lab Logo" class="logo">
     <h1 class="header-title">Vegetation and Environment Remote Sensing Lab</h1>
-    <div style="width:70px;"></div>
+    <div style="width:85px;"></div>
   </header>
 
   <!-- ===== Navigation ===== -->
@@ -215,11 +217,7 @@
     <section id="publications" class="publications-section">
       <h2 class="section-title">Selected Publications</h2>
 
-      <!-- 这里保留你原始的 publication 内容不省略 -->
-      <!-- === Year Groups === -->
-      <!-- 从 2025 开始到 2019，内容保持完全一致 -->
-
-      <!-- 2025 -->
+      <!-- === 2025 === -->
       <div class="year-group">
         <h3 class="year">2025</h3>
         <div class="publication-grid">
@@ -238,7 +236,7 @@
         </div>
       </div>
 
-      <!-- 2024 -->
+      <!-- === 2024 === -->
       <div class="year-group">
         <h3 class="year">2024</h3>
         <div class="publication-grid">
@@ -251,7 +249,7 @@
         </div>
       </div>
 
-      <!-- 2023 -->
+      <!-- === 2023 === -->
       <div class="year-group">
         <h3 class="year">2023</h3>
         <div class="publication-grid">
@@ -276,7 +274,7 @@
         </div>
       </div>
 
-      <!-- 2022 -->
+      <!-- === 2022 === -->
       <div class="year-group">
         <h3 class="year">2022</h3>
         <div class="publication-grid">
@@ -295,7 +293,7 @@
         </div>
       </div>
 
-      <!-- 2021 -->
+      <!-- === 2021 === -->
       <div class="year-group">
         <h3 class="year">2021</h3>
         <div class="publication-grid">
@@ -314,7 +312,7 @@
         </div>
       </div>
 
-      <!-- 2020 -->
+      <!-- === 2020 === -->
       <div class="year-group">
         <h3 class="year">2020</h3>
         <div class="publication-grid">
@@ -333,7 +331,7 @@
         </div>
       </div>
 
-      <!-- 2019 -->
+      <!-- === 2019 === -->
       <div class="year-group">
         <h3 class="year">2019</h3>
         <div class="publication-grid">
