@@ -2,90 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Publications | Peiqi Yang</title>
+  <title>Publications | Vegetation And Environment Remote Sensing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ===== Base Style ===== */
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #f9fbfd 0%, #eef3f8 100%);
-      color: #2c3e50;
+      font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      color: #1a1a1a;
+      background-color: #f9f9fb;
+      line-height: 1.7;
     }
 
-    /* ===== Header ===== */
+    /* ===== Header (exactly same as index.html) ===== */
     header {
-      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      background-color: #002b5b;
       color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.5rem 2rem;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px 0;
       position: relative;
-      height: 100px; /* ✅ 与 index 一致 */
+      text-align: center;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
     }
 
     .logo {
-      height: 85px; /* ✅ 比条带略低 */
-      vertical-align: middle;
+      height: 110px;
+      width: auto;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    .header-title {
-      flex: 1;
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #ffffff;
+    header h1 {
+      font-size: 2rem;
       margin: 0;
     }
 
     nav {
-      position: absolute;
-      bottom: -2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      border-radius: 25px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-      padding: 0.5rem 2rem;
+      margin-top: 10px;
     }
 
     nav a {
-      color: #1e3c72;
-      margin: 0 1rem;
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s;
+      transition: opacity 0.3s;
     }
 
     nav a:hover {
-      color: #2a5298;
+      opacity: 0.8;
     }
 
     nav a.active {
-      color: #2a5298;
-      font-weight: 600;
-      border-bottom: 2px solid #2a5298;
+      font-weight: bold;
+      text-decoration: underline;
     }
 
     /* ===== Main ===== */
     main {
-      max-width: 1200px;
-      margin: 5rem auto 3rem auto;
-      padding: 2rem;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     .section-title {
       text-align: center;
       font-size: 2rem;
-      color: #1e3c72;
-      border-bottom: 3px solid #2a5298;
+      color: #002b5b;
+      border-bottom: 3px solid #002b5b;
       display: inline-block;
-      margin-bottom: 2rem;
+      margin: 30px auto;
       padding-bottom: 0.5rem;
     }
 
@@ -95,11 +88,11 @@
 
     .year {
       font-size: 1.4rem;
-      color: #2a5298;
+      color: #002b5b;
       font-weight: bold;
       background: #f3f6fa;
       padding: 0.6rem 1rem;
-      border-left: 5px solid #2a5298;
+      border-left: 5px solid #002b5b;
       border-radius: 6px;
       margin-bottom: 1rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -121,7 +114,7 @@
     }
 
     .publication:hover {
-      border-left: 3px solid #2a5298;
+      border-left: 3px solid #002b5b;
       transform: translateX(5px);
       box-shadow: 0 4px 10px rgba(0,0,0,0.12);
       background: #fdfdfd;
@@ -146,7 +139,7 @@
     }
 
     .doi a {
-      color: #2a5298;
+      color: #002b5b;
       text-decoration: none;
       font-size: 0.9rem;
       word-break: break-word;
@@ -154,42 +147,38 @@
     }
 
     .doi a:hover {
-      color: #1e3c72;
+      color: #004080;
       text-decoration: underline;
     }
 
-    /* ===== Footer ===== */
+    /* ===== Footer (exactly same as index.html) ===== */
     footer {
-      background: linear-gradient(90deg, #1e3c72, #2a5298);
-      color: #f1f4f8;
       text-align: center;
-      padding: 1rem 0;
+      padding: 30px 0;
+      background-color: #002b5b;
+      color: white;
       font-size: 0.9rem;
-      margin-top: 2rem;
-      position: relative;
+      margin-top: 40px;
     }
 
     .footer-logo {
-      height: 60px;
-      display: block;
-      margin: 0.5rem auto;
+      height: 110px;
+      width: auto;
+      margin-bottom: 10px;
     }
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        height: auto;
-      }
-      .logo {
-        height: 70px;
-      }
-      .header-title {
-        font-size: 1.4rem;
+    @media (max-width: 900px) {
+      header h1 {
+        font-size: 1.8rem;
       }
       nav {
+        margin-top: 10px;
+      }
+      .logo {
         position: static;
-        transform: none;
-        margin-top: 1rem;
+        display: block;
+        margin: 0 auto 10px auto;
+        height: 90px;
       }
     }
   </style>
@@ -198,26 +187,26 @@
 
   <!-- ===== Header ===== -->
   <header>
-    <img src="images/logo.jpg" alt="Lab Logo" class="logo">
-    <h1 class="header-title">Vegetation and Environment Remote Sensing Lab</h1>
-    <div style="width:85px;"></div>
+    <div class="header-container">
+      <img src="images/logo.jpg" alt="Group Logo" class="logo">
+      <h1>Vegetation And Environment Remote Sensing</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="students.html">Students</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-
-  <!-- ===== Navigation ===== -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="students.html">Students</a>
-    <a href="publications.html" class="active">Publications</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
   <!-- ===== Main Content ===== -->
   <main>
     <section id="publications" class="publications-section">
       <h2 class="section-title">Selected Publications</h2>
 
-      <!-- === 2025 === -->
+      <!-- === Year Groups === -->
+      <!-- 2025 -->
       <div class="year-group">
         <h3 class="year">2025</h3>
         <div class="publication-grid">
@@ -236,7 +225,7 @@
         </div>
       </div>
 
-      <!-- === 2024 === -->
+      <!-- 2024 -->
       <div class="year-group">
         <h3 class="year">2024</h3>
         <div class="publication-grid">
@@ -249,7 +238,7 @@
         </div>
       </div>
 
-      <!-- === 2023 === -->
+      <!-- 2023 -->
       <div class="year-group">
         <h3 class="year">2023</h3>
         <div class="publication-grid">
@@ -274,7 +263,7 @@
         </div>
       </div>
 
-      <!-- === 2022 === -->
+      <!-- 2022 -->
       <div class="year-group">
         <h3 class="year">2022</h3>
         <div class="publication-grid">
@@ -293,7 +282,7 @@
         </div>
       </div>
 
-      <!-- === 2021 === -->
+      <!-- 2021 -->
       <div class="year-group">
         <h3 class="year">2021</h3>
         <div class="publication-grid">
@@ -312,7 +301,7 @@
         </div>
       </div>
 
-      <!-- === 2020 === -->
+      <!-- 2020 -->
       <div class="year-group">
         <h3 class="year">2020</h3>
         <div class="publication-grid">
@@ -331,7 +320,7 @@
         </div>
       </div>
 
-      <!-- === 2019 === -->
+      <!-- 2019 -->
       <div class="year-group">
         <h3 class="year">2019</h3>
         <div class="publication-grid">
@@ -344,7 +333,7 @@
           <div class="publication">
             <div class="authors">Yang, P.*, van der Tol, C.</div>
             <div class="title">Linking canopy scattering of far-red sun-induced chlorophyll fluorescence with reflectance.</div>
-            <div class="journal">Remote Sensing of Environment, 209, 456 – 467.</div>
+            <div class="journal">Remote Sensing of Environment, 209, 456–467.</div>
             <div class="doi"><a href="https://doi.org/10.1016/j.rse.2018.02.029" target="_blank">https://doi.org/10.1016/j.rse.2018.02.029</a></div>
           </div>
         </div>
@@ -355,8 +344,9 @@
 
   <!-- ===== Footer ===== -->
   <footer>
-    <img src="images/logo.jpg" alt="Lab Logo" class="footer-logo">
-    <p>&copy; 2025 Vegetation and Environment Remote Sensing Lab. All rights reserved.</p>
+    <img src="images/logo.jpg" alt="Group Logo" class="footer-logo">
+    <br>
+    © 2025 Vegetation And Environment Remote Sensing Group | Nanjing Normal University
   </footer>
 
 </body>
