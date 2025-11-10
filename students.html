@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ==== Academic Blue-White Theme (matching index.html) ==== */
     body {
       font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
@@ -16,17 +15,33 @@
       line-height: 1.7;
     }
 
+    /* ==== Header ==== */
     header {
       background-color: #002b5b;
       color: white;
       padding: 20px 0;
+      position: relative;
       text-align: center;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .logo {
+      height: 110px;
+      width: auto;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     header h1 {
       font-size: 2rem;
       margin: 0;
-      letter-spacing: 1px;
     }
 
     nav {
@@ -117,16 +132,33 @@
 
     footer {
       text-align: center;
-      padding: 25px 0;
+      padding: 30px 0;
       background-color: #002b5b;
       color: white;
       font-size: 0.9rem;
       margin-top: 50px;
     }
 
+    .footer-logo {
+      height: 110px;
+      width: auto;
+      margin-bottom: 10px;
+    }
+
     @media (max-width: 768px) {
       .team-grid {
         grid-template-columns: 1fr;
+      }
+
+      .logo {
+        position: static;
+        display: block;
+        margin: 0 auto 10px auto;
+        height: 90px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
       }
     }
   </style>
@@ -134,14 +166,17 @@
 <body>
 
 <header>
-  <h1>Our Students</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="students.html" style="font-weight:bold; text-decoration:underline;">Students</a>
-    <a href="publications_v2.html">Publications</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="header-container">
+    <img src="images/logo.jpg" alt="Group Logo" class="logo">
+    <h1>Our Students</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html" style="font-weight:bold; text-decoration:underline;">Students</a>
+      <a href="publications_v2.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
@@ -155,7 +190,6 @@
           <p>Sun-induced chlorophyll fluorescence and plant physiology monitoring</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/shi_siqi.html">
           <img src="images/team/shi_siqi.jpg" alt="Siqi Shi">
@@ -163,7 +197,6 @@
           <p>Vegetation remote sensing and phenology monitoring</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/han_dalei.html">
           <img src="images/team/han_dalei.jpg" alt="Dalei Han">
@@ -171,7 +204,6 @@
           <p>Quantitative vegetation remote sensing, radiative transfer, lidar</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/wang_ziyang.html">
           <img src="images/team/wang_ziyang.jpg" alt="Ziyang Wang">
@@ -179,7 +211,6 @@
           <p>Lidar remote sensing and satellite signal interpretation</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/zhang_runfei.html">
           <img src="images/team/zhang_runfei.jpg" alt="Runfei Zhang">
@@ -187,7 +218,6 @@
           <p>Vegetation remote sensing</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/jiang_hao.html">
           <img src="images/team/jiang_hao.png" alt="Hao Jiang">
@@ -195,7 +225,6 @@
           <p>Vegetation remote sensing, SIF, water stress</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/li_jie.html">
           <img src="images/team/li_jie.jpg" alt="Jie Li">
@@ -203,7 +232,6 @@
           <p>Quantitative vegetation remote sensing</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/huang_xiaoshuang.html">
           <img src="images/team/huang_xiaoshuang.jpg" alt="Xiaoshuang Huang">
@@ -211,7 +239,6 @@
           <p>Quantitative vegetation remote sensing</p>
         </a>
       </div>
-
       <div class="team-card">
         <a href="members/guo_xianan.html">
           <img src="images/team/guo_xianan.jpg" alt="Xianan Guo">
@@ -224,6 +251,8 @@
 </main>
 
 <footer>
+  <img src="images/logo.jpg" alt="Group Logo" class="footer-logo">
+  <br>
   © 2025 Vegetation Remote Sensing Group | Nanjing Normal University
 </footer>
 
