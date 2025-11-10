@@ -16,54 +16,45 @@
       line-height: 1.7;
     }
 
-    /* ==== Header with logo and title on same line ==== */
+    /* ==== Header ==== */
     header {
       background-color: #002b5b;
       color: white;
-      padding: 18px 0 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .header-top {
+      padding: 15px 40px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 18px;
-      transition: all 0.3s ease;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
-    /* ✅ 顶部 logo 放大并加悬停效果 */
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
     .logo {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #ffffffcc;
-      box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
-      background-color: #fff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .logo:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      height: 60px; /* ✅ 放大到比蓝色条稍小 */
+      width: auto;
+      vertical-align: middle;
     }
 
     header h1 {
       font-size: 2rem;
       margin: 0;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
+      white-space: nowrap;
     }
 
     nav {
-      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
       transition: opacity 0.3s;
@@ -73,6 +64,7 @@
       opacity: 0.8;
     }
 
+    /* ==== Main Content ==== */
     main {
       max-width: 1100px;
       margin: 40px auto;
@@ -164,7 +156,7 @@
       color: #003366;
     }
 
-    /* ==== Research & Publication ==== */
+    /* ==== Research & Publications ==== */
     .research-section {
       background-color: white;
       padding: 30px;
@@ -179,44 +171,28 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    /* ✅ 页脚 logo 保持一致大小与顶部协调 */
+    /* ==== Footer ==== */
     footer {
       text-align: center;
-      padding: 25px 0;
+      padding: 30px 0;
       background-color: #002b5b;
       color: white;
       font-size: 0.9rem;
       margin-top: 40px;
     }
 
-    footer .footer-logo {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      vertical-align: middle;
-      margin-right: 10px;
-      object-fit: cover;
-      border: 2px solid #ffffffcc;
-      box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
-      background-color: #fff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    footer .footer-logo:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-
-    a {
-      color: #004c97;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    .footer-logo {
+      height: 60px; /* ✅ 和顶部一致 */
+      width: auto;
+      margin-bottom: 10px;
     }
 
     @media (max-width: 900px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
       .faculty-section {
         flex-wrap: wrap;
         justify-content: center;
@@ -227,16 +203,15 @@
         margin-bottom: 20px;
       }
 
-      .header-top {
+      .header-left {
         flex-direction: column;
-        gap: 10px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-top">
+    <div class="header-left">
       <img src="images/logo.jpg" alt="Group Logo" class="logo">
       <h1>Vegetation And Environment Remote Sensing</h1>
     </div>
@@ -318,7 +293,10 @@
 
   <footer>
     <img src="images/logo.jpg" alt="Group Logo" class="footer-logo">
+    <br>
     © 2025 Vegetation And Environment Remote Sensing Group | Nanjing Normal University
   </footer>
 </body>
+</html>
+
 </html>
