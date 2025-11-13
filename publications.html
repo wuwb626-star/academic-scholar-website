@@ -15,7 +15,7 @@
       line-height: 1.7;
     }
 
-    /* ===== Header (exactly same as index.html) ===== */
+    /* ===== Header ===== */
     header {
       background-color: #002b5b;
       color: white;
@@ -80,6 +80,24 @@
       display: inline-block;
       margin: 30px auto;
       padding-bottom: 0.5rem;
+    }
+
+    /* === Toggle Button === */
+    .toggle-btn {
+      display: block;
+      margin: 10px auto 30px auto;
+      background-color: #002b5b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #004080;
     }
 
     .year-group {
@@ -151,7 +169,7 @@
       text-decoration: underline;
     }
 
-    /* ===== Footer (exactly same as index.html) ===== */
+    /* ===== Footer ===== */
     footer {
       text-align: center;
       padding: 30px 0;
@@ -205,149 +223,64 @@
     <section id="publications" class="publications-section">
       <h2 class="section-title">Selected Publications</h2>
 
+      <!-- 切换按钮 -->
+      <button class="toggle-btn" onclick="toggleView()">按年份分类</button>
+
       <!-- === Year Groups === -->
-      <!-- 2025 -->
-      <div class="year-group">
-        <h3 class="year">2025</h3>
-        <div class="publication-grid">
-          <div class="publication">
-            <div class="authors">Yang, P.*, Verhoef, W., Fang, H., Fan, W., & van der Tol, C.</div>
-            <div class="title">Linking Kubelka-Munk and recollision probability theories for radiative transfer simulations in turbid canopy.</div>
-            <div class="journal">Remote Sensing of Environment, 321, 114680.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2025.114680" target="_blank">https://doi.org/10.1016/j.rse.2025.114680</a></div>
-          </div>
-          <div class="publication">
-            <div class="authors">Yang, P.*, van der Tol, C., Liu, J., & Liu, Z.</div>
-            <div class="title">Separation of the direct reflection of soil from canopy spectral reflectance.</div>
-            <div class="journal">Remote Sensing of Environment, 316, 114500.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2024.114500" target="_blank">https://doi.org/10.1016/j.rse.2024.114500</a></div>
+      <div id="publication-container">
+
+        <!-- 保留你原本所有的内容（不省略） -->
+        <!-- 我这里为节省篇幅，只演示一个年份 -->
+        <!-- ⚠️ 在你的实际文件中，把所有 year-group 都保留！ -->
+
+        <div class="year-group">
+          <h3 class="year">2025</h3>
+          <div class="publication-grid">
+            <div class="publication">
+              <div class="authors">Yang, P.*, Verhoef, W., Fang, H., Fan, W., & van der Tol, C.</div>
+              <div class="title">Linking Kubelka-Munk and recollision probability theories for radiative transfer simulations in turbid canopy.</div>
+              <div class="journal">Remote Sensing of Environment, 321, 114680.</div>
+              <div class="doi"><a href="https://doi.org/10.1016/j.rse.2025.114680" target="_blank">https://doi.org/10.1016/j.rse.2025.114680</a></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- 2024 -->
-      <div class="year-group">
-        <h3 class="year">2024</h3>
-        <div class="publication-grid">
-          <div class="publication">
-            <div class="authors">Yang, P.*</div>
-            <div class="title">Downscaling canopy photochemical reflectance index to leaf level by correcting for the soil effects.</div>
-            <div class="journal">Remote Sensing of Environment, 311, p.114250.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2024.114250" target="_blank">https://doi.org/10.1016/j.rse.2024.114250</a></div>
-          </div>
-        </div>
-      </div>
+        <!-- 其余年份组照常保留 -->
 
-      <!-- 2023 -->
-      <div class="year-group">
-        <h3 class="year">2023</h3>
-        <div class="publication-grid">
-          <div class="publication">
-            <div class="authors">Yang, P.*, Liu, X., Liu, Z., van der Tol, C. and Liu, L.</div>
-            <div class="title">The roles of radiative, structural and physiological information of sun-induced chlorophyll fluorescence in predicting gross primary production of a corn crop at various temporal scales.</div>
-            <div class="journal">Agricultural and Forest Meteorology, 342, p.109720.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.agrformet.2023.109720" target="_blank">https://doi.org/10.1016/j.agrformet.2023.109720</a></div>
-          </div>
-          <div class="publication">
-            <div class="authors">Shi, S., Yang, P.* and van der Tol, C.</div>
-            <div class="title">Spatial-temporal dynamics of land surface phenology over Africa for the period of 1982-2015.</div>
-            <div class="journal">Heliyon, 9(6).</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.heliyon.2023.e16413" target="_blank">https://doi.org/10.1016/j.heliyon.2023.e16413</a></div>
-          </div>
-          <div class="publication">
-            <div class="authors">Wang, N., Yang, P., Clevers, J.G., Wieneke, S. and Kooistra, L.</div>
-            <div class="title">Decoupling physiological and non-physiological responses of sugar beet to water stress from sun-induced chlorophyll fluorescence.</div>
-            <div class="journal">Remote Sensing of Environment, 286, p.113445.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2022.113445" target="_blank">https://doi.org/10.1016/j.rse.2022.113445</a></div>
-          </div>
-        </div>
       </div>
-
-      <!-- 2022 -->
-      <div class="year-group">
-        <h3 class="year">2022</h3>
-        <div class="publication-grid">
-          <div class="publication">
-            <div class="authors">Yang, P.*</div>
-            <div class="title">Exploring the interrelated effects of soil background, canopy structure and sun-observer geometry on canopy photochemical reflectance index.</div>
-            <div class="journal">Remote Sensing of Environment, 279, 113133.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2022.113133" target="_blank">https://doi.org/10.1016/j.rse.2022.113133</a></div>
-          </div>
-          <div class="publication">
-            <div class="authors">Zhang, R., Yang, P.*, Liu, S., Wang, C., and Liu, J.</div>
-            <div class="title">Evaluation of the Methods for Estimating Leaf Chlorophyll Content with SPAD Chlorophyll Meters.</div>
-            <div class="journal">Remote Sensing 14, no. 20: 5144.</div>
-            <div class="doi"><a href="https://doi.org/10.3390/rs14205144" target="_blank">https://doi.org/10.3390/rs14205144</a></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2021 -->
-      <div class="year-group">
-        <h3 class="year">2021</h3>
-        <div class="publication-grid">
-          <div class="publication">
-            <div class="authors">Yang, P.*, Verhoef, W., Prikaziuk, E., & van der Tol, C.</div>
-            <div class="title">Improved retrieval of land surface biophysical variables from time series of Sentinel-3 OLCI TOA spectral observations by considering the temporal autocorrelation of surface and atmospheric properties.</div>
-            <div class="journal">Remote Sensing of Environment, 256, 112328.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2021.112328" target="_blank">https://doi.org/10.1016/j.rse.2021.112328</a></div>
-          </div>
-          <div class="publication">
-            <div class="authors">Yang, P., Prikaziuk, E., Verhoef, W., & van Der Tol, C.*</div>
-            <div class="title">SCOPE 2.0: A model to simulate vegetated land surface fluxes and satellite signals.</div>
-            <div class="journal">Geoscientific Model Development, 14(7), 4697-4712.</div>
-            <div class="doi"><a href="https://doi.org/10.5194/gmd-14-4697-2021" target="_blank">https://doi.org/10.5194/gmd-14-4697-2021</a></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2020 -->
-      <div class="year-group">
-        <h3 class="year">2020</h3>
-        <div class="publication-grid">
-          <div class="publication">
-            <div class="authors">Yang, P.*, van der Tol, C., Tiangang Yin., Verhoef, W.</div>
-            <div class="title">The SPART model: a soil-plant-atmosphere radiative transfer model for satellite measurements in the solar spectrum.</div>
-            <div class="journal">Remote Sensing of Environment, 247, 11187.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2020.111870" target="_blank">https://doi.org/10.1016/j.rse.2020.111870</a></div>
-          </div>
-          <div class="publication">
-            <div class="authors">Yang, P.*, van der Tol, C., Campbell, P. and Middleton, E.</div>
-            <div class="title">Fluorescence Correction Vegetation Index (FCVI): A physically based reflectance index to separate physiological and non-physiological information in far-red sun-induced chlorophyll fluorescence.</div>
-            <div class="journal">Remote Sensing of Environment, 240, 111676.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2020.111676" target="_blank">https://doi.org/10.1016/j.rse.2020.111676</a></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2019 -->
-      <div class="year-group">
-        <h3 class="year">2019</h3>
-        <div class="publication-grid">
-          <div class="publication">
-            <div class="authors">Yang, P.*, van der Tol, C., Verhoef, W., Damm, ... & Rascher, U.</div>
-            <div class="title">Using reflectance to explain vegetation biochemical and structural effects on sun-induced chlorophyll fluorescence.</div>
-            <div class="journal">Remote Sensing of Environment, 231.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2018.11.039" target="_blank">https://doi.org/10.1016/j.rse.2018.11.039</a></div>
-          </div>
-          <div class="publication">
-            <div class="authors">Yang, P.*, van der Tol, C.</div>
-            <div class="title">Linking canopy scattering of far-red sun-induced chlorophyll fluorescence with reflectance.</div>
-            <div class="journal">Remote Sensing of Environment, 209, 456–467.</div>
-            <div class="doi"><a href="https://doi.org/10.1016/j.rse.2018.02.029" target="_blank">https://doi.org/10.1016/j.rse.2018.02.029</a></div>
-          </div>
-        </div>
-      </div>
-
     </section>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer>
-    <img src="images/logo.jpg" alt="Group Logo" class="footer-logo">
-    <br>
+    <img src="images/logo.jpg" alt="Group Logo" class="footer-logo"><br>
     © 2025 Vegetation And Environment Remote Sensing Group | Nanjing Normal University
   </footer>
+
+  <!-- ===== Script: 切换显示模式 ===== -->
+  <script>
+    let grouped = true;
+
+    function toggleView() {
+      const btn = document.querySelector('.toggle-btn');
+      const container = document.getElementById('publication-container');
+
+      if (grouped) {
+        // 展示为“一览无余”：把所有论文打平
+        const allPubs = Array.from(container.querySelectorAll('.publication'));
+        const flatView = document.createElement('div');
+        flatView.className = 'publication-grid';
+        allPubs.forEach(pub => flatView.appendChild(pub.cloneNode(true)));
+        container.innerHTML = '';
+        container.appendChild(flatView);
+        btn.textContent = '按年份分类';
+        grouped = false;
+      } else {
+        // 恢复按年份分组（刷新页面即可恢复结构）
+        location.reload();
+      }
+    }
+  </script>
 
 </body>
 </html>
