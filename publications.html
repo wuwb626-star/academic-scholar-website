@@ -226,10 +226,11 @@
       <!-- 切换按钮 -->
       <button class="toggle-btn" onclick="toggleView()">按年份分类</button>
 
-      <!-- === Year Groups === -->
+      <!-- === Publications Container === -->
       <div id="publication-container">
+        <!-- === Year Groups === -->
 
-     <!-- 2025 -->
+        <!-- 2025 -->
         <div class="year-group">
           <h3 class="year">2025</h3>
           <div class="publication-grid">
@@ -370,14 +371,16 @@
     © 2025 Vegetation And Environment Remote Sensing Group | Nanjing Normal University
   </footer>
 
-  <!-- ===== Script: 默认平铺显示 ===== -->
+  <!-- ===== Script: 修复切换功能 ===== -->
   <script>
-    let grouped = false; // 默认是平铺状态
+    let grouped = false;
+    const container = document.getElementById('publication-container');
+    const originalHTML = container.innerHTML;
 
+    // 默认平铺显示
     window.addEventListener('DOMContentLoaded', flattenPublications);
 
     function flattenPublications() {
-      const container = document.getElementById('publication-container');
       const allPubs = Array.from(container.querySelectorAll('.publication'));
       const flatView = document.createElement('div');
       flatView.className = 'publication-grid';
@@ -388,17 +391,15 @@
 
     function toggleView() {
       const btn = document.querySelector('.toggle-btn');
-      const container = document.getElementById('publication-container');
-
-      if (!grouped) {
-        // 按年份分组（刷新页面）
-        location.reload();
-      } else {
-        // 再次平铺
+      if (grouped) {
+        // 平铺显示
         flattenPublications();
         btn.textContent = '按年份分类';
+      } else {
+        // 按年份分组
+        container.innerHTML = originalHTML;
+        btn.textContent = '平铺显示';
       }
-
       grouped = !grouped;
     }
   </script>
