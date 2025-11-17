@@ -3,20 +3,20 @@
    ============================== */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #F6F7F4; /* 暖米白，舒适 */
-  color: #2B2B2B; /* 深灰文本 */
+  background: #F6F7F4;
+  color: #2B2B2B;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #3A5F41; /* 深绿 */
+  color: #3A5F41;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #7BAF87; /* 浅绿色 hover */
+  color: #7BAF87;
   text-decoration: none;
 }
 
@@ -24,31 +24,32 @@ a:hover {
    Header
    ============================== */
 header {
-  background: #3A5F41; /* 深绿 */
-  padding: 20px;
+  background-color: #002b5b;
+  color: white;
+  padding: 25px 0;
   text-align: center;
-  border-bottom: 3px solid #7BAF87; /* 浅绿分隔线 */
+  position: relative;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #F6F7F4; /* 米白文字 */
-  margin: 0;
-  font-weight: 600;
+  margin-left: 80px;
+  font-size: 2.4rem;
+  color: #ffffff;
 }
 
-header p {
-  font-size: 1rem;
-  color: #DCE2D0; /* 米白偏灰 */
-}
-
-nav a {
-  margin: 0 15px;
-  font-size: 1.2rem;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #7BAF87;
+/* 顶部 logo */
+header .logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffffcc;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background-color: #fff;
 }
 
 /* ==============================
@@ -57,13 +58,14 @@ nav a:hover {
 section {
   padding: 40px 20px;
   max-width: 1200px;
-  margin: 0 auto 10px auto !important;  /* ← 底部间距固定 10px */
   border-radius: 8px;
+
+  /* ⭐ 最小修改：间距固定为 10px */
+  margin-bottom: 10px !important;
 }
 
-
 #intro {
-  background: #E9EFE6; /* 米白偏绿 */
+  background: #E9EFE6;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -186,10 +188,10 @@ section {
    Footer
    ============================== */
 footer {
-  background: #3A5F41;
+  background-color: #002b5b;
+  color: white;
   text-align: center;
-  padding: 20px;
-  color: #F6F7F4;
+  padding: 25px 0;
 }
 
 /* ==============================
@@ -199,25 +201,6 @@ footer {
   header h1 { font-size: 2rem; }
   nav a { font-size: 1rem; }
   .app-card h3, .team-card h3 { font-size: 1.2rem; }
-}
-
-/* ==============================
-   Logo 样式优化（蓝色系协调）
-   ============================== */
-
-/* 顶部 logo */
-header .logo {
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ffffffcc;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  background-color: #fff;
 }
 
 /* 页脚 logo */
@@ -230,26 +213,4 @@ footer .footer-logo {
   object-fit: cover;
   border: 2px solid #ffffffcc;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
-}
-
-/* 调整 header 以容纳左侧 logo */
-header {
-  background-color: #002b5b;
-  color: white;
-  padding: 25px 0;
-  text-align: center;
-  position: relative;
-}
-
-header h1 {
-  margin-left: 80px;
-  font-size: 2.4rem;
-  color: #ffffff;
-}
-
-footer {
-  background-color: #002b5b;
-  color: white;
-  text-align: center;
-  padding: 25px 0;
 }
