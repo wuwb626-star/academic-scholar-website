@@ -3,222 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Vegetation And Environment Remote Sensing </title>
+  <title>Home | Vegetation And Environment Remote Sensing</title>
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* --------------------------
-       Base / Typography
-       -------------------------- */
-    body {
-      font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #1a1a1a;
-      background-color: #f9f9fb;
-      line-height: 1.7;
-    }
-
-    /* --------------------------
-       Header
-       -------------------------- */
-    header {
-      background-color: #002b5b;
-      color: white;
-      padding: 20px 0;
-      position: relative;
-      text-align: center;
-    }
-
-    .header-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .logo {
-      height: 110px;
-      width: auto;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    header h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: opacity 0.3s;
-    }
-
-    nav a:hover {
-      opacity: 0.8;
-    }
-
-    /* --------------------------
-       Layout / Sections
-       -------------------------- */
-    main {
-      max-width: 1100px;
-      margin: 10px auto;
-      padding: 0 20px;
-    }
-
-    /* --------------------------
-       Headings & text
-       -------------------------- */
-    h2 {
-      color: #002b5b;
-      border-left: 4px solid #002b5b;
-      padding-left: 10px;
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      color: #444;
-      margin-top: 15px;
-    }
-
-    p {
-      margin: 8px 0;
-      color: #333;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    /* --------------------------
-       Faculty cards
-       -------------------------- */
-    .faculty-section {
-      display: flex;
-      justify-content: space-between;
-      gap: 25px;
-      margin-top: 10px;
-      flex-wrap: nowrap;
-    }
-
-    .faculty-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      width: 32%;
-      text-align: center;
-      padding: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .faculty-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    }
-
-    .faculty-card a {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-
-    .faculty-card img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-    }
-
-    .faculty-card h3 {
-      color: #002b5b;
-      margin: 10px 0 5px;
-      font-size: 1.1rem;
-    }
-
-    .faculty-card p {
-      font-size: 0.95rem;
-      color: #555;
-      line-height: 1.5;
-    }
-
-    .faculty-card .direction {
-      margin-top: 10px;
-      background: #f1f4f9;
-      padding: 10px;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      color: #003366;
-    }
-
-    /* --------------------------
-       Research / Publications
-       -------------------------- */
-    .research-section {
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    /* --------------------------
-       Footer
-       -------------------------- */
-    footer {
-      text-align: center;
-      padding: 30px 0;
-      background-color: #002b5b;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
-
-    .footer-logo {
-      height: 110px;
-      width: auto;
-      margin-bottom: 10px;
-    }
-
-    /* --------------------------
-       Responsive
-       -------------------------- */
-    @media (max-width: 900px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-
-      .faculty-section {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .faculty-card {
-        width: 90%;
-        margin-bottom: 20px;
-      }
-
-      .logo {
-        position: static;
-        display: block;
-        margin: 0 auto 10px auto;
-        height: 90px;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -228,7 +14,7 @@
       <img src="images/logo.jpg" alt="Group Logo" class="logo">
       <h1>Vegetation And Environment Remote Sensing (<strong>VAMOS</strong>)</h1>
       <nav>
-        <a href="index.html" style="font-weight:bold; text-decoration:underline;">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="research.html">Research</a>
         <a href="students.html">Students</a>
         <a href="publications_v2.html">Publications</a>
@@ -251,7 +37,6 @@
     <!-- Faculty Section -->
     <section id="faculty">
       <h2>Faculty Members</h2>
-
       <div class="faculty-section">
         <div class="faculty-card">
           <a href="members/yang_peiqi.html">
@@ -279,9 +64,9 @@
           <a href="members/li_long.html">
             <img src="images/team/li_long.jpg" alt="Long Li">
             <h3>Dr. Long Li</h3>
-            <p>Assistant professor | Remote Sensing Applications</p>
+            <p>Assistant Professor | Remote Sensing Applications</p>
             <div class="direction">
-              Remote sensing application in urban and natural ecosystems
+              Remote sensing application in urban and natural ecosystems.
             </div>
           </a>
         </div>
@@ -335,5 +120,6 @@
     <br>
     © 2025 VAMOS Group | Nanjing Normal University
   </footer>
+
 </body>
 </html>
