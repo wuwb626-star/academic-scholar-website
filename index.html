@@ -15,11 +15,16 @@
       line-height: 1.7;
     }
 
+    /* ==== Reduce spacing between About and Faculty ==== */
+    #about {
+      margin-bottom: 0px; /* 减小 About 与 Faculty 的间距 */
+    }
+
     /* ==== Header (replicate students.html style) ==== */
     header {
       background-color: #002b5b;
       color: white;
-      padding: 20px 0; /* 跟 students 页面一致 */
+      padding: 20px 0;
       position: relative;
       text-align: center;
     }
@@ -31,7 +36,7 @@
     }
 
     .logo {
-      height: 110px; /* 顶部 logo，比蓝色条带略小 */
+      height: 110px;
       width: auto;
       position: absolute;
       left: 0;
@@ -67,7 +72,7 @@
     }
 
     section {
-      margin-bottom: 10px;
+      margin-bottom: 10px;  /* 保持默认，About 单独处理 */
     }
 
     h2 {
@@ -76,6 +81,7 @@
       padding-left: 10px;
       font-size: 1.5rem;
       margin-bottom: 10px;
+      margin-top: 10px; /* 避免 section 顶部过大间距 */
     }
 
     h3 {
@@ -96,7 +102,7 @@
       display: flex;
       justify-content: space-between;
       gap: 25px;
-      margin-top: 25px;
+      margin-top: 20px; /* 调整 faculty 的顶部间距，让整体更紧凑 */
       flex-wrap: nowrap;
     }
 
@@ -224,12 +230,13 @@
 
   <main>
     <!-- About Section -->
-    <section>
+    <section id="about">
       <h2>About Us</h2>
       <p>
         The <strong>Vegetation And environMent remOte Sensing (VAMOS)</strong> group advances quantitative remote sensing of vegetation structure, function, and environmental interactions across both natural and urban ecosystems. Vegetation in cities and natural landscapes plays a crucial role in regulating local climate, mitigating heat extremes, stabilizing soils, enhancing carbon storage, and maintaining biodiversity. By integrating multi-source Earth observation data, we investigate vegetation 3D structure and physiological–biochemical dynamics, and unravel how radiative transfer, hydrological cycles, and biogeochemical processes drive energy and matter exchanges among soil, vegetation, and the atmosphere.
       </p>
     </section>
+
     <!-- Faculty Section -->
     <section>
       <h2>Faculty Members</h2>
@@ -307,7 +314,6 @@
   </div>
 
 </section>
-
 
   <footer>
     <img src="images/logo.jpg" alt="Group Logo" class="footer-logo">
