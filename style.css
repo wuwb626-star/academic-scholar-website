@@ -56,12 +56,10 @@ header .logo {
    Sections
    ============================== */
 section {
-  padding: 40px 20px;
+  padding: 10px 20px;   /* ⭐ 改成 10px */
   max-width: 1200px;
   border-radius: 8px;
-
-  /* ⭐ 最小修改：间距固定为 10px */
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important;  /* ⭐ 你要求的 10px */
 }
 
 #intro {
@@ -194,15 +192,6 @@ footer {
   padding: 25px 0;
 }
 
-/* ==============================
-   Media Queries
-   ============================== */
-@media (max-width: 768px) {
-  header h1 { font-size: 2rem; }
-  nav a { font-size: 1rem; }
-  .app-card h3, .team-card h3 { font-size: 1.2rem; }
-}
-
 /* 页脚 logo */
 footer .footer-logo {
   width: 55px;
@@ -213,4 +202,13 @@ footer .footer-logo {
   object-fit: cover;
   border: 2px solid #ffffffcc;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+/* ==============================
+   Media Queries
+   ============================== */
+@media (max-width: 768px) {
+  header h1 { font-size: 2rem; }
+  nav a { font-size: 1rem; }
+  .app-card h3, .team-card h3 { font-size: 1.2rem; }
 }
