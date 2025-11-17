@@ -7,6 +7,7 @@ body {
   color: #2B2B2B;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 a {
@@ -37,7 +38,6 @@ header h1 {
   color: #ffffff;
 }
 
-/* 顶部 logo */
 header .logo {
   position: absolute;
   left: 40px;
@@ -52,134 +52,84 @@ header .logo {
   background-color: #fff;
 }
 
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* ==============================
    Sections
    ============================== */
 section {
-  padding: 10px 20px;   /* ⭐ 改成 10px */
+  padding: 40px 20px;
   max-width: 1200px;
   border-radius: 8px;
-  margin-bottom: 10px !important;  /* ⭐ 你要求的 10px */
+  margin: 0 auto 10px auto;
 }
 
-#intro {
-  background: #E9EFE6;
+/* ==============================
+   Faculty Cards
+   ============================== */
+.faculty-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.faculty-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  width: 32%;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#intro h2 {
-  font-size: 2rem;
-  color: #3A5F41;
+.faculty-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.faculty-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 15px;
 }
 
-#intro p {
-  font-size: 1.2rem;
-  color: #2B2B2B;
-  line-height: 1.6;
+.faculty-card h3 {
+  color: #002b5b;
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
 }
 
-/* ==============================
-   Applications Grid
-   ============================== */
-.app-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.app-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.app-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
-
-.app-card h3 {
-  font-size: 1.5rem;
-  color: #3A5F41;
-  margin-bottom: 10px;
-}
-
-.app-card p {
-  color: #2B2B2B;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.app-card a {
-  background: #3A5F41;
-  color: #F6F7F4;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
-
-.app-card a:hover {
-  background: #7BAF87;
-}
-
-/* ==============================
-   Research Interests
-   ============================== */
-.research-interests ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-.research-interests li {
-  margin-bottom: 8px;
-}
-
-/* ==============================
-   Team Section
-   ============================== */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.team-card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
-
-.team-card img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.team-card h3 {
-  font-size: 1.2rem;
-  color: #2B2B2B;
-  margin-bottom: 5px;
-}
-
-.team-card p {
-  font-size: 1rem;
+.faculty-card p {
+  font-size: 0.95rem;
   color: #555;
-  margin: 0;
+  line-height: 1.5;
+}
+
+.faculty-card .direction {
+  margin-top: 10px;
+  background: #f1f4f9;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #003366;
+}
+
+/* ==============================
+   Research Section
+   ============================== */
+.research-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 /* ==============================
@@ -192,23 +142,23 @@ footer {
   padding: 25px 0;
 }
 
-/* 页脚 logo */
 footer .footer-logo {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   vertical-align: middle;
-  margin-right: 12px;
+  margin-bottom: 10px;
   object-fit: cover;
   border: 2px solid #ffffffcc;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
 }
 
 /* ==============================
-   Media Queries
+   Responsive
    ============================== */
-@media (max-width: 768px) {
-  header h1 { font-size: 2rem; }
-  nav a { font-size: 1rem; }
-  .app-card h3, .team-card h3 { font-size: 1.2rem; }
+@media (max-width: 900px) {
+  header h1 { font-size: 1.8rem; }
+  .faculty-section { flex-wrap: wrap; justify-content: center; }
+  .faculty-card { width: 90%; margin-bottom: 20px; }
+  .logo { position: static; display: block; margin: 0 auto 10px auto; height: 90px; }
 }
