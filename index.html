@@ -6,6 +6,9 @@
   <title>Home | Vegetation And Environment Remote Sensing </title>
   <link rel="stylesheet" href="style.css">
   <style>
+    /* --------------------------
+       Base / Typography
+       -------------------------- */
     body {
       font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
@@ -15,16 +18,13 @@
       line-height: 1.7;
     }
 
-    /* ==== Reduce spacing between About and Faculty ==== */
-    #about {
-      margin-bottom: 1px; /* ★ 改成和模板相同的 10px ★ */
-    }
-
-    /* ==== Header (replicate students.html style) ==== */
+    /* --------------------------
+       Header
+       -------------------------- */
     header {
       background-color: #002b5b;
       color: white;
-      padding: 20px 0;
+      padding: 20px 0; /* 跟 students 页面一致 */
       position: relative;
       text-align: center;
     }
@@ -36,7 +36,7 @@
     }
 
     .logo {
-      height: 110px;
+      height: 110px; /* 顶部 logo，比蓝色条带略小 */
       width: auto;
       position: absolute;
       left: 0;
@@ -65,6 +65,9 @@
       opacity: 0.8;
     }
 
+    /* --------------------------
+       Layout / Sections
+       -------------------------- */
     main {
       max-width: 1100px;
       margin: 10px auto;
@@ -72,7 +75,7 @@
     }
 
     section {
-      margin-bottom: 5px;  /* 模板标准 */
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -81,7 +84,6 @@
       padding-left: 10px;
       font-size: 1.5rem;
       margin-bottom: 10px;
-      margin-top: 10px;
     }
 
     h3 {
@@ -98,11 +100,14 @@
       padding-left: 20px;
     }
 
+    /* --------------------------
+       Faculty cards
+       -------------------------- */
     .faculty-section {
       display: flex;
       justify-content: space-between;
       gap: 25px;
-      margin-top: 20px;
+      margin-top: 10px;
       flex-wrap: nowrap;
     }
 
@@ -156,6 +161,9 @@
       color: #003366;
     }
 
+    /* --------------------------
+       Research / Publications
+       -------------------------- */
     .research-section {
       background-color: white;
       padding: 30px;
@@ -170,6 +178,9 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
+    /* --------------------------
+       Footer
+       -------------------------- */
     footer {
       text-align: center;
       padding: 30px 0;
@@ -185,6 +196,9 @@
       margin-bottom: 10px;
     }
 
+    /* --------------------------
+       Responsive
+       -------------------------- */
     @media (max-width: 900px) {
       header h1 {
         font-size: 1.8rem;
@@ -214,6 +228,7 @@
   </style>
 </head>
 <body>
+  <!-- ================= Header ================= -->
   <header>
     <div class="header-container">
       <img src="images/logo.jpg" alt="Group Logo" class="logo">
@@ -228,7 +243,9 @@
     </div>
   </header>
 
+  <!-- ================= Main ================= -->
   <main>
+
     <!-- About Section -->
     <section id="about">
       <h2>About Us</h2>
@@ -238,8 +255,9 @@
     </section>
 
     <!-- Faculty Section -->
-    <section>
+    <section id="faculty">
       <h2>Faculty Members</h2>
+
       <div class="faculty-section">
         <div class="faculty-card">
           <a href="members/yang_peiqi.html">
@@ -276,45 +294,48 @@
       </div>
     </section>
 
-<!-- Research Section -->
-<section class="research-section">
-  <h2>Research Focus</h2>
+    <!-- Research Section -->
+    <section class="research-section">
+      <h2>Research Focus</h2>
 
-  <div class="research-item">
-    <h3>1. Radiative Transfer & Quantitative Remote Sensing</h3>
-    <p>
-      We study the physical principles of electromagnetic scattering, absorption, and emission 
-      to reveal the intrinsic connections between the physical world and remotely sensed observations. 
-      Our work develops multi-scale inversion theories and robust retrieval approaches to produce 
-      accurate land-surface parameter estimates from global and regional observation systems.
-    </p>
-  </div>
+      <div class="research-item">
+        <h3>1. Radiative Transfer & Quantitative Remote Sensing</h3>
+        <p>
+          We study the physical principles of electromagnetic scattering, absorption, and emission 
+          to reveal the intrinsic connections between the physical world and remotely sensed observations. 
+          Our work develops multi-scale inversion theories and robust retrieval approaches to produce 
+          accurate land-surface parameter estimates from global and regional observation systems.
+        </p>
+      </div>
 
-  <div class="research-item">
-    <h3>2. Vegetation Structure and Functional Remote Sensing</h3>
-    <p>
-      We address key challenges in monitoring vegetation structure and function using hyperspectral, 
-      LiDAR, thermal infrared, and solar-induced chlorophyll fluorescence (SIF) techniques. 
-      Our research spans forests, croplands, wetlands, and urban green spaces, focusing on 
-      reconstructing canopy 3D architecture and quantifying physiological processes 
-      across diverse environments.
-    </p>
-  </div>
+      <div class="research-item">
+        <h3>2. Vegetation Structure and Functional Remote Sensing</h3>
+        <p>
+          We address key challenges in monitoring vegetation structure and function using hyperspectral, 
+          LiDAR, thermal infrared, and solar-induced chlorophyll fluorescence (SIF) techniques. 
+          Our research spans forests, croplands, wetlands, and urban green spaces, focusing on 
+          reconstructing canopy 3D architecture and quantifying physiological processes 
+          across diverse environments.
+        </p>
+      </div>
 
-  <div class="research-item">
-    <h3>3. Global Change, Urban Environments, and Ecosystem Applications</h3>
-    <p>
-      We apply advanced remote sensing to investigate how ecosystems respond to global 
-      environmental change, with applications in urban environmental monitoring, ecosystem 
-      health assessment, agricultural management, and disaster risk reduction. 
-      Our goal is to understand the spatiotemporal evolution of critical geographic processes 
-      and support sustainable planning, ecological restoration, and climate resilience 
-      in both natural and urban settings.
-    </p>
-  </div>
+      <div class="research-item">
+        <h3>3. Global Change, Urban Environments, and Ecosystem Applications</h3>
+        <p>
+          We apply advanced remote sensing to investigate how ecosystems respond to global 
+          environmental change, with applications in urban environmental monitoring, ecosystem 
+          health assessment, agricultural management, and disaster risk reduction. 
+          Our goal is to understand the spatiotemporal evolution of critical geographic processes 
+          and support sustainable planning, ecological restoration, and climate resilience 
+          in both natural and urban settings.
+        </p>
+      </div>
 
-</section>
+    </section>
 
+  </main>
+
+  <!-- ================= Footer ================= -->
   <footer>
     <img src="images/logo.jpg" alt="Group Logo" class="footer-logo">
     <br>
