@@ -57,9 +57,10 @@ nav a:hover {
 section {
   padding: 40px 20px;
   max-width: 1200px;
-  margin: 0 auto 10px auto;   /* ← ★ 已改为 10px ★ */
+  margin: 0 auto 10px auto;  /* ← 关键：底部间距固定 10px */
   border-radius: 8px;
 }
+
 
 #intro {
   background: #E9EFE6; /* 米白偏绿 */
@@ -252,3 +253,4 @@ footer {
   text-align: center;
   padding: 25px 0;
 }
+
