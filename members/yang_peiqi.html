@@ -6,43 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f5f7fa;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
+    /* ====== 卡片样式统一 ====== */
+    .profile-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 30px;
       max-width: 900px;
       margin: 40px auto;
-      padding: 30px;
+      color: #1f2937;
+      font-family: 'Poppins', sans-serif;
     }
 
-    /* 头像和标题卡片风格 */
-    img {
+    .profile-card img {
       width: 180px;
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
+      border: 3px solid #2563eb;
       display: block;
       margin: 0 auto 20px auto;
-      border: 3px solid #2563eb;
     }
 
-    h1 {
-      font-size: 2rem;
+    .profile-card h1 {
       text-align: center;
       color: #2563eb;
+      font-size: 2rem;
       margin-bottom: 12px;
     }
 
-    h2 {
-      font-size: 1.4rem;
+    .profile-card p {
+      line-height: 1.6;
+      margin: 6px 0;
+    }
+
+    .profile-card strong {
+      color: #2563eb;
+    }
+
+    .profile-card h2 {
       color: #2563eb;
       margin-top: 30px;
       margin-bottom: 12px;
@@ -50,118 +53,88 @@
       padding-bottom: 4px;
     }
 
-    p, li {
-      line-height: 1.6;
-      color: #1f2937;
-      margin: 6px 0;
+    /* ====== 论文引用风格 ====== */
+    .publication-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
     }
 
-    strong {
-      color: #2563eb;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin: 0;
-    }
-
-    section {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 25px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      color: #2563eb;
-      font-weight: 600;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    a.back:hover {
-      color: #1e40af;
-      text-decoration: underline;
-    }
-
-    /* 论文引用风格 */
-    .publication {
+    .publication-list li {
       border-left: 4px solid #2563eb;
       padding-left: 12px;
       margin-bottom: 12px;
-      font-style: normal;
+      line-height: 1.5;
+      color: #1f2937;
     }
 
-    .publication em {
-      font-style: italic;
-    }
-
+    /* ====== 响应式 ====== */
     @media (max-width: 600px) {
-      .container { padding: 20px; margin: 20px 12px; }
-      h1 { font-size: 1.6rem; }
-      h2 { font-size: 1.2rem; }
-      img { width: 140px; height: 140px; }
+      .profile-card { padding: 20px; margin: 20px 12px; }
+      .profile-card img { width: 140px; height: 140px; }
+      .profile-card h1 { font-size: 1.6rem; }
+      .profile-card h2 { font-size: 1.2rem; }
     }
   </style>
 </head>
 <body>
-  <div class="container" data-aos="fade-up">
+
+  <!-- ====== 头部 Header 从 index.html 复制 ====== -->
+  <header>
+    <nav>
+      <!-- 你的全局导航栏 HTML 内容 -->
+    </nav>
+  </header>
+
+  <!-- ====== 个人信息卡片 ====== -->
+  <div class="profile-card">
     <img src="../images/team/yang_peiqi.jpg" alt="Peiqi Yang">
     <h1>Peiqi Yang, Professor</h1>
     <p><strong>Gender:</strong> Male</p>
     <p><strong>Hometown:</strong> Shangrao, Jiangxi, China</p>
     <p><strong>Affiliation:</strong> School of Geography, Nanjing Normal University</p>
-    <p><strong>PhD Supervisor</strong></p>
     <p><strong>Email:</strong> p.yang@njnu.edu.cn</p>
 
-    <section>
-      <h2>Professional Profile</h2>
-      <p>Peiqi Yang is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and Nanjing Normal University Outstanding Young Scholar. His research focuses on quantitative remote sensing, radiative transfer modeling, chlorophyll fluorescence remote sensing, and biogeochemical cycling. He has published over 30 papers in journals including <em>Remote Sensing of Environment</em> and <em>Geoscientific Model Development</em>, established a unified radiative transfer theory across optical, thermal, and fluorescence domains, and developed the SPART soil-vegetation-atmosphere model, mSCOPE, and SCOPE2.0 models. He has also revealed physical relationships between fluorescence and near-infrared reflectance, proposed the R2F relationship theory, and established the FCVI index for plant physiological remote sensing.</p>
-    </section>
+    <h2>Professional Profile</h2>
+    <p>Peiqi Yang is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and Nanjing Normal University Outstanding Young Scholar. His research focuses on quantitative remote sensing, radiative transfer modeling, chlorophyll fluorescence remote sensing, and biogeochemical cycling. He has published over 30 papers in journals including <em>Remote Sensing of Environment</em> and <em>Geoscientific Model Development</em>, established a unified radiative transfer theory across optical, thermal, and fluorescence domains, and developed the SPART soil-vegetation-atmosphere model, mSCOPE, and SCOPE2.0 models. He has also revealed physical relationships between fluorescence and near-infrared reflectance, proposed the R2F relationship theory, and established the FCVI index for plant physiological remote sensing.</p>
 
-    <section>
-      <h2>Selected Publications</h2>
-      <ul>
-        <li class="publication">Yang, P.*, Liu, Z., Han, D., et al. Mitigating the black-soil problem in the reflectance-to-fluorescence (R2F) relationship. <em>Remote Sensing of Environment</em>, 330, 114998. <a href="https://doi.org/10.1016/j.rse.2025.114998" target="_blank">DOI</a></li>
-        <li class="publication">Han, D., Liu, J.*, Xu, S., Yin, T., et al. Estimation of canopy fAPAR using optical reflectance and airborne LiDAR data. <em>Remote Sensing of Environment</em>, 332, 115065. <a href="https://doi.org/10.1016/j.rse.2025.115065" target="_blank">DOI</a></li>
-        <li class="publication">Lu, X.*, Yang, P., Mac Arthur, A., van der Tol, C., 2025. Using reflectance to reduce solar angle effects on far-red SIF to better track diurnal GPP. <em>Agricultural and Forest Meteorology</em>, 373, 110794. <a href="https://doi.org/10.1016/j.agrformet.2025.110794" target="_blank">DOI</a></li>
-        <li class="publication">Zhang, R., Yang, P.*, Xu, S., et al. Relationship between ratio of far-red to red leaf SIF and leaf chlorophyll content. <em>Remote Sensing of Environment</em>, 324, 114762. <a href="https://doi.org/10.1016/j.rse.2025.114762" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, Verhoef, W., Fang, H., Fan, W., van der Tol, C., 2025. Linking Kubelka-Munk and recollision probability theories for radiative transfer simulations in turbid canopy. <em>Remote Sensing of Environment</em>, 321, 114680. <a href="https://doi.org/10.1016/j.rse.2025.114680" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, van der Tol, C., Liu, J., Liu, Z., 2025. Separation of direct soil reflection from canopy spectral reflectance. <em>Remote Sensing of Environment</em>, 316, 114500. <a href="https://doi.org/10.1016/j.rse.2024.114500" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, 2024. Downscaling canopy PRI to leaf level by correcting soil effects. <em>Remote Sensing of Environment</em>, 311, 114250. <a href="https://doi.org/10.1016/j.rse.2024.114250" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, Liu, X., Liu, Z., van der Tol, C., Liu, L., 2023. Sun-induced chlorophyll fluorescence for predicting GPP in mixed canopies. <em>Agricultural and Forest Meteorology</em>, 342, 109720. <a href="https://doi.org/10.1016/j.agrformet.2023.109720" target="_blank">DOI</a></li>
-        <li class="publication">Shi, S., Yang, P.*, van der Tol, C., et al., 2023. Spatiotemporal land surface phenology from multi-source satellite data over Africa. <em>Heliyon</em>, 9(6), e16413. <a href="https://doi.org/10.1016/j.heliyon.2023.e16413" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, Liu, L., van der Tol, C., 2022. Modeling chlorophyll fluorescence and PRI across scales. <em>Remote Sensing of Environment</em>, 270, 112876. <a href="https://doi.org/10.1016/j.rse.2022.112876" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, van der Tol, C., 2021. SCOPE2: A coupled model of canopy reflectance, fluorescence and photosynthesis. <em>Geoscientific Model Development</em>, 14, 5107–5125. <a href="https://doi.org/10.5194/gmd-14-5107-2021" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2020. Fluorescence-based monitoring of photosynthesis in crops. <em>Remote Sensing</em>, 12(12), 2034. <a href="https://doi.org/10.3390/rs12122034" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2019. Radiative transfer modeling of canopy fluorescence. <em>Remote Sensing of Environment</em>, 224, 129–142. <a href="https://doi.org/10.1016/j.rse.2019.02.004" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2018. Leaf-level SIF retrieval and GPP estimation. <em>Remote Sensing of Environment</em>, 209, 374–387. <a href="https://doi.org/10.1016/j.rse.2018.02.021" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2017. Modeling chlorophyll fluorescence in heterogeneous canopies. <em>Remote Sensing of Environment</em>, 203, 219–230. <a href="https://doi.org/10.1016/j.rse.2017.05.023" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2016. Integrating SIF with PRI for improved photosynthesis monitoring. <em>Agricultural and Forest Meteorology</em>, 226–227, 212–223. <a href="https://doi.org/10.1016/j.agrformet.2016.06.005" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2015. Evaluating canopy reflectance models with hyperspectral data. <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 53(12), 6542–6556. <a href="https://doi.org/10.1109/TGRS.2015.2471522" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2014. Comparing SCOPE and FLUX models for ecosystem photosynthesis estimation. <em>Biogeosciences</em>, 11, 4413–4427. <a href="https://doi.org/10.5194/bg-11-4413-2014" target="_blank">DOI</a></li>
-        <li class="publication">Yang, P.*, et al., 2013. Radiative transfer theory in heterogeneous canopies. <em>Remote Sensing of Environment</em>, 136, 218–232. <a href="https://doi.org/10.1016/j.rse.2013.05.013" target="_blank">DOI</a></li>
-      </ul>
-    </section>
+    <h2>Selected Publications</h2>
+    <ul class="publication-list">
+      <li>Yang, P.*, Liu, Z., Han, D., et al. Mitigating the black-soil problem in the reflectance-to-fluorescence (R2F) relationship. <em>Remote Sensing of Environment</em>, 330, 114998. <a href="https://doi.org/10.1016/j.rse.2025.114998" target="_blank">DOI</a></li>
+      <li>Han, D., Liu, J.*, Xu, S., Yin, T., et al. Estimation of canopy fAPAR using optical reflectance and airborne LiDAR data. <em>Remote Sensing of Environment</em>, 332, 115065. <a href="https://doi.org/10.1016/j.rse.2025.115065" target="_blank">DOI</a></li>
+      <li>Lu, X.*, Yang, P., Mac Arthur, A., van der Tol, C., 2025. Using reflectance to reduce solar angle effects on far-red SIF to better track diurnal GPP. <em>Agricultural and Forest Meteorology</em>, 373, 110794. <a href="https://doi.org/10.1016/j.agrformet.2025.110794" target="_blank">DOI</a></li>
+      <li>Zhang, R., Yang, P.*, Xu, S., et al. Relationship between ratio of far-red to red leaf SIF and leaf chlorophyll content. <em>Remote Sensing of Environment</em>, 324, 114762. <a href="https://doi.org/10.1016/j.rse.2025.114762" target="_blank">DOI</a></li>
+      <li>Yang, P.*, Verhoef, W., Fang, H., Fan, W., van der Tol, C., 2025. Linking Kubelka-Munk and recollision probability theories for radiative transfer simulations in turbid canopy. <em>Remote Sensing of Environment</em>, 321, 114680. <a href="https://doi.org/10.1016/j.rse.2025.114680" target="_blank">DOI</a></li>
+      <li>Yang, P.*, van der Tol, C., Liu, J., Liu, Z., 2025. Separation of direct soil reflection from canopy spectral reflectance. <em>Remote Sensing of Environment</em>, 316, 114500. <a href="https://doi.org/10.1016/j.rse.2024.114500" target="_blank">DOI</a></li>
+      <li>Yang, P.*, 2024. Downscaling canopy PRI to leaf level by correcting soil effects. <em>Remote Sensing of Environment</em>, 311, 114250. <a href="https://doi.org/10.1016/j.rse.2024.114250" target="_blank">DOI</a></li>
+      <li>Yang, P.*, Liu, X., Liu, Z., van der Tol, C., Liu, L., 2023. Sun-induced chlorophyll fluorescence for predicting GPP in mixed canopies. <em>Agricultural and Forest Meteorology</em>, 342, 109720. <a href="https://doi.org/10.1016/j.agrformet.2023.109720" target="_blank">DOI</a></li>
+      <li>Shi, S., Yang, P.*, van der Tol, C., et al., 2023. Spatiotemporal land surface phenology from multi-source satellite data over Africa. <em>Heliyon</em>, 9(6), e16413. <a href="https://doi.org/10.1016/j.heliyon.2023.e16413" target="_blank">DOI</a></li>
+      <li>Yang, P.*, Liu, L., van der Tol, C., 2022. Modeling chlorophyll fluorescence and PRI across scales. <em>Remote Sensing of Environment</em>, 270, 112876. <a href="https://doi.org/10.1016/j.rse.2022.112876" target="_blank">DOI</a></li>
+      <li>Yang, P.*, van der Tol, C., 2021. SCOPE2: A coupled model of canopy reflectance, fluorescence and photosynthesis. <em>Geoscientific Model Development</em>, 14, 5107–5125. <a href="https://doi.org/10.5194/gmd-14-5107-2021" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2020. Fluorescence-based monitoring of photosynthesis in crops. <em>Remote Sensing</em>, 12(12), 2034. <a href="https://doi.org/10.3390/rs12122034" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2019. Radiative transfer modeling of canopy fluorescence. <em>Remote Sensing of Environment</em>, 224, 129–142. <a href="https://doi.org/10.1016/j.rse.2019.02.004" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2018. Leaf-level SIF retrieval and GPP estimation. <em>Remote Sensing of Environment</em>, 209, 374–387. <a href="https://doi.org/10.1016/j.rse.2018.02.021" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2017. Modeling chlorophyll fluorescence in heterogeneous canopies. <em>Remote Sensing of Environment</em>, 203, 219–230. <a href="https://doi.org/10.1016/j.rse.2017.05.023" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2016. Integrating SIF with PRI for improved photosynthesis monitoring. <em>Agricultural and Forest Meteorology</em>, 226–227, 212–223. <a href="https://doi.org/10.1016/j.agrformet.2016.06.005" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2015. Evaluating canopy reflectance models with hyperspectral data. <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 53(12), 6542–6556. <a href="https://doi.org/10.1109/TGRS.2015.2471522" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2014. Comparing SCOPE and FLUX models for ecosystem photosynthesis estimation. <em>Biogeosciences</em>, 11, 4413–4427. <a href="https://doi.org/10.5194/bg-11-4413-2014" target="_blank">DOI</a></li>
+      <li>Yang, P.*, et al., 2013. Radiative transfer theory in heterogeneous canopies. <em>Remote Sensing of Environment</em>, 136, 218–232. <a href="https://doi.org/10.1016/j.rse.2013.05.013" target="_blank">DOI</a></li>
+    </ul>
 
-    <section>
-      <h2>Patents & Software</h2>
-      <ul>
-        <li>Passive-active long-term chlorophyll fluorescence observation system, CN201410220579.2, granted</li>
-        <li>Method for remote sensing of plantation forests using satellite LiDAR waveform complexity, CN119649227A, published</li>
-        <li>Method for LAI retrieval in mountainous forests using terrestrial LiDAR, CN119741597A, published</li>
-      </ul>
-    </section>
+    <h2>Patents & Software</h2>
+    <ul class="publication-list">
+      <li>Passive-active long-term chlorophyll fluorescence observation system, CN201410220579.2, granted</li>
+      <li>Method for remote sensing of plantation forests using satellite LiDAR waveform complexity, CN119649227A, published</li>
+      <li>Method for LAI retrieval in mountainous forests using terrestrial LiDAR, CN119741597A, published</li>
+    </ul>
 
-    <a href="../team.html" class="back">← Back to Team</a>
+    <a href="../team.html" class="back" style="color:#2563eb; font-weight:600;">← Back to Team</a>
   </div>
 
-  <script>
-    AOS.init({ offset: 100, duration: 600, easing: 'ease-in-out', delay: 100, once: true });
-  </script>
+  <!-- ====== 尾部 Footer 从 index.html 复制 ====== -->
+  <footer>
+    <!-- 你的全局页脚 HTML 内容 -->
+  </footer>
+
 </body>
 </html>
