@@ -57,7 +57,7 @@ nav a:hover {
 section {
   padding: 40px 20px;
   max-width: 1200px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 10px auto;   /* ← ★ 已改为 10px ★ */
   border-radius: 8px;
 }
 
@@ -199,6 +199,7 @@ footer {
   nav a { font-size: 1rem; }
   .app-card h3, .team-card h3 { font-size: 1.2rem; }
 }
+
 /* ==============================
    Logo 样式优化（蓝色系协调）
    ============================== */
@@ -207,15 +208,15 @@ footer {
 header .logo {
   position: absolute;
   left: 40px;
-  top: 50%;
+ top: 50%;
   transform: translateY(-50%);
   width: 70px;
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ffffffcc; /* 半透明白边，更柔和 */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* 柔和光晕 */
-  background-color: #fff; /* 避免底图透出 */
+  border: 3px solid #ffffffcc;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background-color: #fff;
 }
 
 /* 页脚 logo */
@@ -240,7 +241,7 @@ header {
 }
 
 header h1 {
-  margin-left: 80px; /* 避开左侧 logo */
+  margin-left: 80px;
   font-size: 2.4rem;
   color: #ffffff;
 }
@@ -251,4 +252,3 @@ footer {
   text-align: center;
   padding: 25px 0;
 }
-
