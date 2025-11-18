@@ -250,4 +250,21 @@ footer .footer-logo {
     font-size: 1rem;
   }
 }
+.profile-title,
+.section-title {
+  color: #002b5b;
+  border-left: 4px solid #002b5b;
+  padding-left: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.pub-item {
+  border-left: 3px solid #003366;
+  padding-left: 12px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #333;
+}
+
 
