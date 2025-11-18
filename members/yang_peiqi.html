@@ -1,6 +1,3 @@
-
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +6,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img.logo {
+      height: 80px;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    h2.section-title {
+      color: #003366;
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #003366;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    p, li {
+      line-height: 1.6;
+      margin: 6px 0;
+    }
+
+    strong {
+      color: #003366;
+    }
+
+    a {
+      color: #003366;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #1e40af;
+    }
+
+    .info-list {
+      list-style: none;
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+
+    .info-list li {
+      border-left: 3px solid #003366;
+      padding-left: 10px;
+      margin-bottom: 8px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .publication {
+      border-left: 3px solid #003366;
+      padding-left: 12px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 0;
+      background-color: #003366;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    .footer-logo {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- Header -->
   <header>
     <img src="../images/logo.jpg" alt="Group Logo" class="logo">
@@ -27,24 +150,19 @@
   </header>
 
   <main>
-
-    <!-- Profile Section -->
-    <section>
-      <div style="text-align:center;">
-        <img src="../images/team/yang_peiqi.jpg" alt="Peiqi Yang" 
-             style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #003366;">
-        <h2 class="profile-title">Peiqi Yang, Professor</h2>
-      </div>
-
-      <p><strong>Affiliation:</strong> School of Geography, Nanjing Normal University</p>
-      <p><strong>PhD Supervisor</strong></p>
-      <p><strong>Email:</strong> p.yang@njnu.edu.cn</p>
-    </section>
+    <!-- Profile -->
+    <div style="text-align:center;">
+      <img src="../images/team/yang_peiqi.jpg" alt="Peiqi Yang" class="profile">
+      <h2>Peiqi Yang, Professor</h2>
+    </div>
+    <p><strong>Affiliation:</strong> School of Geography, Nanjing Normal University</p>
+    <p><strong>PhD Supervisor</strong></p>
+    <p><strong>Email:</strong> p.yang@njnu.edu.cn</p>
 
     <!-- Professional Profile -->
     <section>
       <h2 class="section-title">Professional Profile</h2>
-      <p>Peiqi Yang is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and Nanjing Normal University Outstanding Young Scholar. His research focuses on quantitative remote sensing, radiative transfer modeling, chlorophyll fluorescence remote sensing, and biogeochemical cycling. He has published over 30 papers ...</p>
+      <p>Peiqi Yang is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and Nanjing Normal University Outstanding Young Scholar. His research focuses on quantitative remote sensing, radiative transfer modeling, chlorophyll fluorescence remote sensing, and biogeochemical cycling. He has published over 30 papers in journals including <em>Remote Sensing of Environment</em> and <em>Geoscientific Model Development</em>, established a unified radiative transfer theory across optical, thermal, and fluorescence domains, and developed the SPART soil-vegetation-atmosphere model, mSCOPE, and SCOPE2.0 models. He has also revealed physical relationships between fluorescence and near-infrared reflectance, proposed the R2F relationship theory, and established the FCVI index for plant physiological remote sensing.</p>
     </section>
 
     <!-- Publications -->
@@ -95,20 +213,62 @@
     <!-- Patents -->
     <section>
       <h2 class="section-title">Patents & Software</h2>
-      <ul>
-        <li>Passive-active long-term chlorophyll fluorescence observation system</li>
-        <li>Satellite LiDAR waveform complexity retrieval method</li>
-        <li>LAI retrieval using terrestrial LiDAR</li>
+      <ul class="info-list">
+        <li>Passive-active long-term chlorophyll fluorescence observation system, CN201410220579.2, granted</li>
+        <li>Method for remote sensing of plantation forests using satellite LiDAR waveform complexity, CN119649227A, published</li>
+        <li>Method for LAI retrieval in mountainous forests using terrestrial LiDAR, CN119741597A, published</li>
       </ul>
     </section>
 
-    <p><a href="../team.html" style="color:#003366; font-weight:600;">← Back to Team</a></p>
+    <!-- Honors for Students -->
+    <section>
+      <h2 class="section-title">Honors for Students Supervised</h2>
+      <ul class="info-list">
+        <li><strong>2024</strong> Third Prize, Hyperspectral Remote Sensing Data Processing and Application Competition (Vegetation Group, 1st place)</li>
+        <li><strong>2024</strong> First Prize, Excellent Undergraduate Thesis, Surveying and Mapping & Geographic Information, Jiangsu Province</li>
+        <li><strong>2023</strong> First Prize & Excellent Supervising Teacher, First Su-Hong Kong-Macau Universities Remote Sensing Mapping and Academic Skills Competition</li>
+      </ul>
+    </section>
+
+    <!-- Professional Service -->
+    <section>
+      <h2 class="section-title">Professional Service</h2>
+      <ul class="info-list">
+        <li>Associate Editor, <em>Information Geography</em></li>
+        <li>Editorial Board Member, <em>Remote Sensing</em></li>
+        <li>Young Editorial Board Member, <em>Journal of Remote Sensing</em></li>
+        <li>Member, Cartography Committee, Chinese Society of Natural Resources</li>
+        <li>Member, Su-Hong Kong-Macau Universities Remote Sensing and Environment Professional Alliance Committee</li>
+      </ul>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+      <h2 class="section-title">Work Experience</h2>
+      <ul class="info-list">
+        <li><strong>Jul 2021 – Present:</strong> Professor, School of Geography, Nanjing Normal University</li>
+        <li><strong>Jul 2018 – Jul 2021:</strong> Researcher, Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, Netherlands</li>
+        <li><strong>Jul 2015 – Sep 2015:</strong> Short-term Visiting Researcher, Jülich Research Centre, Germany</li>
+        <li><strong>Mar 2019 – Apr 2019:</strong> Short-term Visiting Researcher, University of Maryland, Baltimore County, USA</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      <ul class="info-list">
+        <li><strong>Sep 2014 – Jul 2018:</strong> Ph.D., Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, Netherlands</li>
+        <li><strong>Sep 2011 – Jul 2014:</strong> M.Sc. in Cartography and Geographic Information System, School of Geography and Remote Sensing, Beijing Normal University, China</li>
+        <li><strong>Sep 2007 – Jul 2011:</strong> B.Eng. in Surveying Engineering, School of Geodesy and Surveying, Wuhan University, China</li>
+      </ul>
+    </section>
+
+    <p><a href="../team.html" style="font-weight:600;">← Back to Team</a></p>
   </main>
 
   <footer>
     <img src="../images/logo.jpg" alt="Group Logo" class="footer-logo"><br>
     © 2025 Vegetation And Environment Remote Sensing Group | Nanjing Normal University
   </footer>
-
 </body>
 </html>
