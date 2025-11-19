@@ -7,68 +7,47 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* ======== 保留你原本排版，仅修复 header 乱掉问题 ======== */
+    /* ========== 只为满足你提出的两个要求 ========== */
 
-    header {
-      padding: 20px 0;
-      background: #ffffff;
+    /* 1. 让 h1 分两行，VAMOS 独占第二行并居中 */
+    .header-title {
+      text-align: center;
+      line-height: 1.2;
+      margin-top: 10px;
+    }
+    .header-title strong {
+      display: block;   /* 强制换行独占第二行 */
+      margin-top: 4px;
+    }
+
+    /* 2. 把 logo 靠右挪，让它紧贴文字开头 */
+    .logo {
+      margin-right: 15px;     /* 从左边挤过去 */
+      margin-left: auto;      /* 把它推到文字旁 */
     }
 
     .header-container {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      text-align: center;
-      gap: 5px;
+      gap: 20px;
     }
 
-    /* 第一行：标题 + logo */
-    .title-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      white-space: nowrap; /* 避免自动换行 */
-    }
-
-    .title-row h1 {
-      margin: 0;
-      padding-right: 10px; /* 让 logo 和标题之间有适当距离 */
-    }
-
-    .logo {
-      height: 60px;
-      margin-left: 10px; /* logo 稍微靠右 */
-    }
-
-    /* 第二行的 VAMOS */
-    .header-container > h1 strong {
-      display: block;
-      margin-top: 3px;
-      font-size: 1.8rem;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
   </style>
-
 </head>
+
 <body>
 
   <!-- ================= Header ================= -->
   <header>
     <div class="header-container">
+      <img src="images/logo.jpg" alt="Group Logo" class="logo">
 
-      <!-- 第一行：标题 + logo -->
-      <div class="title-row">
-        <h1>Vegetation And Environment Remote Sensing</h1>
-        <img src="images/logo.jpg" alt="Group Logo" class="logo">
-      </div>
+      <!-- 添加 class 但内容不变 -->
+      <h1 class="header-title">
+        Vegetation And Environment Remote Sensing
+        (<strong>VAMOS</strong>)
+      </h1>
 
-      <!-- 第二行：VAMOS -->
-      <h1><strong>VAMOS</strong></h1>
-
-      <!-- 导航 -->
       <nav>
         <a href="index.html" class="active">Home</a>
         <a href="research.html">Research</a>
@@ -76,7 +55,6 @@
         <a href="publications_v2.html">Publications</a>
         <a href="contact.html">Contact</a>
       </nav>
-
     </div>
   </header>
 
@@ -95,6 +73,7 @@
     <section id="faculty">
       <h2>Faculty Members</h2>
       <div class="faculty-section">
+
         <div class="faculty-card">
           <a href="members/yang_peiqi.html">
             <img src="images/team/yang_peiqi.jpg" alt="Peiqi Yang">
@@ -127,6 +106,7 @@
             </div>
           </a>
         </div>
+
       </div>
     </section>
 
@@ -137,33 +117,21 @@
       <div class="research-item">
         <h3>1. Radiative Transfer & Quantitative Remote Sensing</h3>
         <p>
-          We study the physical principles of electromagnetic scattering, absorption, and emission 
-          to reveal the intrinsic connections between the physical world and remotely sensed observations. 
-          Our work develops multi-scale inversion theories and robust retrieval approaches to produce 
-          accurate land-surface parameter estimates from global and regional observation systems.
+          We study the physical principles of electromagnetic scattering, absorption, and emission to reveal the intrinsic connections between the physical world and remotely sensed observations. Our work develops multi-scale inversion theories and robust retrieval approaches to produce accurate land-surface parameter estimates from global and regional observation systems.
         </p>
       </div>
 
       <div class="research-item">
         <h3>2. Vegetation Structure and Functional Remote Sensing</h3>
         <p>
-          We address key challenges in monitoring vegetation structure and function using hyperspectral, 
-          LiDAR, thermal infrared, and solar-induced chlorophyll fluorescence (SIF) techniques. 
-          Our research spans forests, croplands, wetlands, and urban green spaces, focusing on 
-          reconstructing canopy 3D architecture and quantifying physiological processes 
-          across diverse environments.
+          We address key challenges in monitoring vegetation structure and function using hyperspectral, LiDAR, thermal infrared, and solar-induced chlorophyll fluorescence (SIF) techniques. Our research spans forests, croplands, wetlands, and urban green spaces, focusing on reconstructing canopy 3D architecture and quantifying physiological processes across diverse environments.
         </p>
       </div>
 
       <div class="research-item">
         <h3>3. Global Change, Urban Environments, and Ecosystem Applications</h3>
         <p>
-          We apply advanced remote sensing to investigate how ecosystems respond to global 
-          environmental change, with applications in urban environmental monitoring, ecosystem 
-          health assessment, agricultural management, and disaster risk reduction. 
-          Our goal is to understand the spatiotemporal evolution of critical geographic processes 
-          and support sustainable planning, ecological restoration, and climate resilience 
-          in both natural and urban settings.
+          We apply advanced remote sensing to investigate how ecosystems respond to global environmental change, with applications in urban environmental monitoring, ecosystem health assessment, agricultural management, and disaster risk reduction. Our goal is to understand the spatiotemporal evolution of critical geographic processes and support sustainable planning, ecological restoration, and climate resilience in both natural and urban settings.
         </p>
       </div>
 
