@@ -5,14 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Vegetation And Environment Remote Sensing</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ======== 新增的局部样式修改 ======== */
+
+    header {
+      padding: 20px 0;
+      background: #ffffff;
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;   /* 顶部两行纵向排列 */
+      align-items: center;
+      text-align: center;
+      gap: 5px;
+    }
+
+    /* 第一行：文字 + logo 右靠近标题 */
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;   /* 控制 logo 与标题距离 */
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+  </style>
+
 </head>
 <body>
 
   <!-- ================= Header ================= -->
   <header>
     <div class="header-container">
-      <img src="images/logo.jpg" alt="Group Logo" class="logo">
-      <h1>Vegetation And Environment Remote Sensing (<strong>VAMOS</strong>)</h1>
+
+      <!-- 第一行：标题 + logo 靠右 -->
+      <div class="title-row">
+        <h1>Vegetation And Environment Remote Sensing</h1>
+        <img src="images/logo.jpg" alt="Group Logo" class="logo">
+      </div>
+
+      <!-- 第二行：单独显示 VAMOS（居中） -->
+      <h1><strong>VAMOS</strong></h1>
+
+      <!-- 导航 -->
       <nav>
         <a href="index.html" class="active">Home</a>
         <a href="research.html">Research</a>
@@ -20,6 +63,7 @@
         <a href="publications_v2.html">Publications</a>
         <a href="contact.html">Contact</a>
       </nav>
+
     </div>
   </header>
 
