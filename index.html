@@ -7,31 +7,53 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* ⭐绝不修改你的原样式，只新增这一小段 */
-    .title-row {
+    /* ====== 仅新增局部样式 ====== */
+
+    .header-container {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px; /* 轻微距离，不影响大小 */
+      flex-direction: column; /* 保持竖向排列 */
+      align-items: center;    /* 居中标题和 VAMOS */
+      position: relative;     /* 让 logo 可以绝对定位 */
+    }
+
+    /* logo 靠右并与文字在同一行 */
+    .header-container .logo {
+      position: absolute;
+      right: 10px;            /* 控制靠右距离，可微调 */
+      top: 12px;              /* 调整高度，让 logo 与标题垂直对齐 */
+      height: auto;           /* 保持原大小 */
+      width: auto;            /* 保持原大小 */
+    }
+
+    /* 缩小第一行和第二行的间距 */
+    .header-container h1:first-of-type {
+      margin-bottom: 0;       /* 取消底部默认间距 */
+    }
+
+    .header-container h1 strong {
+      display: block;         /* VAMOS 单独占一行 */
+      margin-top: 5px;        /* 第一行与 VAMOS 的间距，可微调 */
+      text-align: center;     /* 居中 */
     }
   </style>
-</head>
 
+</head>
 <body>
 
 <!-- ================= Header ================= -->
 <header>
   <div class="header-container">
 
-    <!-- ⭐第一行：标题 + logo（横向排列，居中） -->
-    <div class="title-row">
-      <h1>Vegetation And Environment Remote Sensing</h1>
-      <img src="images/logo.jpg" alt="Group Logo" class="logo">
-    </div>
+    <!-- logo 会靠右 -->
+    <img src="images/logo.jpg" alt="Group Logo" class="logo">
 
-    <!-- ⭐第二行：VAMOS 居中显示 -->
-    <h1><strong>VAMOS</strong></h1>
+    <!-- 第一行标题 + 第二行 VAMOS -->
+    <h1>
+      Vegetation And Environment Remote Sensing
+      (<strong>VAMOS</strong>)
+    </h1>
 
+    <!-- 导航 -->
     <nav>
       <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
@@ -41,6 +63,7 @@
     </nav>
   </div>
 </header>
+
 
 
 
