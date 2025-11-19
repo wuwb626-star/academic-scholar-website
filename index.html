@@ -6,53 +6,51 @@
   <title>Home | Vegetation And Environment Remote Sensing</title>
   <link rel="stylesheet" href="style.css">
 
-  <<style>
-/* ====== 仅新增局部样式 ====== */
+  <style>
+    /* ====== 局部样式 ====== */
 
-.header-container {
-  display: flex;
-  flex-direction: column; /* 保持竖向排列 */
-  align-items: center;    /* 居中标题和 VAMOS */
-  position: relative;     /* 让 logo 可以绝对定位 */
-}
+    .header-container {
+      display: flex;
+      flex-direction: column;  /* 保持竖向排列 */
+      align-items: center;     /* 居中标题和 VAMOS */
+      position: relative;      /* 允许 logo 绝对定位 */
+    }
 
-/* logo 靠右，保持原大小 */
-.header-container .logo {
-  position: absolute;
-  right: 10px;      /* 靠右的距离，可微调 */
-  top: 0;           /* 与标题顶部对齐，可微调 */
-}
+    /* logo 靠右，保持原大小 */
+    .header-container .logo {
+      position: absolute;
+      right: 10px; /* 调整靠右距离 */
+      top: 0;      /* 与标题垂直对齐 */
+    }
 
-/* 缩小标题与 VAMOS 间距 */
-.header-container h1:first-of-type {
-  margin-bottom: 0;  /* 去掉默认底部间距 */
-}
+    /* VAMOS 独占第二行 */
+    .vamos-line {
+      display: block;   /* 单独占一行 */
+      margin-top: 5px;  /* 与标题间距 */
+      text-align: center;
+    }
 
-.header-container h1 strong {
-  display: block;    /* VAMOS 单独占一行 */
-  margin-top: 5px;   /* 第一行与 VAMOS 间距，可微调 */
-  text-align: center;
-}
-</style>
-
-
+    /* 缩小第一行与第二行间距 */
+    .header-container h1:first-of-type {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ================= Header ================= -->
 <header>
   <div class="header-container">
 
-    <!-- logo 会靠右 -->
+    <!-- logo 往右 -->
     <img src="images/logo.jpg" alt="Group Logo" class="logo">
 
-    <!-- 第一行标题 + 第二行 VAMOS -->
-    <h1>
-      Vegetation And Environment Remote Sensing
-      (<strong>VAMOS</strong>)
-    </h1>
+    <!-- 第一行标题 -->
+    <h1>Vegetation And Environment Remote Sensing</h1>
 
-    <!-- 导航 -->
+    <!-- 第二行 VAMOS（含括号） -->
+    <h1 class="vamos-line"><strong>(VAMOS)</strong></h1>
+
     <nav>
       <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
@@ -62,6 +60,7 @@
     </nav>
   </div>
 </header>
+
 
 
 
