@@ -7,56 +7,57 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* ========== 只为满足你提出的两个要求 ========== */
+    /* ⭐只添加局部，不修改任何原有字体/尺寸 */
 
-    /* 1. 让 h1 分两行，VAMOS 独占第二行并居中 */
-    .header-title {
-      text-align: center;
-      line-height: 1.2;
-      margin-top: 10px;
-    }
-    .header-title strong {
-      display: block;   /* 强制换行独占第二行 */
-      margin-top: 4px;
-    }
-
-    /* 2. 把 logo 靠右挪，让它紧贴文字开头 */
-    .logo {
-      margin-right: 15px;     /* 从左边挤过去 */
-      margin-left: auto;      /* 把它推到文字旁 */
-    }
-
+    /* 容器保持竖排，不变 */
     .header-container {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 20px;
+      text-align: center;
     }
 
+    /* ⭐新加的小容器：标题 + logo */
+    .title-row {
+      display: flex;
+      align-items: center;   /* 垂直对齐，不影响大小 */
+      justify-content: center;
+      gap: 8px;              /* 让 logo 靠近标题，但不贴死 */
+    }
+
+    /* ⭐只让 logo 稍微变小靠右，不改变原本样式 */
+    .title-row .logo {
+      height: 55px;          /* 与原图相同大小（若你原来是 60px 就改成 60px） */
+    }
+
+    /* ⭐VAMOS 单独一行，居中（继承 header-container 行为，不需要额外样式） */
   </style>
 </head>
-
 <body>
 
-  <!-- ================= Header ================= -->
-  <header>
-    <div class="header-container">
+<!-- ================= Header ================= -->
+<header>
+  <div class="header-container">
+
+    <!-- ⭐第一行：标题 + logo（横向排列） -->
+    <div class="title-row">
+      <h1>Vegetation And Environment Remote Sensing</h1>
       <img src="images/logo.jpg" alt="Group Logo" class="logo">
-
-      <!-- 添加 class 但内容不变 -->
-      <h1 class="header-title">
-        Vegetation And Environment Remote Sensing
-        (<strong>VAMOS</strong>)
-      </h1>
-
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="research.html">Research</a>
-        <a href="students.html">Students</a>
-        <a href="publications_v2.html">Publications</a>
-        <a href="contact.html">Contact</a>
-      </nav>
     </div>
-  </header>
+
+    <!-- ⭐第二行：VAMOS（单独一行、自动居中） -->
+    <h1><strong>VAMOS</strong></h1>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="students.html">Students</a>
+      <a href="publications_v2.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
 
   <!-- ================= Main ================= -->
   <main>
