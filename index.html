@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* ======== 新增的局部样式修改 ======== */
+    /* ======== 保留你原本排版，仅修复 header 乱掉问题 ======== */
 
     header {
       padding: 20px 0;
@@ -16,22 +16,35 @@
 
     .header-container {
       display: flex;
-      flex-direction: column;   /* 顶部两行纵向排列 */
+      flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 5px;
     }
 
-    /* 第一行：文字 + logo 右靠近标题 */
+    /* 第一行：标题 + logo */
     .title-row {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;   /* 控制 logo 与标题距离 */
+      white-space: nowrap; /* 避免自动换行 */
+    }
+
+    .title-row h1 {
+      margin: 0;
+      padding-right: 10px; /* 让 logo 和标题之间有适当距离 */
     }
 
     .logo {
       height: 60px;
+      margin-left: 10px; /* logo 稍微靠右 */
+    }
+
+    /* 第二行的 VAMOS */
+    .header-container > h1 strong {
+      display: block;
+      margin-top: 3px;
+      font-size: 1.8rem;
     }
 
     nav {
@@ -46,13 +59,13 @@
   <header>
     <div class="header-container">
 
-      <!-- 第一行：标题 + logo 靠右 -->
+      <!-- 第一行：标题 + logo -->
       <div class="title-row">
         <h1>Vegetation And Environment Remote Sensing</h1>
         <img src="images/logo.jpg" alt="Group Logo" class="logo">
       </div>
 
-      <!-- 第二行：单独显示 VAMOS（居中） -->
+      <!-- 第二行：VAMOS -->
       <h1><strong>VAMOS</strong></h1>
 
       <!-- 导航 -->
