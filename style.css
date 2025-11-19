@@ -27,9 +27,8 @@ header {
   background-color: #002b5b;
   color: white;
   padding: 25px 0;
-  text-align: center;
-  position: relative;
   margin-bottom: 10px;
+  /* 去掉 text-align:center，交给 flex 控制 */
 }
 
 header h1 {
@@ -39,7 +38,6 @@ header h1 {
 }
 
 header .logo {
-  position: static;       /* 去掉 absolute */
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -265,6 +263,7 @@ footer .footer-logo {
   line-height: 1.55;
   color: #333;
 }
+
 
 
 
