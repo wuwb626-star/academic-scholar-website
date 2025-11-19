@@ -32,25 +32,30 @@ header {
   margin-bottom: 10px;
 }
 
+/* 标题 */
 header h1 {
-  margin-left: 80px;
+  margin: 0;        /* 去掉原来的 margin-left */
   font-size: 2.4rem;
   color: #ffffff;
+  display: inline-block; /* 让标题和 logo 在同一行 */
+  vertical-align: middle;
 }
 
+/* Logo 调整 */
 header .logo {
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 70px;
+  position: static;   /* 去掉 absolute 定位 */
+  display: inline-block;
+  vertical-align: middle; /* 与标题垂直居中 */
+  width: 70px;       /* 保持原大小 */
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ffffffcc;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   background-color: #fff;
+  margin-left: 8px;  /* 靠近标题 */
 }
+
 
 nav a {
   margin: 0 15px;
@@ -266,5 +271,6 @@ footer .footer-logo {
   line-height: 1.55;
   color: #333;
 }
+
 
 
