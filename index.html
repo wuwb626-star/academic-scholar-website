@@ -40,16 +40,16 @@
 <body>
 
 <header>
-  <div class="header-container">
+  <div class="header-container" style="display: flex; flex-direction: column; align-items: center; position: relative;">
 
-    <!-- logo 往右 -->
-    <img src="images/logo.jpg" alt="Group Logo" class="logo">
-
-    <!-- 第一行标题 -->
-    <h1>Vegetation And Environment Remote Sensing</h1>
+    <!-- 第一行标题和 logo 在同一行 -->
+    <div style="display: inline-flex; align-items: center;">
+      <h1 style="margin: 0;">Vegetation And Environment Remote Sensing</h1>
+      <img src="images/logo.jpg" alt="Group Logo" class="logo" style="margin-left: 5px;">
+    </div>
 
     <!-- 第二行 VAMOS（含括号） -->
-    <h1 class="vamos-line"><strong>(VAMOS)</strong></h1>
+    <h1 style="margin: 5px 0 0 0;"><strong>(VAMOS)</strong></h1>
 
     <nav>
       <a href="index.html" class="active">Home</a>
@@ -60,6 +60,7 @@
     </nav>
   </div>
 </header>
+
 
 
 
