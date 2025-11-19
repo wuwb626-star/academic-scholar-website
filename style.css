@@ -45,6 +45,9 @@ header .logo {
   border: 3px solid #ffffffcc;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   background-color: #fff;
+  vertical-align: middle; /* 确保与标题垂直对齐 */
+  margin-right: 8px; /* logo 与标题间距 */
+  position: static; /* 确保不受 absolute 干扰 */
 }
 
 
@@ -263,6 +266,7 @@ footer .footer-logo {
   line-height: 1.55;
   color: #333;
 }
+
 
 
 
