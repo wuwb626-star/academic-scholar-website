@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,7 @@
       padding: 0;
     }
 
+    /* ========== Header Styles ========== */
     header {
       background-color: #003366;
       color: white;
@@ -194,7 +196,8 @@
       <p><strong>Email:</strong> p.yang@njnu.edu.cn; peiqiyangweb@gmail.com</p>
 Peiqi Yang’s research centers on quantitative remote sensing, with a focus on radiative transfer modeling and the remote sensing of photosynthesis using solar-induced chlorophyll fluorescence (SIF) and the photochemical reflectance index (PRI). His work spans canopy radiation physics, vegetation structure–function relationships, and soil–vegetation–atmosphere energy–carbon coupling. He is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and NNU Outstanding Young Scholar. Yang has developed several influential modeling frameworks, including unified canopy radiative transfer theory and the SPART, mSCOPE, and SCOPE2.0 models. He has also advanced physically based methods for interpreting SIF and PRI to better quantify plant physiological status and ecosystem photosynthetic function. His research contributes to improving the physical foundations and retrieval capability of next-generation vegetation remote sensing.
     </section>   
-<!-- Work and Education Experience -->
+
+    <!-- Work and Education Experience -->
     <section>
       <h2 class="section-title">Work and Education Experience</h2>
       <ul class="info-list">
@@ -206,17 +209,16 @@ Peiqi Yang’s research centers on quantitative remote sensing, with a focus on 
       </ul>
     </section>
 
-
     <!-- ===================== Publications Section ===================== -->
-<section id="publications">
+    <section id="publications">
       <h2 class="section-title">Publications</h2>
 
-<div>
-<button class="pub-tab-btn active" onclick="showSelected()">Selected Publications</button>
-<button class="pub-tab-btn" onclick="showAll()">All Publications</button>
-</div>
+      <div>
+        <button class="pub-tab-btn active" onclick="showSelected()">Selected Publications</button>
+        <button class="pub-tab-btn" onclick="showAll()">All Publications</button>
+      </div>
 
-<div id="pub-selected">
+      <div id="pub-selected">
 <!-- SELECTED CONTENT -->
 
 <div class="pub-item"><span class="pub-year">21</span>. Han, D., Liu, J., Xu, S., Yin, T., Liu, S., Zhang, R., <strong>Yang, P.</strong> (2026). Estimation of canopy fAPAR using optical reflectance and airborne LiDAR data. <span class="pub-journal">Remote Sensing of Environment</span>, 332, 115065.</div>
@@ -383,24 +385,22 @@ Peiqi Yang’s research centers on quantitative remote sensing, with a focus on 
 
 </div>
 
-<script>
-function showSelected(){
- document.getElementById("pub-selected").style.display="block";
- document.getElementById("pub-all").style.display="none";
- document.querySelectorAll(".pub-tab-btn")[0].classList.add("active");
- document.querySelectorAll(".pub-tab-btn")[1].classList.remove("active");
-}
-function showAll(){
- document.getElementById("pub-selected").style.display="none";
- document.getElementById("pub-all").style.display="block";
- document.querySelectorAll(".pub-tab-btn")[1].classList.add("active");
- document.querySelectorAll(".pub-tab-btn")[0].classList.remove("active");
-}
-</script>
-</section>
-
+      <script>
+        function showSelected(){
+          document.getElementById("pub-selected").style.display="block";
+          document.getElementById("pub-all").style.display="none";
+          document.querySelectorAll(".pub-tab-btn")[0].classList.add("active");
+          document.querySelectorAll(".pub-tab-btn")[1].classList.remove("active");
+        }
+        function showAll(){
+          document.getElementById("pub-selected").style.display="none";
+          document.getElementById("pub-all").style.display="block";
+          document.querySelectorAll(".pub-tab-btn")[1].classList.add("active");
+          document.querySelectorAll(".pub-tab-btn")[0].classList.remove("active");
+        }
+      </script>
+    </section>
     <!-- ===================== END Publications Section ===================== -->
-
 
     <!-- Patents -->
     <section>
@@ -412,7 +412,6 @@ function showAll(){
       </ul>
     </section>
 
-
     <!-- Honors -->
     <section>
       <h2 class="section-title">Honors for Students Supervised</h2>
@@ -422,7 +421,6 @@ function showAll(){
         <li><strong>2023</strong> Su–HK–Macao Remote Sensing Competition — First Prize</li>
       </ul>
     </section>
-
 
     <!-- Service -->
     <section>
