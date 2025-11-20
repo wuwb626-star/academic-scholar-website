@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: #ffffff;
-      color: #1f2937;
       margin: 0;
       padding: 0;
+      background: #fff;
+      color: #1f2937;
     }
 
     /* ========== Header Styles ========== */
@@ -21,46 +20,45 @@
       width: 100%;
       background-color: #003366;
       color: white;
-      padding: 20px 0;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      padding: 15px 0;
+      box-sizing: border-box;
     }
 
-    header .header-inner {
+    .header-inner {
       width: 90%;
       max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: relative;
+      flex-wrap: wrap;
     }
 
     header img.logo {
-      height: 80px;
+      height: 70px;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2rem;
-      text-align: center;
       flex: 1;
+      text-align: center;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 600;
       color: white;
     }
 
     nav {
-      margin-top: 10px;
-      text-align: center;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
       transition: opacity 0.3s;
+      padding: 5px 8px;
     }
 
     nav a:hover {
@@ -128,43 +126,6 @@
       line-height: 1.5;
     }
 
-    /* Publication Styles */
-    #pub-tabs {
-      margin-bottom: 20px;
-    }
-
-    .pub-tab-btn {
-      padding: 8px 18px;
-      margin-right: 10px;
-      border: none;
-      background-color: #e6e6e6;
-      cursor: pointer;
-      border-radius: 4px;
-      font-size: 15px;
-    }
-
-    .pub-tab-btn.active {
-      background-color: #003366;
-      color: white;
-      font-weight: bold;
-    }
-
-    .pub-item {
-      border-left: 3px solid #003366;
-      padding-left: 12px;
-      margin-bottom: 14px;
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    .pub-year {
-      font-weight: bold;
-    }
-
-    .pub-journal {
-      font-style: italic;
-    }
-
     footer {
       text-align: center;
       padding: 25px 0;
@@ -180,18 +141,17 @@
     }
   </style>
 </head>
-
 <body>
   <!-- Header -->
   <header>
     <div class="header-inner">
-      <!-- Logo -->
+      <!-- Logo 左对齐 -->
       <img src="../images/logo.jpg" alt="Group Logo" class="logo">
 
-      <!-- Title -->
+      <!-- 标题 居中 -->
       <h1>Vegetation And Environment Remote Sensing (<strong>VAMOS</strong>)</h1>
 
-      <!-- Navigation -->
+      <!-- 导航 -->
       <nav>
         <a href="../index.html">Home</a>
         <a href="../research.html">Research</a>
@@ -203,19 +163,16 @@
   </header>
 
   <main>
-    <!-- Profile -->
     <div style="text-align:center;">
       <img src="../images/team/yang_peiqi.jpg" alt="Peiqi Yang" class="profile">
     </div>
   
-    <!-- Professional Profile -->
     <section>
       <h2 class="section-title">Peiqi Yang, Professor</h2>
       <p><strong>Email:</strong> p.yang@njnu.edu.cn; peiqiyangweb@gmail.com</p>
       Peiqi Yang’s research centers on quantitative remote sensing, with a focus on radiative transfer modeling and the remote sensing of photosynthesis using solar-induced chlorophyll fluorescence (SIF) and the photochemical reflectance index (PRI). His work spans canopy radiation physics, vegetation structure–function relationships, and soil–vegetation–atmosphere energy–carbon coupling. He is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and NNU Outstanding Young Scholar. Yang has developed several influential modeling frameworks, including unified canopy radiative transfer theory and the SPART, mSCOPE, and SCOPE2.0 models. He has also advanced physically based methods for interpreting SIF and PRI to better quantify plant physiological status and ecosystem photosynthetic function. His research contributes to improving the physical foundations and retrieval capability of next-generation vegetation remote sensing.
     </section>   
 
-    <!-- Work and Education Experience -->
     <section>
       <h2 class="section-title">Work and Education Experience</h2>
       <ul class="info-list">
