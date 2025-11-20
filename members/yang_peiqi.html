@@ -7,37 +7,38 @@
   <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #1f2937;
-    }
+   body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #1f2937;
+}
 
-   /* ==============================
+/* ==============================
    Header
    ============================== */
+
 /* ==============================
    Header Center Layout
    ============================== */
 header {
   background-color: #002b5b;
   color: white;
-  padding: 25px 0;
-  margin-bottom: 10px;
+  padding: 15px 0; /* 上下间距缩小 */
+  margin-bottom: 5px; /* 下间距缩小 */
 }
 
 header .header-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* 整体居中 */
+  align-items: center;
 }
 
 .header-title-row {
   display: flex;
-  align-items: center; /* logo 与标题垂直居中 */
-  justify-content: center; /* 标题居中 */
+  align-items: center;
+  justify-content: center;
 }
 
 .header-title-row .logo {
@@ -57,18 +58,16 @@ header h1 {
 }
 
 .vamos-line {
-  margin: 10px 0;
+  margin: 5px 0; /* 上下间距缩小 */
   font-size: 2rem;
-  color: white; /* 改为白色，与 header 文字一致 */
+  color: white;
 }
-    .vamos-line strong {
+.vamos-line strong {
   color: white;
 }
 
-
-
 header nav {
-  margin-top: 5px;
+  margin-top: 3px; /* 上间距缩小 */
 }
 
 header nav a {
@@ -86,117 +85,119 @@ header nav a.active {
 header nav a:hover {
   opacity: 0.8;
 }
+
 header nav a {
-  text-decoration: none; /* 去掉下划线 */
+  text-decoration: none;
 }
+
 header nav a.active {
-  text-decoration: underline; /* 只给激活页加下划线 */
+  text-decoration: underline;
 }
 
-    nav a.active {
-      font-weight: bold;
-      text-decoration: underline;
-    }
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-  main {
+main {
   max-width: 900px;
-  margin: 20px auto; /* 原来是 30px */
+  margin: 10px auto; /* 上下间距缩小 */
   padding: 0 15px;
 }
 
+h2.section-title {
+  color: #003366;
+  font-size: 1.5rem;
+  margin-top: 10px;  /* 上间距缩小 */
+  margin-bottom: 6px; /* 下间距缩小 */
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 3px;
+}
 
-    h2.section-title {
-      color: #003366;
-      font-size: 1.5rem;
-      margin-top: 20px;
-      margin-bottom: 8px;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 3px;
-    }
+img.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #003366;
+  display: block;
+  margin: 0 auto 6px auto; /* 下间距缩小 */
+}
 
-    img.profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #003366;
-      display: block;
-      margin: 0 auto 10px auto;
-    }
+p, li {
+  line-height: 1.5;
+  margin: 2px 0; /* 上下间距缩小 */
+}
 
-    p, li {
-      line-height: 1.5;
-      margin: 4px 0;
-    }
+strong {
+  color: #003366;
+}
 
-    strong {
-      color: #003366;
-    }
+a {
+  color: #003366;
+  text-decoration: underline;
+}
 
-    a {
-      color: #003366;
-      text-decoration: underline;
-    }
+a:hover {
+  color: #1e40af;
+}
 
-    a:hover {
-      color: #1e40af;
-    }
+.info-list {
+  list-style: none;
+  padding-left: 5px;
+  margin-bottom: 6px; /* 下间距缩小 */
+}
 
-    .info-list {
-      list-style: none;
-      padding-left: 5px;
-      margin-bottom: 8px;
-    }
+.info-list li {
+  border-left: 3px solid #003366;
+  padding-left: 10px;
+  margin-bottom: 6px; /* 下间距缩小 */
+  line-height: 1.5;
+}
 
-    .info-list li {
-      border-left: 3px solid #003366;
-      padding-left: 10px;
-      margin-bottom: 8px;
-      line-height: 1.5;
-    }
+footer {
+  text-align: center;
+  padding: 10px 0; /* 上下间距缩小 */
+  background-color: #003366;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 20px; /* 上间距缩小 */
+}
 
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #003366;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 30px;
-    }
+.footer-logo {
+  height: 80px;
+  margin-bottom: 6px; /* 下间距缩小 */
+}
 
-    .footer-logo {
-      height: 80px;
-      margin-bottom: 10px;
-    }
+/* Publication Tabs */
+.pub-tab-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
 
-    /* Publication Tabs */
-    .pub-tab-btn {
-      background-color: #f0f0f0;
-      border: none;
-      padding: 6px 12px;
-      margin-right: 6px;
-      cursor: pointer;
-      font-weight: 500;
-    }
+.pub-tab-btn.active {
+  background-color: #003366;
+  color: white;
+  font-weight: 600;
+}
 
-    .pub-tab-btn.active {
-      background-color: #003366;
-      color: white;
-      font-weight: 600;
-    }
+.pub-item {
+  margin-bottom: 6px; /* 下间距缩小 */
+}
 
-    .pub-item {
-      margin-bottom: 8px;
-    }
+.pub-year {
+  font-weight: bold;
+  margin-right: 4px;
+}
 
-    .pub-year {
-      font-weight: bold;
-      margin-right: 4px;
-    }
+.pub-journal {
+  font-style: italic;
+}
 
-    .pub-journal {
-      font-style: italic;
-    }
   </style>
 </head>
 <body>
