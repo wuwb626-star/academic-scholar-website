@@ -18,28 +18,41 @@
 
     /* ========== Header Styles ========== */
     header {
+      width: 100%;
       background-color: #003366;
       color: white;
       padding: 20px 0;
-      text-align: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    header .header-inner {
+      width: 90%;
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       position: relative;
     }
 
     header img.logo {
       height: 80px;
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
     }
 
     header h1 {
       margin: 0;
       font-size: 2rem;
+      text-align: center;
+      flex: 1;
+      color: white;
     }
 
     nav {
       margin-top: 10px;
+      text-align: center;
     }
 
     nav a {
@@ -170,32 +183,26 @@
 
 <body>
   <!-- Header -->
- <!-- ================= Header (Copied EXACTLY from index.html) ================= -->
-<header>
-  <div class="header-container" style="display: flex; align-items: center; justify-content: center; position: relative;">
+  <header>
+    <div class="header-inner">
+      <!-- Logo -->
+      <img src="../images/logo.jpg" alt="Group Logo" class="logo">
 
-    <!-- Logo -->
-    <img src="../images/logo.jpg" alt="Group Logo" class="logo">
+      <!-- Title -->
+      <h1>Vegetation And Environment Remote Sensing (<strong>VAMOS</strong>)</h1>
 
-    <!-- Title -->
-    <h1>Vegetation And Environment Remote Sensing (<strong>VAMOS</strong>)</h1>
-
-    <!-- Navigation -->
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../research.html">Research</a>
-      <a href="../students.html">Students</a>
-      <a href="../publications_v2.html">Publications</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
-
-  </div>
-</header>
-
-
+      <!-- Navigation -->
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../students.html">Students</a>
+        <a href="../publications_v2.html">Publications</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
-
     <!-- Profile -->
     <div style="text-align:center;">
       <img src="../images/team/yang_peiqi.jpg" alt="Peiqi Yang" class="profile">
@@ -205,7 +212,7 @@
     <section>
       <h2 class="section-title">Peiqi Yang, Professor</h2>
       <p><strong>Email:</strong> p.yang@njnu.edu.cn; peiqiyangweb@gmail.com</p>
-Peiqi Yang’s research centers on quantitative remote sensing, with a focus on radiative transfer modeling and the remote sensing of photosynthesis using solar-induced chlorophyll fluorescence (SIF) and the photochemical reflectance index (PRI). His work spans canopy radiation physics, vegetation structure–function relationships, and soil–vegetation–atmosphere energy–carbon coupling. He is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and NNU Outstanding Young Scholar. Yang has developed several influential modeling frameworks, including unified canopy radiative transfer theory and the SPART, mSCOPE, and SCOPE2.0 models. He has also advanced physically based methods for interpreting SIF and PRI to better quantify plant physiological status and ecosystem photosynthetic function. His research contributes to improving the physical foundations and retrieval capability of next-generation vegetation remote sensing.
+      Peiqi Yang’s research centers on quantitative remote sensing, with a focus on radiative transfer modeling and the remote sensing of photosynthesis using solar-induced chlorophyll fluorescence (SIF) and the photochemical reflectance index (PRI). His work spans canopy radiation physics, vegetation structure–function relationships, and soil–vegetation–atmosphere energy–carbon coupling. He is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and NNU Outstanding Young Scholar. Yang has developed several influential modeling frameworks, including unified canopy radiative transfer theory and the SPART, mSCOPE, and SCOPE2.0 models. He has also advanced physically based methods for interpreting SIF and PRI to better quantify plant physiological status and ecosystem photosynthetic function. His research contributes to improving the physical foundations and retrieval capability of next-generation vegetation remote sensing.
     </section>   
 
     <!-- Work and Education Experience -->
