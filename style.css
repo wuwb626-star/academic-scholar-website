@@ -21,86 +21,6 @@ a:hover {
 }
 
 /* ==============================
-   Header
-   ============================== */
-/* ==============================
-   Header Center Layout
-   ============================== */
-header {
-  background-color: #002b5b;
-  color: white;
-  padding: 25px 0;
-  margin-bottom: 10px;
-}
-
-header .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 整体居中 */
-}
-
-.header-title-row {
-  display: flex;
-  align-items: center; /* logo 与标题垂直居中 */
-  justify-content: center; /* 标题居中 */
-}
-
-.header-title-row .logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ffffffcc;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  background-color: #fff;
-  margin-right: 15px;
-}
-
-header h1 {
-  margin: 0;
-  color: #ffffff;
-}
-
-.vamos-line {
-  margin: 10px 0;
-  font-size: 2rem;
-}
-
-header nav {
-  margin-top: 5px;
-}
-
-header nav a {
-  margin: 0 15px;
-  font-weight: 500;
-  color: white;
-  transition: opacity 0.3s ease;
-}
-
-header nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-header nav a:hover {
-  opacity: 0.8;
-}
-
-/* ==============================
-   Responsive adjustments
-   ============================== */
-@media (max-width: 900px) {
-  .header-title-row {
-    flex-direction: column;
-  }
-  .header-title-row .logo {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-
-/* ==============================
    Sections
    ============================== */
 
@@ -112,17 +32,17 @@ main {
 
 section {
   padding: 20px;
-  margin-bottom: 10px; /* 统一间距 10px */
+  margin-bottom: 10px;
   border-radius: 8px;
 }
 
 /* 缩短 About Us 和 Faculty Members 间距 */
 #about {
-  margin-bottom: 5px; /* 原来的 10px 改为 5px */
+  margin-bottom: 5px;
 }
 
 #faculty {
-  margin-top: 5px; /* 保证 Faculty 与上方更紧凑 */
+  margin-top: 5px;
 }
 
 /* Section Titles */
@@ -131,17 +51,17 @@ h2 {
   border-left: 4px solid #002b5b;
   padding-left: 10px;
   font-size: 1.8rem;
-  margin-bottom: 10px; /* 统一小标题间距 */
+  margin-bottom: 10px;
 }
 
 h3 {
   color: #444;
-  margin-top: 10px; /* 调整间距更紧凑 */
+  margin-top: 10px;
 }
 
 p {
   color: #2B2B2B;
-  margin: 5px 0; /* 缩小段落间距 */
+  margin: 5px 0;
 }
 
 ul {
@@ -155,7 +75,7 @@ ul {
 .faculty-section {
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* 卡片之间间距改为 10px */
+  gap: 10px;
   flex-wrap: nowrap;
   margin-top: 10px;
 }
@@ -166,9 +86,9 @@ ul {
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   width: 32%;
   text-align: center;
-  padding: 20px; /* 缩小 padding */
+  padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 10px; /* 卡片底部间距 */
+  margin-bottom: 10px;
 }
 
 .faculty-card:hover {
@@ -183,7 +103,7 @@ ul {
 }
 
 .faculty-card img {
-  width: 120px; /* 缩小图片 */
+  width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
@@ -192,7 +112,7 @@ ul {
 
 .faculty-card h3 {
   color: #002b5b;
-  margin: 5px 0; /* 调整标题间距 */
+  margin: 5px 0;
   font-size: 1rem;
 }
 
@@ -258,17 +178,17 @@ footer .footer-logo {
     font-size: 1.8rem;
     margin-left: 0;
   }
-  
+
   .faculty-section {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .faculty-card {
     width: 90%;
-    margin-bottom: 10px; /* 保持 10px 间距 */
+    margin-bottom: 10px;
   }
-  
+
   header .logo {
     position: static;
     display: block;
@@ -282,6 +202,7 @@ footer .footer-logo {
     font-size: 1rem;
   }
 }
+
 .profile-title,
 .section-title {
   color: #002b5b;
@@ -290,6 +211,7 @@ footer .footer-logo {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
+
 .pub-item {
   border-left: 3px solid #003366;
   padding-left: 12px;
@@ -298,10 +220,3 @@ footer .footer-logo {
   line-height: 1.55;
   color: #333;
 }
-
-
-
-
-
-
-
