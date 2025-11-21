@@ -80,3 +80,12 @@ header nav a:hover {
     margin-bottom: 10px;
   }
 }
+/* ===================== VAMOS 标题样式 ===================== */
+header h1.vamos-line {
+    color: #ffffff;       /* 白色字体 */
+    font-weight: 700;     /* 粗体 */
+    font-size: 2.5rem;    /* 字号，可调整 */
+    text-align: center;   /* 居中显示 */
+    margin: 10px 0;       /* 上下间距 */
+    letter-spacing: 2px;  /* 字母间距，可选 */
+}
