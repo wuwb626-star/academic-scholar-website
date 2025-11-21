@@ -419,19 +419,7 @@ footer {
 
 
 </div>
-        function showSelected(){
-          document.getElementById("pub-selected").style.display="block";
-          document.getElementById("pub-all").style.display="none";
-          document.querySelectorAll(".pub-tab-btn")[0].classList.add("active");
-          document.querySelectorAll(".pub-tab-btn")[1].classList.remove("active");
-        }
-        function showAll(){
-          document.getElementById("pub-selected").style.display="none";
-          document.getElementById("pub-all").style.display="block";
-          document.querySelectorAll(".pub-tab-btn")[1].classList.add("active");
-          document.querySelectorAll(".pub-tab-btn")[0].classList.remove("active");
-        }
-      </script>
+     
     </section>
     <!-- ===================== END Publications Section ===================== -->
 
@@ -466,6 +454,23 @@ footer {
     <p><a href="../team.html" style="font-weight:600;">← Back to Team</a></p>
 
   </main>
+<script>
+  function showSelected(){
+    document.getElementById("pub-selected").style.display="block";
+    document.getElementById("pub-all").style.display="none";
+    document.querySelectorAll(".pub-tab-btn")[0].classList.add("active");
+    document.querySelectorAll(".pub-tab-btn")[1].classList.remove("active");
+  }
+
+  function showAll(){
+    document.getElementById("pub-selected").style.display="none";
+    document.getElementById("pub-all").style.display="block";
+    document.querySelectorAll(".pub-tab-btn")[1].classList.add("active");
+    document.querySelectorAll(".pub-tab-btn")[0].classList.remove("active");
+  }
+</script>
+</body>
+</html>
 
   <footer>
     <img src="../images/logo.jpg" alt="Group Logo" class="footer-logo"><br>
