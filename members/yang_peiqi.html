@@ -15,187 +15,180 @@
       background: #fff;
       color: #1f2937;
     }
-/* ==============================
-   Header
-   ============================== */
 
-header {
-  background-color: #002b5b;
-  color: white;
-  padding: 10px 0; /* 上下间距进一步缩小 */
-  margin-bottom: 3px;
-}
+    /* ==============================
+       Header
+       ============================== */
+    header {
+      background-color: #002b5b;
+      color: white;
+      padding: 8px 0; /* 上下间距进一步缩小 */
+      margin-bottom: 3px;
+    }
 
-header .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    header .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.header-title-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .header-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.header-title-row .logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ffffffcc;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  background-color: #fff;
-  margin-right: 10px; /* 缩小 */
-}
+    .header-title-row .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffffcc;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      background-color: #fff;
+      margin-right: 10px;
+    }
 
-header h1 {
-  margin: 0;
-  color: #ffffff;
-}
+    header h1 {
+      margin: 0;
+      color: #ffffff;
+    }
 
-.vamos-line {
-  margin: 3px 0; /* 上下间距缩小 */
-  font-size: 2rem;
-  color: white;
-}
-.vamos-line strong {
-  color: white;
-}
+    .vamos-line {
+      margin: 2px 0; /* 上下间距缩小 */
+      font-size: 2rem;
+      color: white;
+    }
 
-header nav {
-  margin-top: 2px; /* 上间距缩小 */
-}
+    header nav {
+      margin-top: 2px;
+    }
 
-header nav a {
-  margin: 0 10px;
-  font-weight: 500;
-  color: white;
-  transition: opacity 0.3s ease;
-}
+    header nav a {
+      margin: 0 10px;
+      font-weight: 500;
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
 
-header nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
-}
+    header nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
 
-header nav a:hover {
-  opacity: 0.8;
-}
+    header nav a:hover {
+      opacity: 0.8;
+    }
 
-header nav a {
-  text-decoration: none;
-}
+    main {
+      max-width: 900px;
+      margin: 5px auto;
+      padding: 0 15px;
+    }
 
-header nav a.active {
-  text-decoration: underline;
-}
+    /* ==============================
+       Section 间距缩小
+       ============================== */
+    section {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
 
-nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
-}
+    h2.section-title {
+      color: #003366;
+      font-size: 1.5rem;
+      margin-top: 3px;  
+      margin-bottom: 3px; 
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 2px;
+    }
 
-main {
-  max-width: 900px;
-  margin: 5px auto; /* 上下间距进一步缩小 */
-  padding: 0 15px;
-}
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #003366;
+      display: block;
+      margin: 0 auto 3px auto; 
+    }
 
-h2.section-title {
-  color: #003366;
-  font-size: 1.5rem;
-  margin-top: 5px;  
-  margin-bottom: 3px; 
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 2px;
-}
+    p, li {
+      line-height: 1.5;
+      margin: 1px 0;
+    }
 
-img.profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #003366;
-  display: block;
-  margin: 0 auto 3px auto; 
-}
+    strong {
+      color: #003366;
+    }
 
-p, li {
-  line-height: 1.5;
-  margin: 1px 0; /* 上下间距进一步缩小 */
-}
+    a {
+      color: #003366;
+      text-decoration: underline;
+    }
 
-strong {
-  color: #003366;
-}
+    a:hover {
+      color: #1e40af;
+    }
 
-a {
-  color: #003366;
-  text-decoration: underline;
-}
+    .info-list {
+      list-style: none;
+      padding-left: 5px;
+      margin-bottom: 3px;
+    }
 
-a:hover {
-  color: #1e40af;
-}
+    .info-list li {
+      border-left: 3px solid #003366;
+      padding-left: 10px;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
 
-.info-list {
-  list-style: none;
-  padding-left: 5px;
-  margin-bottom: 3px; 
-}
+    footer {
+      text-align: center;
+      padding: 6px 0;
+      background-color: #003366;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 10px; 
+    }
 
-.info-list li {
-  border-left: 3px solid #003366;
-  padding-left: 10px;
-  margin-bottom: 3px; 
-  line-height: 1.5;
-}
+    .footer-logo {
+      height: 80px;
+      margin-bottom: 3px; 
+    }
 
-footer {
-  text-align: center;
-  padding: 6px 0; /* 上下间距进一步缩小 */
-  background-color: #003366;
-  color: white;
-  font-size: 0.9rem;
-  margin-top: 10px; 
-}
+    /* Publication Tabs */
+    .pub-tab-btn {
+      background-color: #f0f0f0;
+      border: none;
+      padding: 4px 8px;
+      margin-right: 4px; 
+      cursor: pointer;
+      font-weight: 500;
+    }
 
-.footer-logo {
-  height: 80px;
-  margin-bottom: 3px; 
-}
+    .pub-tab-btn.active {
+      background-color: #003366;
+      color: white;
+      font-weight: 600;
+    }
 
-/* Publication Tabs */
-.pub-tab-btn {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 4px 8px; /* 缩小 */
-  margin-right: 4px; 
-  cursor: pointer;
-  font-weight: 500;
-}
+    .pub-item {
+      margin-bottom: 3px; 
+    }
 
-.pub-tab-btn.active {
-  background-color: #003366;
-  color: white;
-  font-weight: 600;
-}
+    .pub-year {
+      font-weight: bold;
+      margin-right: 2px;
+    }
 
-.pub-item {
-  margin-bottom: 3px; 
-}
-
-.pub-year {
-  font-weight: bold;
-  margin-right: 2px;
-}
-
-.pub-journal {
-  font-style: italic;
-}
-
-
+    .pub-journal {
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -203,16 +196,11 @@ footer {
   <!-- ================= Header ================= -->
   <header>
     <div class="header-container">
-      <!-- 第一行：logo + 标题 -->
       <div class="header-title-row">
           <img src="../images/logo.jpg" alt="Group Logo" class="logo">
         <h1>Vegetation And Environment Remote Sensing</h1>
       </div>
-      
-      <!-- 第二行：VAMOS -->
       <h1 class="vamos-line"><strong>VAMOS</strong></h1>
-      
-      <!-- 第三行：导航 -->
       <nav>
         <a href="../index.html">Home</a>
         <a href="../research.html">Research</a>
@@ -420,8 +408,7 @@ footer {
 
 </div>
      
-    </section>
-    <!-- ===================== END Publications Section ===================== -->
+   </section>
 
     <section>
       <h2 class="section-title">Patents & Software</h2>
@@ -452,8 +439,13 @@ footer {
     </section>
 
     <p><a href="../team.html" style="font-weight:600;">← Back to Team</a></p>
-
   </main>
+
+  <footer>
+    <img src="../images/logo.jpg" alt="Group Logo" class="footer-logo"><br>
+    © 2025 Vegetation And Environment Remote Sensing Group | Nanjing Normal University
+  </footer>
+
 <script>
   function showSelected(){
     document.getElementById("pub-selected").style.display="block";
@@ -469,13 +461,5 @@ footer {
     document.querySelectorAll(".pub-tab-btn")[0].classList.remove("active");
   }
 </script>
-</body>
-</html>
-
-  <footer>
-    <img src="../images/logo.jpg" alt="Group Logo" class="footer-logo"><br>
-    © 2025 Vegetation And Environment Remote Sensing Group | Nanjing Normal University
-  </footer>
-
 </body>
 </html>
