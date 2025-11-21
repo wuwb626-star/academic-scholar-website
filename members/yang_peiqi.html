@@ -6,145 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- 引用外部 CSS -->
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../header.css">
+  <link rel="stylesheet" href="../style.css"> <!-- 将原 body、main、section、h2、img、p、li、strong、a、.info-list、footer、.pub-tab-btn、.pub-item 等样式放入 style.css -->
+  <link rel="stylesheet" href="../header.css"> <!-- 将 .vamos-line 样式放入 header.css -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-
-
-
- <style>
-  /* 确保成员页面 VAMOS 是白色，保持大小和布局 */
-  .vamos-line {
-  font-size: 2rem;             /* 字体大小保持一致 */
-  font-weight: 800;             /* 加粗 */
-  color: #ffffff !important;    /* 强制白色 */
-  text-align: center;
-  line-height: 1;               /* 紧凑行高 */
-  letter-spacing: -0.05em;      /* 字母间距更紧凑 */
-  margin: 5px 0;                /* 顶下间距小一些 */
-  font-family: 'Poppins', sans-serif; /* 与首页一致 */
-}
-
-.vamos-line strong {
-  font-weight: inherit;
-  color: inherit;
-}
-
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #F6F7F4;
-    color: #2B2B2B;
-    line-height: 1.6;
-  }
-
-  main {
-    max-width: 900px;
-    margin: 5px auto;
-    padding: 0 15px;
-  }
-
-  section {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-
-  h2.section-title {
-    color: #003366;
-    font-size: 1.5rem;
-    margin-top: 3px;  
-    margin-bottom: 3px; 
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 2px;
-  }
-
-  img.profile {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #003366;
-    display: block;
-    margin: 0 auto 3px auto; 
-  }
-
-  p, li {
-    line-height: 1.5;
-    margin: 1px 0;
-  }
-
-  strong {
-    color: #003366;
-  }
-
-  a {
-    color: #003366;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    color: #1e40af;
-  }
-
-  .info-list {
-    list-style: none;
-    padding-left: 5px;
-    margin-bottom: 3px;
-  }
-
-  .info-list li {
-    border-left: 3px solid #003366;
-    padding-left: 10px;
-    margin-bottom: 3px;
-    line-height: 1.5;
-  }
-
-  footer {
-    text-align: center;
-    padding: 6px 0;
-    background-color: #003366;
-    color: white;
-    font-size: 0.9rem;
-    margin-top: 10px; 
-  }
-
-  .footer-logo {
-    height: 80px;
-    margin-bottom: 3px; 
-  }
-
-  .pub-tab-btn {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 4px 8px;
-    margin-right: 4px; 
-    cursor: pointer;
-    font-weight: 500;
-  }
-
-  .pub-tab-btn.active {
-    background-color: #003366;
-    color: white;
-    font-weight: 600;
-  }
-
-  .pub-item {
-    margin-bottom: 3px; 
-  }
-
-  .pub-year {
-    font-weight: bold;
-    margin-right: 2px;
-  }
-
-  .pub-journal {
-    font-style: italic;
-  }
-</style>
 
 </head>
 <body>
@@ -156,8 +20,7 @@
         <img src="../images/logo.jpg" alt="Group Logo" class="logo">
         <h1>Vegetation And Environment Remote Sensing</h1>
       </div>
-<h1 class="vamos-line"><strong>VAMOS</strong></h1>
-
+      <h1 class="vamos-line"><strong>VAMOS</strong></h1>
 
       <nav>
         <a href="../index.html">Home</a>
@@ -168,7 +31,6 @@
       </nav>
     </div>
   </header>
-
 
   <main>
     <div style="text-align:center;">
@@ -420,5 +282,7 @@
     document.querySelectorAll(".pub-tab-btn")[0].classList.remove("active");
   }
 </script>
+</body>
+</html>
 </body>
 </html>
