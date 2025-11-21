@@ -34,6 +34,7 @@ header .header-container {
 header h1 {
   margin: 0;
   color: #ffffff;
+  font-weight: 600;
 }
 
 .vamos-line {
@@ -42,9 +43,10 @@ header h1 {
   text-align: center;
   position: relative;
   z-index: 10;
-  color: #ffffff; /* 整行文字白色 */
+  color: #ffffff !important; /* 强制白色，覆盖可能的继承 */
+  font-weight: 700;
+  letter-spacing: 2px; /* 可选，美观一点 */
 }
-
 
 header nav {
   margin-top: 5px;
@@ -78,4 +80,3 @@ header nav a:hover {
     margin-bottom: 10px;
   }
 }
-
