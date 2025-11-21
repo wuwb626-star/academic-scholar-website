@@ -39,14 +39,21 @@ header h1 {
 /* ==============================
    VAMOS
    ============================== */
-header .vamos-line {
-  margin: 10px 0;
-  font-size: 2rem; /* 保持原大小 */
-  text-align: center;
-  position: relative;
+/* ====== VAMOS 标题统一样式 ====== */
+header .vamos-line,
+.vamos-line {
+  font-size: 2rem;            /* 字体大小 */
+  font-weight: 800;           /* 加粗 */
+  color: #ffffff !important;  /* 白色字体 */
+  text-align: center;         /* 居中 */
+  line-height: 1;             /* 行高紧凑 */
+  letter-spacing: -0.05em;    /* 字母间距 */
+  margin: 5px 0;              /* 上下间距 */
+  font-family: 'Poppins', sans-serif;
+  position: relative;         /* 保持层级定位 */
   z-index: 10;
-  color: #ffffff !important; /* 保证白色，覆盖其他样式 */
 }
+
 
 /* ==============================
    Navigation
