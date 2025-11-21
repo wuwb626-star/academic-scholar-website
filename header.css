@@ -39,7 +39,12 @@ header h1 {
 .vamos-line {
   margin: 10px 0;
   font-size: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  color: #ffffff; /* 整行文字白色 */
 }
+
 
 header nav {
   margin-top: 5px;
