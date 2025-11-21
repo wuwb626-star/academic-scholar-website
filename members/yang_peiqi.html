@@ -19,10 +19,18 @@
       color: #2B2B2B;
       line-height: 1.6;
     }
-     header .vamos-line,
-    header .vamos-line strong {
-      color: #ffffff !important;
-    }
+   /* 让个人页 VAMOS 跟首页一致 */
+header .vamos-line {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;       /* 加粗 */
+  font-size: 48px;        /* 跟首页一样大小 */
+  letter-spacing: -2px;   /* 缩小字母间距，更紧凑 */
+  line-height: 1;         /* 行高紧凑 */
+  color: #ffffff !important;
+  margin: 0;              /* 去掉上下多余空隙 */
+  padding: 0;
+}
+
 
     /* ============================== 以下保持原页面其他样式 ============================== */
     main {
