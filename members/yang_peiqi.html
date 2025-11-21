@@ -10,171 +10,122 @@
   <link rel="stylesheet" href="../header.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #F6F7F4;
-      color: #2B2B2B;
-      line-height: 1.6;
-    }
+ <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F6F7F4;
+    color: #2B2B2B;
+    line-height: 1.6;
+  }
 
+  main {
+    max-width: 900px;
+    margin: 5px auto;
+    padding: 0 15px;
+  }
 
+  section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
 
-    /* ============================== 以下保持原页面其他样式 ============================== */
-    main {
-      max-width: 900px;
-      margin: 5px auto;
-      padding: 0 15px;
-    }
+  h2.section-title {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-top: 3px;  
+    margin-bottom: 3px; 
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 2px;
+  }
 
-    section {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
+  img.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #003366;
+    display: block;
+    margin: 0 auto 3px auto; 
+  }
 
-    h2.section-title {
-      color: #003366;
-      font-size: 1.5rem;
-      margin-top: 3px;  
-      margin-bottom: 3px; 
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 2px;
-    }
+  p, li {
+    line-height: 1.5;
+    margin: 1px 0;
+  }
 
-    img.profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #003366;
-      display: block;
-      margin: 0 auto 3px auto; 
-    }
+  strong {
+    color: #003366;
+  }
 
-    p, li {
-      line-height: 1.5;
-      margin: 1px 0;
-    }
+  a {
+    color: #003366;
+    text-decoration: underline;
+  }
 
-    strong {
-      color: #003366;
-    }
+  a:hover {
+    color: #1e40af;
+  }
 
-    a {
-      color: #003366;
-      text-decoration: un
+  .info-list {
+    list-style: none;
+    padding-left: 5px;
+    margin-bottom: 3px;
+  }
 
+  .info-list li {
+    border-left: 3px solid #003366;
+    padding-left: 10px;
+    margin-bottom: 3px;
+    line-height: 1.5;
+  }
 
-    /* ============================== 以下保持原页面其他样式不变 ============================== */
-    main {
-      max-width: 900px;
-      margin: 5px auto;
-      padding: 0 15px;
-    }
+  footer {
+    text-align: center;
+    padding: 6px 0;
+    background-color: #003366;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 10px; 
+  }
 
-    section {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
+  .footer-logo {
+    height: 80px;
+    margin-bottom: 3px; 
+  }
 
-    h2.section-title {
-      color: #003366;
-      font-size: 1.5rem;
-      margin-top: 3px;  
-      margin-bottom: 3px; 
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 2px;
-    }
+  .pub-tab-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 4px 8px;
+    margin-right: 4px; 
+    cursor: pointer;
+    font-weight: 500;
+  }
 
-    img.profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #003366;
-      display: block;
-      margin: 0 auto 3px auto; 
-    }
+  .pub-tab-btn.active {
+    background-color: #003366;
+    color: white;
+    font-weight: 600;
+  }
 
-    p, li {
-      line-height: 1.5;
-      margin: 1px 0;
-    }
+  .pub-item {
+    margin-bottom: 3px; 
+  }
 
-    strong {
-      color: #003366;
-    }
+  .pub-year {
+    font-weight: bold;
+    margin-right: 2px;
+  }
 
-    a {
-      color: #003366;
-      text-decoration: underline;
-    }
+  .pub-journal {
+    font-style: italic;
+  }
+</style>
 
-    a:hover {
-      color: #1e40af;
-    }
-
-    .info-list {
-      list-style: none;
-      padding-left: 5px;
-      margin-bottom: 3px;
-    }
-
-    .info-list li {
-      border-left: 3px solid #003366;
-      padding-left: 10px;
-      margin-bottom: 3px;
-      line-height: 1.5;
-    }
-
-    footer {
-      text-align: center;
-      padding: 6px 0;
-      background-color: #003366;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 10px; 
-    }
-
-    .footer-logo {
-      height: 80px;
-      margin-bottom: 3px; 
-    }
-
-    .pub-tab-btn {
-      background-color: #f0f0f0;
-      border: none;
-      padding: 4px 8px;
-      margin-right: 4px; 
-      cursor: pointer;
-      font-weight: 500;
-    }
-
-    .pub-tab-btn.active {
-      background-color: #003366;
-      color: white;
-      font-weight: 600;
-    }
-
-    .pub-item {
-      margin-bottom: 3px; 
-    }
-
-    .pub-year {
-      font-weight: bold;
-      margin-right: 2px;
-    }
-
-    .pub-journal {
-      font-style: italic;
-    }
-  </style>
 </head>
 <body>
 
