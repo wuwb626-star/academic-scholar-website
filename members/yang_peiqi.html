@@ -4,89 +4,68 @@
   <meta charset="UTF-8">
   <title>Peiqi Yang | Research Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 引用外部 CSS -->
+  <link rel="stylesheet" href="../header.css">
   <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       background: #F6F7F4;
-  color: #2B2B2B;
-  line-height: 1.6;
+      color: #2B2B2B;
+      line-height: 1.6;
     }
 
-    /* ============================== Header ============================== */
- 
-    header {
-  background-color: #002b5b;
-  color: white;
-  padding: 25px 0;
-  margin-bottom: 10px;
-}
-
-   header .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 整体居中 */
-}
-
-.header-title-row {
-  display: flex;
-  align-items: center; /* logo 与标题垂直居中 */
-  justify-content: center; /* 标题居中 */
-}
-
-.header-title-row .logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ffffffcc;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  background-color: #fff;
-  margin-right: 15px;
-}
-
-    header h1 {
-      margin: 0;
-      color: #ffffff;
+    /* ============================== 以下保持原页面其他样式 ============================== */
+    main {
+      max-width: 900px;
+      margin: 5px auto;
+      padding: 0 15px;
     }
 
-   .vamos-line {
-  margin: 10px 0;
-  font-size: 2rem;
-  text-align: center;
-  position: relative;  /* 保证 z-index 生效 */
-  z-index: 10;
-}
-
-.vamos-line strong {
-  color: #ffffff !important;  /* 强制白色 */
-}
-
-
-    header nav {
+    section {
       margin-top: 5px;
+      margin-bottom: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
 
-    header nav a {
-      margin: 0 15px;
-      font-weight: 500;
-      color: white;
-      text-decoration: none;
-      transition: opacity 0.3s ease;
+    h2.section-title {
+      color: #003366;
+      font-size: 1.5rem;
+      margin-top: 3px;  
+      margin-bottom: 3px; 
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 2px;
     }
 
-    header nav a.active {
-      font-weight: bold;
-      text-decoration: underline;
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #003366;
+      display: block;
+      margin: 0 auto 3px auto; 
     }
 
-    header nav a:hover {
-      opacity: 0.8;
+    p, li {
+      line-height: 1.5;
+      margin: 1px 0;
     }
+
+    strong {
+      color: #003366;
+    }
+
+    a {
+      color: #003366;
+      text-decoration: un
+
 
     /* ============================== 以下保持原页面其他样式不变 ============================== */
     main {
