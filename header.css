@@ -34,20 +34,23 @@ header .header-container {
 header h1 {
   margin: 0;
   color: #ffffff;
-  font-weight: 600;
 }
 
-.vamos-line {
+/* ==============================
+   VAMOS
+   ============================== */
+header .vamos-line {
   margin: 10px 0;
-  font-size: 2rem;
+  font-size: 2rem; /* 保持原大小 */
   text-align: center;
   position: relative;
   z-index: 10;
-  color: #ffffff !important; /* 强制白色，覆盖可能的继承 */
-  font-weight: 700;
-  letter-spacing: 2px; /* 可选，美观一点 */
+  color: #ffffff !important; /* 保证白色，覆盖其他样式 */
 }
 
+/* ==============================
+   Navigation
+   ============================== */
 header nav {
   margin-top: 5px;
 }
@@ -79,13 +82,4 @@ header nav a:hover {
     margin-right: 0;
     margin-bottom: 10px;
   }
-}
-/* ===================== VAMOS 标题样式 ===================== */
-header h1.vamos-line {
-    color: #ffffff;       /* 白色字体 */
-    font-weight: 700;     /* 粗体 */
-    font-size: 2.5rem;    /* 字号，可调整 */
-    text-align: center;   /* 居中显示 */
-    margin: 10px 0;       /* 上下间距 */
-    letter-spacing: 2px;  /* 字母间距，可选 */
 }
