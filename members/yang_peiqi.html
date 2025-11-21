@@ -16,13 +16,11 @@
       color: #1f2937;
     }
 
-    /* ==============================
-       Header
-       ============================== */
+    /* ============================== Header ============================== */
     header {
       background-color: #002b5b;
       color: white;
-      padding: 8px 0; /* 上下间距进一步缩小 */
+      padding: 8px 0;
       margin-bottom: 3px;
     }
 
@@ -54,14 +52,13 @@
       color: #ffffff;
     }
 
-   .vamos-line {
-  margin: 2px 0;
-  font-size: 2rem;
-  color: #ffffff !important; /* 强制白色 */
-  font-weight: 700;          /* 加粗 */
-  text-align: center;
-}
-
+    .vamos-line {
+      margin: 2px 0;
+      font-size: 2rem;
+      color: #ffffff !important;
+      font-weight: 700;
+      text-align: center;
+    }
 
     header nav {
       margin-top: 2px;
@@ -84,15 +81,13 @@
       opacity: 0.8;
     }
 
+    /* ============================== 以下保持原页面其他样式不变 ============================== */
     main {
       max-width: 900px;
       margin: 5px auto;
       padding: 0 15px;
     }
 
-    /* ==============================
-       Section 间距缩小
-       ============================== */
     section {
       margin-top: 5px;
       margin-bottom: 5px;
@@ -164,7 +159,6 @@
       margin-bottom: 3px; 
     }
 
-    /* Publication Tabs */
     .pub-tab-btn {
       background-color: #f0f0f0;
       border: none;
@@ -197,28 +191,22 @@
 <body>
 
   <!-- ================= Header ================= -->
- <!-- ================= Header ================= -->
-<header>
-  <div class="header-container">
-    <!-- 第一行：logo + 标题 -->
-    <div class="header-title-row">
-      <img src="../images/logo.jpg" alt="Group Logo" class="logo">
-      <h1>Vegetation And Environment Remote Sensing</h1>
+  <header>
+    <div class="header-container">
+      <div class="header-title-row">
+        <img src="../images/logo.jpg" alt="Group Logo" class="logo">
+        <h1>Vegetation And Environment Remote Sensing</h1>
+      </div>
+      <h1 class="vamos-line"><strong>VAMOS</strong></h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../students.html">Students</a>
+        <a href="../publications_v2.html">Publications</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
-
-    <!-- 第二行：VAMOS -->
-    <h1 class="vamos-line" style="color: #ffffff;"><strong>VAMOS</strong></h1>
-
-    <!-- 第三行：导航 -->
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../research.html">Research</a>
-      <a href="../students.html">Students</a>
-      <a href="../publications_v2.html">Publications</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
 
   <main>
